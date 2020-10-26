@@ -16,5 +16,5 @@ The objective of this project is to replicate the work published by Onan et al. 
  
 2. Parse input data
 	```bash
-	python parse_data.py
+	python parse_data.py data\processed_acl
 	```
