@@ -13,8 +13,16 @@ The objective of this project is to replicate the work published by Onan et al. 
 	```bash
 	pip install -r requirements.txt
 	```
+2. Untar data
+	```bash
+    cd data
+	tar xvf processed_acl.tar.gz
+    cd ..
+	```
  
-2. Parse input data
+3. Parse input data
 	```bash
 	python parse_data.py data\processed_acl
 	```
+ 
+ ## Data
