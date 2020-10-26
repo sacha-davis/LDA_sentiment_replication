@@ -16,7 +16,7 @@ The objective of this project is to replicate the work published by Onan et al. 
 2. Untar data
 	```bash
     cd data
-	tar xvf processed_acl.tar.gz
+    tar xvf processed_acl.tar.gz
     cd ..
 	```
  
