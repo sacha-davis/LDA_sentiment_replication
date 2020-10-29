@@ -19,16 +19,18 @@ The objective of this project is to replicate the work published by Onan et al. 
     pip install -r requirements.txt
 	```
  
-2. Untar data
+2. Unzip data files
 	```bash
     cd data
-    tar xvf processed_acl.tar.gz
+    tar -xf multi-domain-sentiment.arff.zip
+    tar -xf IrishEconomicSentiment.arff.zip
     cd ..
 	```
  
-3. Parse input data
+3. Create *document x term* .csv from .arff for each dataset
 	```bash
-    python parse_data.py data\processed_acl
+    src\arff_convert.py data\multi-domain-sentiment.arff data\multidomain_df.csv
+    src\arff_convert.py data\IrishEconomicSentiment.arff data\irish_df.csv
 	```
  
  ## Data
