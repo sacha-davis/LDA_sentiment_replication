@@ -29,8 +29,8 @@ The objective of this project is to replicate the work published by Onan et al. 
  
 3. Create *document x term* .csv from .arff for each dataset
 	```bash
-    src\arff_convert.py data\multi-domain-sentiment.arff data\multidomain_df.csv
-    src\arff_convert.py data\IrishEconomicSentiment.arff data\irish_df.csv
+    python src\arff_convert.py data\multi-domain-sentiment.arff data\multidomain_df.csv
+    python src\arff_convert.py data\IrishEconomicSentiment.arff data\irish_df.csv
 	```
  
  ## Data
