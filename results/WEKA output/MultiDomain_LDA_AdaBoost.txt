@@ -1,0 +1,312 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     multidomain_topics
+Instances:    8000
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+topic_49 <= 0.0180679305 : positive
+topic_49 > 0.0180679305 : negative
+topic_49 is missing : negative
+
+Class distributions
+
+topic_49 <= 0.0180679305
+negative	positive	
+0.45433255269320844	0.5456674473067916	
+topic_49 > 0.0180679305
+negative	positive	
+0.7671232876712328	0.2328767123287671	
+topic_49 is missing
+negative	positive	
+0.5	0.5	
+
+
+Weight: 0.31
+
+Decision Stump
+
+Classifications
+
+topic_18 <= 0.12354217149999999 : negative
+topic_18 > 0.12354217149999999 : negative
+topic_18 is missing : negative
+
+Class distributions
+
+topic_18 <= 0.12354217149999999
+negative	positive	
+0.521213121214189	0.478786878785811	
+topic_18 > 0.12354217149999999
+negative	positive	
+0.7538866388576246	0.2461133611423753	
+topic_18 is missing
+negative	positive	
+0.5566014529591894	0.4433985470408106	
+
+
+Weight: 0.23
+
+Decision Stump
+
+Classifications
+
+topic_18 <= 0.12354217149999999 : positive
+topic_18 > 0.12354217149999999 : negative
+topic_18 is missing : negative
+
+Class distributions
+
+topic_18 <= 0.12354217149999999
+negative	positive	
+0.46444088586868987	0.5355591141313101	
+topic_18 > 0.12354217149999999
+negative	positive	
+0.7093170236789544	0.2906829763210455	
+topic_18 is missing
+negative	positive	
+0.5000000000000294	0.4999999999999707	
+
+
+Weight: 0.24
+
+Decision Stump
+
+Classifications
+
+topic_49 <= 0.0818554435 : negative
+topic_49 > 0.0818554435 : negative
+topic_49 is missing : negative
+
+Class distributions
+
+topic_49 <= 0.0818554435
+negative	positive	
+0.5244503262064923	0.47554967379350765	
+topic_49 > 0.0818554435
+negative	positive	
+0.7704911915409135	0.22950880845908636	
+topic_49 is missing
+negative	positive	
+0.5437829341778795	0.4562170658221204	
+
+
+Weight: 0.18
+
+Decision Stump
+
+Classifications
+
+topic_49 <= 0.0818554435 : positive
+topic_49 > 0.0818554435 : negative
+topic_49 is missing : negative
+
+Class distributions
+
+topic_49 <= 0.0818554435
+negative	positive	
+0.4805842532556937	0.5194157467443064	
+topic_49 > 0.0818554435
+negative	positive	
+0.7379818358265671	0.262018164173433	
+topic_49 is missing
+negative	positive	
+0.5000000000000586	0.4999999999999413	
+
+
+Weight: 0.14
+
+Decision Stump
+
+Classifications
+
+topic_3 <= 4.396135E-4 : negative
+topic_3 > 4.396135E-4 : positive
+topic_3 is missing : negative
+
+Class distributions
+
+topic_3 <= 4.396135E-4
+negative	positive	
+0.5655196088775315	0.43448039112246845	
+topic_3 > 4.396135E-4
+negative	positive	
+0.41772370315218627	0.5822762968478137	
+topic_3 is missing
+negative	positive	
+0.530644090905638	0.469355909094362	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+topic_18 <= 0.276628852 : positive
+topic_18 > 0.276628852 : negative
+topic_18 is missing : positive
+
+Class distributions
+
+topic_18 <= 0.276628852
+negative	positive	
+0.47696305906023123	0.5230369409397687	
+topic_18 > 0.276628852
+negative	positive	
+0.6891375355284182	0.31086246447158183	
+topic_18 is missing
+negative	positive	
+0.4938389739016849	0.5061610260983151	
+
+
+Weight: 0.15
+
+Decision Stump
+
+Classifications
+
+topic_49 <= 0.0818554435 : negative
+topic_49 > 0.0818554435 : negative
+topic_49 is missing : negative
+
+Class distributions
+
+topic_49 <= 0.0818554435
+negative	positive	
+0.5094365240560534	0.49056347594394645	
+topic_49 > 0.0818554435
+negative	positive	
+0.7169112014915467	0.28308879850845337	
+topic_49 is missing
+negative	positive	
+0.5244494915295214	0.4755505084704786	
+
+
+Weight: 0.1
+
+Decision Stump
+
+Classifications
+
+topic_49 <= 0.0818554435 : positive
+topic_49 > 0.0818554435 : negative
+topic_49 is missing : positive
+
+Class distributions
+
+topic_49 <= 0.0818554435
+negative	positive	
+0.48497316466791957	0.5150268353320804	
+topic_49 > 0.0818554435
+negative	positive	
+0.6966329786068837	0.30336702139311633	
+topic_49 is missing
+negative	positive	
+0.499999999999887	0.5000000000001129	
+
+
+Weight: 0.11
+
+Decision Stump
+
+Classifications
+
+topic_40 <= 0.070060809 : negative
+topic_40 > 0.070060809 : negative
+topic_40 is missing : negative
+
+Class distributions
+
+topic_40 <= 0.070060809
+negative	positive	
+0.5111665004848907	0.4888334995151094	
+topic_40 > 0.070060809
+negative	positive	
+0.7064217171918451	0.2935782828081548	
+topic_40 is missing
+negative	positive	
+0.5240305598289837	0.4759694401710162	
+
+
+Weight: 0.1
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.4 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4940               61.75   %
+Incorrectly Classified Instances      3060               38.25   %
+Total Number of Instances             8000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.371    0.136    0.732      0.371    0.492      negative
+                 0.864    0.629    0.579      0.864    0.693      positive
+Weighted Avg.    0.618    0.383    0.655      0.618    0.593      
+

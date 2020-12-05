@@ -1,0 +1,662 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     multidomain_topics
+Instances:    8000
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      negative
+======================
+topic_1        -0.9053
+topic_2         0.5207
+topic_3         -2.582
+topic_4         0.2648
+topic_5        -2.4925
+topic_6        -0.2488
+topic_7        -0.6799
+topic_8         0.1615
+topic_9         0.0197
+topic_10        0.5278
+topic_11       -0.2541
+topic_12        0.1893
+topic_13        0.8251
+topic_14       -0.0596
+topic_15       -0.0277
+topic_16       -0.4389
+topic_17       -1.2319
+topic_18        2.4502
+topic_19        0.5887
+topic_20        0.0557
+topic_21        0.1102
+topic_22       -0.1431
+topic_23       -0.0729
+topic_24       -0.2839
+topic_25       -0.2277
+topic_26       -0.8096
+topic_27       -0.0591
+topic_28        0.3735
+topic_29        0.0184
+topic_30        0.5078
+topic_31        0.3238
+topic_32       -0.5737
+topic_33       -1.3566
+topic_34       -0.7922
+topic_35       -1.1257
+topic_36        0.5524
+topic_37       -0.4669
+topic_38        -0.183
+topic_39       -0.0166
+topic_40        2.1158
+topic_41       -0.5029
+topic_42        -1.405
+topic_43        0.1054
+topic_44       -0.8804
+topic_45        0.2046
+topic_46       -0.2808
+topic_47       -0.4326
+topic_48       -0.9187
+topic_49        7.8273
+topic_50       -0.6364
+Intercept       0.0144
+
+
+Odds Ratios...
+                 Class
+Variable      negative
+======================
+topic_1         0.4044
+topic_2         1.6833
+topic_3         0.0756
+topic_4         1.3031
+topic_5         0.0827
+topic_6         0.7797
+topic_7         0.5067
+topic_8         1.1753
+topic_9         1.0199
+topic_10        1.6952
+topic_11        0.7756
+topic_12        1.2084
+topic_13        2.2821
+topic_14        0.9421
+topic_15        0.9727
+topic_16        0.6447
+topic_17        0.2917
+topic_18       11.5911
+topic_19        1.8017
+topic_20        1.0572
+topic_21        1.1165
+topic_22        0.8667
+topic_23        0.9297
+topic_24        0.7528
+topic_25        0.7964
+topic_26         0.445
+topic_27        0.9427
+topic_28        1.4528
+topic_29        1.0186
+topic_30        1.6616
+topic_31        1.3823
+topic_32        0.5634
+topic_33        0.2575
+topic_34        0.4528
+topic_35        0.3244
+topic_36        1.7374
+topic_37        0.6269
+topic_38        0.8327
+topic_39        0.9835
+topic_40         8.296
+topic_41        0.6048
+topic_42        0.2454
+topic_43        1.1112
+topic_44        0.4146
+topic_45        1.2271
+topic_46        0.7552
+topic_47        0.6488
+topic_48         0.399
+topic_49     2508.1306
+topic_50        0.5292
+
+
+Weight: 0.58
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_1       -0.2144
+topic_2       -0.3261
+topic_3        -1.458
+topic_4       -0.4749
+topic_5       -1.3767
+topic_6        0.1909
+topic_7       -0.0957
+topic_8         -0.49
+topic_9        0.0166
+topic_10       -0.365
+topic_11       0.2037
+topic_12      -0.1788
+topic_13      -0.1837
+topic_14       0.3286
+topic_15       0.1414
+topic_16       0.1694
+topic_17      -0.6115
+topic_18       1.0667
+topic_19      -0.2905
+topic_20      -0.1612
+topic_21      -0.1979
+topic_22       0.1956
+topic_23       0.0563
+topic_24       0.2386
+topic_25       0.2591
+topic_26      -0.1735
+topic_27       0.1738
+topic_28      -0.1502
+topic_29      -0.2735
+topic_30      -0.3394
+topic_31      -0.4022
+topic_32      -0.0077
+topic_33      -0.5503
+topic_34       -0.277
+topic_35      -0.2755
+topic_36       -0.303
+topic_37       0.0953
+topic_38        0.016
+topic_39       0.1656
+topic_40       0.6364
+topic_41      -0.0025
+topic_42      -0.6528
+topic_43       -0.211
+topic_44      -0.2294
+topic_45      -0.4191
+topic_46       0.1989
+topic_47       0.0408
+topic_48       -0.198
+topic_49       3.8732
+topic_50       -0.093
+Intercept      0.1051
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_1         0.807
+topic_2        0.7218
+topic_3        0.2327
+topic_4        0.6219
+topic_5        0.2524
+topic_6        1.2103
+topic_7        0.9088
+topic_8        0.6126
+topic_9        1.0167
+topic_10       0.6942
+topic_11        1.226
+topic_12       0.8363
+topic_13       0.8322
+topic_14       1.3891
+topic_15       1.1519
+topic_16       1.1846
+topic_17       0.5425
+topic_18       2.9058
+topic_19       0.7479
+topic_20       0.8511
+topic_21       0.8205
+topic_22        1.216
+topic_23       1.0579
+topic_24       1.2694
+topic_25       1.2957
+topic_26       0.8408
+topic_27       1.1898
+topic_28       0.8605
+topic_29       0.7607
+topic_30       0.7122
+topic_31       0.6689
+topic_32       0.9923
+topic_33       0.5768
+topic_34       0.7581
+topic_35       0.7592
+topic_36       0.7386
+topic_37          1.1
+topic_38       1.0161
+topic_39       1.1802
+topic_40       1.8896
+topic_41       0.9976
+topic_42       0.5206
+topic_43       0.8097
+topic_44        0.795
+topic_45       0.6576
+topic_46         1.22
+topic_47       1.0417
+topic_48       0.8203
+topic_49       48.097
+topic_50       0.9112
+
+
+Weight: 0.27
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_1        0.0769
+topic_2        0.0502
+topic_3       -0.6891
+topic_4        0.0318
+topic_5       -0.6697
+topic_6        -0.086
+topic_7       -0.1836
+topic_8       -0.0413
+topic_9       -0.1954
+topic_10      -0.0032
+topic_11      -0.0413
+topic_12       0.0281
+topic_13       0.0286
+topic_14       0.0222
+topic_15       -0.148
+topic_16      -0.0768
+topic_17      -0.0763
+topic_18       0.5896
+topic_19       0.0433
+topic_20       0.0367
+topic_21       0.0566
+topic_22      -0.0632
+topic_23      -0.1695
+topic_24       -0.036
+topic_25      -0.0491
+topic_26      -0.0989
+topic_27      -0.1035
+topic_28       -0.026
+topic_29       0.0802
+topic_30       0.0733
+topic_31       0.0358
+topic_32      -0.2099
+topic_33      -0.0398
+topic_34       0.0296
+topic_35        0.018
+topic_36       0.0647
+topic_37      -0.1245
+topic_38      -0.1278
+topic_39       -0.078
+topic_40       0.2498
+topic_41      -0.2011
+topic_42      -0.1876
+topic_43      -0.0152
+topic_44       0.0312
+topic_45       0.0294
+topic_46      -0.0761
+topic_47      -0.1697
+topic_48       0.0259
+topic_49       2.9563
+topic_50      -0.0716
+Intercept      0.0283
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_1          1.08
+topic_2        1.0514
+topic_3         0.502
+topic_4        1.0323
+topic_5        0.5119
+topic_6        0.9176
+topic_7        0.8322
+topic_8        0.9596
+topic_9        0.8225
+topic_10       0.9969
+topic_11       0.9596
+topic_12       1.0285
+topic_13        1.029
+topic_14       1.0224
+topic_15       0.8624
+topic_16        0.926
+topic_17       0.9265
+topic_18       1.8033
+topic_19       1.0442
+topic_20       1.0374
+topic_21       1.0583
+topic_22       0.9387
+topic_23       0.8441
+topic_24       0.9646
+topic_25       0.9521
+topic_26       0.9058
+topic_27       0.9017
+topic_28       0.9744
+topic_29       1.0835
+topic_30        1.076
+topic_31       1.0365
+topic_32       0.8106
+topic_33        0.961
+topic_34       1.0301
+topic_35       1.0182
+topic_36       1.0669
+topic_37       0.8829
+topic_38         0.88
+topic_39       0.9249
+topic_40       1.2837
+topic_41       0.8178
+topic_42       0.8289
+topic_43       0.9849
+topic_44       1.0317
+topic_45       1.0298
+topic_46       0.9267
+topic_47        0.844
+topic_48       1.0262
+topic_49      19.2276
+topic_50       0.9309
+
+
+Weight: 0.13
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_1       -0.0766
+topic_2       -0.1182
+topic_3       -0.4406
+topic_4        -0.096
+topic_5       -0.4236
+topic_6        0.0144
+topic_7       -0.0559
+topic_8        0.0364
+topic_9       -0.0339
+topic_10       -0.083
+topic_11       0.0527
+topic_12      -0.0819
+topic_13      -0.0985
+topic_14      -0.0847
+topic_15      -0.0008
+topic_16       0.0322
+topic_17       0.0178
+topic_18       0.3216
+topic_19      -0.1023
+topic_20      -0.0765
+topic_21      -0.0922
+topic_22       0.0335
+topic_23      -0.0473
+topic_24       0.0293
+topic_25        0.027
+topic_26      -0.0125
+topic_27       0.0241
+topic_28      -0.0133
+topic_29      -0.1094
+topic_30      -0.1046
+topic_31      -0.1053
+topic_32      -0.0466
+topic_33       0.0198
+topic_34      -0.1181
+topic_35      -0.0567
+topic_36      -0.1026
+topic_37       0.0122
+topic_38        -0.03
+topic_39       0.0251
+topic_40      -0.0072
+topic_41      -0.0577
+topic_42      -0.0656
+topic_43      -0.0818
+topic_44      -0.1029
+topic_45      -0.1014
+topic_46        0.027
+topic_47      -0.0366
+topic_48       -0.105
+topic_49       2.3238
+topic_50       0.0189
+Intercept      0.0394
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_1        0.9262
+topic_2        0.8885
+topic_3        0.6436
+topic_4        0.9085
+topic_5        0.6547
+topic_6        1.0145
+topic_7        0.9456
+topic_8        1.0371
+topic_9        0.9667
+topic_10       0.9204
+topic_11       1.0541
+topic_12       0.9214
+topic_13       0.9062
+topic_14       0.9188
+topic_15       0.9992
+topic_16       1.0327
+topic_17        1.018
+topic_18       1.3793
+topic_19       0.9028
+topic_20       0.9264
+topic_21       0.9119
+topic_22        1.034
+topic_23       0.9538
+topic_24       1.0298
+topic_25       1.0273
+topic_26       0.9876
+topic_27       1.0244
+topic_28       0.9868
+topic_29       0.8964
+topic_30       0.9006
+topic_31       0.9001
+topic_32       0.9545
+topic_33         1.02
+topic_34       0.8886
+topic_35       0.9448
+topic_36       0.9025
+topic_37       1.0123
+topic_38       0.9704
+topic_39       1.0254
+topic_40       0.9928
+topic_41       0.9439
+topic_42       0.9365
+topic_43       0.9214
+topic_44       0.9022
+topic_45       0.9036
+topic_46       1.0274
+topic_47        0.964
+topic_48       0.9003
+topic_49      10.2148
+topic_50       1.0191
+
+
+Weight: 0.05
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_1       -0.0222
+topic_2        -0.048
+topic_3        -0.315
+topic_4       -0.0264
+topic_5       -0.3105
+topic_6       -0.0328
+topic_7        -0.034
+topic_8       -0.0104
+topic_9       -0.0473
+topic_10      -0.0398
+topic_11       0.0081
+topic_12      -0.0355
+topic_13      -0.0346
+topic_14      -0.0211
+topic_15      -0.0427
+topic_16      -0.0171
+topic_17      -0.0301
+topic_18       0.2333
+topic_19      -0.0412
+topic_20       -0.033
+topic_21      -0.0445
+topic_22      -0.0146
+topic_23      -0.0358
+topic_24      -0.0166
+topic_25      -0.0336
+topic_26      -0.0453
+topic_27      -0.0269
+topic_28      -0.0381
+topic_29      -0.0281
+topic_30      -0.0412
+topic_31      -0.0313
+topic_32       -0.026
+topic_33       -0.026
+topic_34       -0.054
+topic_35      -0.0225
+topic_36      -0.0402
+topic_37      -0.0285
+topic_38      -0.0414
+topic_39      -0.0192
+topic_40      -0.0398
+topic_41      -0.0157
+topic_42      -0.0295
+topic_43       -0.043
+topic_44      -0.0389
+topic_45      -0.0314
+topic_46      -0.0219
+topic_47      -0.0522
+topic_48      -0.0313
+topic_49       2.1718
+topic_50      -0.0277
+Intercept      0.0288
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_1         0.978
+topic_2        0.9531
+topic_3        0.7298
+topic_4        0.9739
+topic_5        0.7331
+topic_6        0.9678
+topic_7        0.9666
+topic_8        0.9897
+topic_9        0.9538
+topic_10        0.961
+topic_11       1.0081
+topic_12       0.9651
+topic_13        0.966
+topic_14       0.9791
+topic_15       0.9582
+topic_16        0.983
+topic_17       0.9703
+topic_18       1.2628
+topic_19       0.9596
+topic_20       0.9675
+topic_21       0.9564
+topic_22       0.9855
+topic_23       0.9648
+topic_24       0.9835
+topic_25       0.9669
+topic_26       0.9557
+topic_27       0.9734
+topic_28       0.9626
+topic_29       0.9723
+topic_30       0.9596
+topic_31       0.9692
+topic_32       0.9743
+topic_33       0.9744
+topic_34       0.9475
+topic_35       0.9777
+topic_36       0.9606
+topic_37       0.9719
+topic_38       0.9594
+topic_39        0.981
+topic_40        0.961
+topic_41       0.9844
+topic_42       0.9709
+topic_43       0.9579
+topic_44       0.9618
+topic_45       0.9691
+topic_46       0.9784
+topic_47       0.9492
+topic_48       0.9691
+topic_49       8.7743
+topic_50       0.9727
+
+
+Weight: 0.01
+
+Number of performed Iterations: 5
+
+
+Time taken to build model: 0.94 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5057               63.2125 %
+Incorrectly Classified Instances      2943               36.7875 %
+Total Number of Instances             8000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.544    0.280    0.660      0.544    0.597      negative
+                 0.720    0.456    0.612      0.720    0.662      positive
+Weighted Avg.    0.632    0.368    0.636      0.632    0.629      
+

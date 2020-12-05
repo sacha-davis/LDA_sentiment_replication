@@ -1,0 +1,1081 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     multidomain_topics
+Instances:    8000
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 48,16,1,35,45,40,22,9,18,19,42,47,46,8,13,7,43,20,2,38,23,14,27,11,34,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R48,16,1,35,45,40,22,9,18,19,42,47,46,8,13,7,43,20,2,38,23,14,27,11,34,51'
+
+@attribute topic_48 numeric
+@attribute topic_16 numeric
+@attribute topic_1 numeric
+@attribute topic_35 numeric
+@attribute topic_45 numeric
+@attribute topic_40 numeric
+@attribute topic_22 numeric
+@attribute topic_9 numeric
+@attribute topic_18 numeric
+@attribute topic_19 numeric
+@attribute topic_42 numeric
+@attribute topic_47 numeric
+@attribute topic_46 numeric
+@attribute topic_8 numeric
+@attribute topic_13 numeric
+@attribute topic_7 numeric
+@attribute topic_43 numeric
+@attribute topic_20 numeric
+@attribute topic_2 numeric
+@attribute topic_38 numeric
+@attribute topic_23 numeric
+@attribute topic_14 numeric
+@attribute topic_27 numeric
+@attribute topic_11 numeric
+@attribute topic_34 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_48      -0.6722
+topic_16      -0.2288
+topic_1       -0.7964
+topic_35      -0.7928
+topic_45       0.4422
+topic_40       2.1878
+topic_22       0.0716
+topic_9        0.0814
+topic_18       2.6489
+topic_19       0.8708
+topic_42      -1.1855
+topic_47       -0.073
+topic_46      -0.0314
+topic_8        0.4007
+topic_13       1.1113
+topic_7       -0.3371
+topic_43       0.2606
+topic_20       0.1403
+topic_2        0.9081
+topic_38       -0.018
+topic_23         0.06
+topic_14       0.0524
+topic_27       0.3682
+topic_11       -0.056
+topic_34       -0.568
+Intercept     -0.1612
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_48       0.5106
+topic_16       0.7955
+topic_1         0.451
+topic_35       0.4526
+topic_45       1.5561
+topic_40       8.9156
+topic_22       1.0742
+topic_9        1.0848
+topic_18      14.1389
+topic_19       2.3887
+topic_42       0.3056
+topic_47       0.9296
+topic_46       0.9691
+topic_8        1.4928
+topic_13       3.0384
+topic_7        0.7139
+topic_43       1.2977
+topic_20       1.1506
+topic_2        2.4797
+topic_38       0.9822
+topic_23       1.0618
+topic_14       1.0537
+topic_27       1.4452
+topic_11       0.9456
+topic_34       0.5667
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 33,38,13,10,4,7,22,26,32,36,48,3,8,9,44,27,42,23,16,29,28,30,35,50,18,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R33,38,13,10,4,7,22,26,32,36,48,3,8,9,44,27,42,23,16,29,28,30,35,50,18,51'
+
+@attribute topic_33 numeric
+@attribute topic_38 numeric
+@attribute topic_13 numeric
+@attribute topic_10 numeric
+@attribute topic_4 numeric
+@attribute topic_7 numeric
+@attribute topic_22 numeric
+@attribute topic_26 numeric
+@attribute topic_32 numeric
+@attribute topic_36 numeric
+@attribute topic_48 numeric
+@attribute topic_3 numeric
+@attribute topic_8 numeric
+@attribute topic_9 numeric
+@attribute topic_44 numeric
+@attribute topic_27 numeric
+@attribute topic_42 numeric
+@attribute topic_23 numeric
+@attribute topic_16 numeric
+@attribute topic_29 numeric
+@attribute topic_28 numeric
+@attribute topic_30 numeric
+@attribute topic_35 numeric
+@attribute topic_50 numeric
+@attribute topic_18 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_33      -1.3369
+topic_38      -0.2114
+topic_13       0.8397
+topic_10        0.592
+topic_4        0.2359
+topic_7       -0.6103
+topic_22      -0.2575
+topic_26      -0.7767
+topic_32      -0.5308
+topic_36       0.5838
+topic_48      -0.9708
+topic_3       -2.6466
+topic_8        0.1221
+topic_9        0.0583
+topic_44      -0.8135
+topic_27       0.1188
+topic_42      -1.3901
+topic_23      -0.1836
+topic_16      -0.5423
+topic_29       0.0097
+topic_28       0.3366
+topic_30       0.4137
+topic_35      -1.1754
+topic_50      -0.6843
+topic_18       2.4779
+Intercept      0.0637
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_33       0.2627
+topic_38       0.8094
+topic_13       2.3156
+topic_10       1.8076
+topic_4         1.266
+topic_7        0.5432
+topic_22        0.773
+topic_26       0.4599
+topic_32       0.5881
+topic_36       1.7928
+topic_48       0.3788
+topic_3        0.0709
+topic_8        1.1299
+topic_9          1.06
+topic_44       0.4433
+topic_27       1.1262
+topic_42       0.2491
+topic_23       0.8323
+topic_16       0.5814
+topic_29       1.0097
+topic_28       1.4002
+topic_30       1.5124
+topic_35       0.3087
+topic_50       0.5044
+topic_18      11.9157
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 23,42,5,19,17,14,33,26,34,15,30,10,50,4,6,2,47,41,43,28,21,37,36,48,49,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R23,42,5,19,17,14,33,26,34,15,30,10,50,4,6,2,47,41,43,28,21,37,36,48,49,51'
+
+@attribute topic_23 numeric
+@attribute topic_42 numeric
+@attribute topic_5 numeric
+@attribute topic_19 numeric
+@attribute topic_17 numeric
+@attribute topic_14 numeric
+@attribute topic_33 numeric
+@attribute topic_26 numeric
+@attribute topic_34 numeric
+@attribute topic_15 numeric
+@attribute topic_30 numeric
+@attribute topic_10 numeric
+@attribute topic_50 numeric
+@attribute topic_4 numeric
+@attribute topic_6 numeric
+@attribute topic_2 numeric
+@attribute topic_47 numeric
+@attribute topic_41 numeric
+@attribute topic_43 numeric
+@attribute topic_28 numeric
+@attribute topic_21 numeric
+@attribute topic_37 numeric
+@attribute topic_36 numeric
+@attribute topic_48 numeric
+@attribute topic_49 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      negative
+======================
+topic_23        0.1827
+topic_42       -1.2933
+topic_5        -2.4427
+topic_19        0.4485
+topic_17       -1.3943
+topic_14       -0.2494
+topic_33       -1.5124
+topic_26       -0.6375
+topic_34       -0.9152
+topic_15       -0.1337
+topic_30        0.6731
+topic_10        0.4801
+topic_50       -0.7804
+topic_4          0.206
+topic_6        -0.3516
+topic_2         0.4572
+topic_47       -0.5268
+topic_41       -0.5815
+topic_43        0.3629
+topic_28         0.188
+topic_21        0.1105
+topic_37       -0.6387
+topic_36        0.4724
+topic_48       -1.0328
+topic_49        7.7698
+Intercept       0.0446
+
+
+Odds Ratios...
+                 Class
+Variable      negative
+======================
+topic_23        1.2005
+topic_42        0.2744
+topic_5         0.0869
+topic_19         1.566
+topic_17         0.248
+topic_14        0.7793
+topic_33        0.2204
+topic_26        0.5286
+topic_34        0.4004
+topic_15        0.8749
+topic_30        1.9604
+topic_10        1.6163
+topic_50        0.4582
+topic_4         1.2287
+topic_6         0.7036
+topic_2         1.5796
+topic_47        0.5905
+topic_41        0.5591
+topic_43        1.4375
+topic_28        1.2069
+topic_21        1.1169
+topic_37         0.528
+topic_36        1.6038
+topic_48         0.356
+topic_49     2367.9753
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 39,27,36,50,40,38,29,41,16,10,11,7,1,32,26,45,17,4,13,28,42,18,14,46,48,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R39,27,36,50,40,38,29,41,16,10,11,7,1,32,26,45,17,4,13,28,42,18,14,46,48,51'
+
+@attribute topic_39 numeric
+@attribute topic_27 numeric
+@attribute topic_36 numeric
+@attribute topic_50 numeric
+@attribute topic_40 numeric
+@attribute topic_38 numeric
+@attribute topic_29 numeric
+@attribute topic_41 numeric
+@attribute topic_16 numeric
+@attribute topic_10 numeric
+@attribute topic_11 numeric
+@attribute topic_7 numeric
+@attribute topic_1 numeric
+@attribute topic_32 numeric
+@attribute topic_26 numeric
+@attribute topic_45 numeric
+@attribute topic_17 numeric
+@attribute topic_4 numeric
+@attribute topic_13 numeric
+@attribute topic_28 numeric
+@attribute topic_42 numeric
+@attribute topic_18 numeric
+@attribute topic_14 numeric
+@attribute topic_46 numeric
+@attribute topic_48 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_39        0.189
+topic_27       0.3397
+topic_36       0.8009
+topic_50      -0.6583
+topic_40       2.1654
+topic_38      -0.0333
+topic_29       0.1872
+topic_41      -0.3009
+topic_16      -0.3008
+topic_10        0.787
+topic_11      -0.1244
+topic_7       -0.3762
+topic_1       -0.8068
+topic_32      -0.4156
+topic_26      -0.6335
+topic_45       0.3735
+topic_17      -1.1578
+topic_4        0.4165
+topic_13       1.0123
+topic_28       0.3418
+topic_42      -1.2044
+topic_18       2.6437
+topic_14      -0.0378
+topic_46      -0.0656
+topic_48      -0.7181
+Intercept     -0.1208
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_39        1.208
+topic_27       1.4045
+topic_36       2.2275
+topic_50       0.5177
+topic_40       8.7183
+topic_38       0.9673
+topic_29       1.2059
+topic_41       0.7402
+topic_16       0.7402
+topic_10       2.1969
+topic_11        0.883
+topic_7        0.6864
+topic_1        0.4463
+topic_32       0.6599
+topic_26       0.5307
+topic_45       1.4528
+topic_17       0.3142
+topic_4        1.5166
+topic_13        2.752
+topic_28       1.4074
+topic_42       0.2999
+topic_18      14.0651
+topic_14       0.9629
+topic_46       0.9365
+topic_48       0.4877
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 7,37,36,39,21,2,29,49,48,16,38,41,30,18,46,43,3,44,12,35,19,13,4,1,9,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R7,37,36,39,21,2,29,49,48,16,38,41,30,18,46,43,3,44,12,35,19,13,4,1,9,51'
+
+@attribute topic_7 numeric
+@attribute topic_37 numeric
+@attribute topic_36 numeric
+@attribute topic_39 numeric
+@attribute topic_21 numeric
+@attribute topic_2 numeric
+@attribute topic_29 numeric
+@attribute topic_49 numeric
+@attribute topic_48 numeric
+@attribute topic_16 numeric
+@attribute topic_38 numeric
+@attribute topic_41 numeric
+@attribute topic_30 numeric
+@attribute topic_18 numeric
+@attribute topic_46 numeric
+@attribute topic_43 numeric
+@attribute topic_3 numeric
+@attribute topic_44 numeric
+@attribute topic_12 numeric
+@attribute topic_35 numeric
+@attribute topic_19 numeric
+@attribute topic_13 numeric
+@attribute topic_4 numeric
+@attribute topic_1 numeric
+@attribute topic_9 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      negative
+======================
+topic_7        -0.4405
+topic_37       -0.1899
+topic_36        0.7914
+topic_39        0.2965
+topic_21        0.3944
+topic_2         0.8043
+topic_29        0.3161
+topic_49        8.0499
+topic_48       -0.6412
+topic_16       -0.1505
+topic_38        0.0033
+topic_41       -0.1844
+topic_30        0.7348
+topic_18        2.6269
+topic_46       -0.1307
+topic_43         0.295
+topic_3        -2.3802
+topic_44       -0.5818
+topic_12        0.4195
+topic_35       -0.7549
+topic_19        0.8789
+topic_13        1.1058
+topic_4         0.5937
+topic_1        -0.7372
+topic_9         0.2913
+Intercept      -0.2382
+
+
+Odds Ratios...
+                 Class
+Variable      negative
+======================
+topic_7         0.6437
+topic_37         0.827
+topic_36        2.2065
+topic_39        1.3451
+topic_21        1.4834
+topic_2         2.2351
+topic_29        1.3717
+topic_49     3133.5197
+topic_48        0.5266
+topic_16        0.8602
+topic_38        1.0033
+topic_41        0.8316
+topic_30         2.085
+topic_18       13.8302
+topic_46        0.8775
+topic_43        1.3432
+topic_3         0.0925
+topic_44        0.5589
+topic_12        1.5213
+topic_35        0.4701
+topic_19        2.4082
+topic_13        3.0215
+topic_4         1.8107
+topic_1         0.4784
+topic_9         1.3381
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 40,46,20,1,47,48,21,42,18,2,17,43,14,8,13,25,19,33,38,11,28,37,12,27,15,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R40,46,20,1,47,48,21,42,18,2,17,43,14,8,13,25,19,33,38,11,28,37,12,27,15,51'
+
+@attribute topic_40 numeric
+@attribute topic_46 numeric
+@attribute topic_20 numeric
+@attribute topic_1 numeric
+@attribute topic_47 numeric
+@attribute topic_48 numeric
+@attribute topic_21 numeric
+@attribute topic_42 numeric
+@attribute topic_18 numeric
+@attribute topic_2 numeric
+@attribute topic_17 numeric
+@attribute topic_43 numeric
+@attribute topic_14 numeric
+@attribute topic_8 numeric
+@attribute topic_13 numeric
+@attribute topic_25 numeric
+@attribute topic_19 numeric
+@attribute topic_33 numeric
+@attribute topic_38 numeric
+@attribute topic_11 numeric
+@attribute topic_28 numeric
+@attribute topic_37 numeric
+@attribute topic_12 numeric
+@attribute topic_27 numeric
+@attribute topic_15 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     negative
+=====================
+topic_40       2.2682
+topic_46       0.0622
+topic_20       0.2098
+topic_1       -0.6973
+topic_47      -0.0675
+topic_48        -0.65
+topic_21       0.4138
+topic_42      -1.1077
+topic_18       2.7072
+topic_2        0.9454
+topic_17      -1.0008
+topic_43       0.3319
+topic_14       0.0721
+topic_8        0.3849
+topic_13       1.1247
+topic_25      -0.0326
+topic_19       0.9127
+topic_33      -1.0364
+topic_38        0.059
+topic_11       0.0218
+topic_28       0.5579
+topic_37      -0.2566
+topic_12       0.4785
+topic_27       0.4702
+topic_15        0.392
+Intercept     -0.2237
+
+
+Odds Ratios...
+                Class
+Variable     negative
+=====================
+topic_40       9.6618
+topic_46       1.0642
+topic_20       1.2335
+topic_1        0.4979
+topic_47       0.9348
+topic_48       0.5221
+topic_21       1.5126
+topic_42       0.3303
+topic_18      14.9879
+topic_2        2.5737
+topic_17       0.3676
+topic_43       1.3935
+topic_14       1.0748
+topic_8        1.4695
+topic_13       3.0793
+topic_25       0.9679
+topic_19       2.4911
+topic_33       0.3547
+topic_38       1.0608
+topic_11        1.022
+topic_28        1.747
+topic_37       0.7737
+topic_12       1.6136
+topic_27       1.6003
+topic_15       1.4799
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 45,18,30,49,13,40,37,48,32,33,50,16,2,34,36,25,41,27,21,14,17,19,35,28,31,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R45,18,30,49,13,40,37,48,32,33,50,16,2,34,36,25,41,27,21,14,17,19,35,28,31,51'
+
+@attribute topic_45 numeric
+@attribute topic_18 numeric
+@attribute topic_30 numeric
+@attribute topic_49 numeric
+@attribute topic_13 numeric
+@attribute topic_40 numeric
+@attribute topic_37 numeric
+@attribute topic_48 numeric
+@attribute topic_32 numeric
+@attribute topic_33 numeric
+@attribute topic_50 numeric
+@attribute topic_16 numeric
+@attribute topic_2 numeric
+@attribute topic_34 numeric
+@attribute topic_36 numeric
+@attribute topic_25 numeric
+@attribute topic_41 numeric
+@attribute topic_27 numeric
+@attribute topic_21 numeric
+@attribute topic_14 numeric
+@attribute topic_17 numeric
+@attribute topic_19 numeric
+@attribute topic_35 numeric
+@attribute topic_28 numeric
+@attribute topic_31 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      negative
+======================
+topic_45        0.6753
+topic_18        2.7691
+topic_30         0.895
+topic_49         8.194
+topic_13        1.2981
+topic_40        2.4469
+topic_37       -0.1695
+topic_48       -0.4049
+topic_32       -0.1754
+topic_33       -0.8739
+topic_50       -0.3627
+topic_16        0.0566
+topic_2         0.9816
+topic_34       -0.3579
+topic_36        0.9977
+topic_25        0.2528
+topic_41       -0.0362
+topic_27        0.4261
+topic_21        0.4562
+topic_14        0.3645
+topic_17       -0.8719
+topic_19        1.0188
+topic_35       -0.4919
+topic_28        0.6596
+topic_31        0.7936
+Intercept      -0.4008
+
+
+Odds Ratios...
+                 Class
+Variable      negative
+======================
+topic_45        1.9645
+topic_18       15.9446
+topic_30        2.4474
+topic_49     3619.0046
+topic_13        3.6622
+topic_40       11.5525
+topic_37        0.8441
+topic_48        0.6671
+topic_32        0.8391
+topic_33        0.4173
+topic_50        0.6958
+topic_16        1.0583
+topic_2         2.6686
+topic_34        0.6992
+topic_36        2.7121
+topic_25        1.2876
+topic_41        0.9644
+topic_27        1.5313
+topic_21        1.5781
+topic_14        1.4398
+topic_17        0.4182
+topic_19        2.7699
+topic_35        0.6114
+topic_28        1.9341
+topic_31        2.2113
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 29,44,6,37,21,48,46,13,35,2,30,20,5,3,38,49,17,33,25,7,15,27,42,41,36,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R29,44,6,37,21,48,46,13,35,2,30,20,5,3,38,49,17,33,25,7,15,27,42,41,36,51'
+
+@attribute topic_29 numeric
+@attribute topic_44 numeric
+@attribute topic_6 numeric
+@attribute topic_37 numeric
+@attribute topic_21 numeric
+@attribute topic_48 numeric
+@attribute topic_46 numeric
+@attribute topic_13 numeric
+@attribute topic_35 numeric
+@attribute topic_2 numeric
+@attribute topic_30 numeric
+@attribute topic_20 numeric
+@attribute topic_5 numeric
+@attribute topic_3 numeric
+@attribute topic_38 numeric
+@attribute topic_49 numeric
+@attribute topic_17 numeric
+@attribute topic_33 numeric
+@attribute topic_25 numeric
+@attribute topic_7 numeric
+@attribute topic_15 numeric
+@attribute topic_27 numeric
+@attribute topic_42 numeric
+@attribute topic_41 numeric
+@attribute topic_36 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      negative
+======================
+topic_29       -0.3397
+topic_44       -1.2053
+topic_6        -0.6477
+topic_37       -0.8271
+topic_21       -0.1026
+topic_48       -1.3393
+topic_46       -0.7372
+topic_13        0.4523
+topic_35        -1.579
+topic_2         0.2137
+topic_30        0.4005
+topic_20       -0.2419
+topic_5        -2.6111
+topic_3         -2.887
+topic_38       -0.3626
+topic_49        7.6037
+topic_17        -1.552
+topic_33       -1.7506
+topic_25        -0.638
+topic_7        -1.0598
+topic_15        -0.488
+topic_27       -0.4638
+topic_42        -1.574
+topic_41       -0.8285
+topic_36        0.2086
+Intercept       0.3382
+
+
+Odds Ratios...
+                 Class
+Variable      negative
+======================
+topic_29         0.712
+topic_44        0.2996
+topic_6         0.5232
+topic_37        0.4373
+topic_21        0.9025
+topic_48         0.262
+topic_46        0.4785
+topic_13        1.5719
+topic_35        0.2062
+topic_2         1.2383
+topic_30        1.4926
+topic_20        0.7851
+topic_5         0.0735
+topic_3         0.0557
+topic_38        0.6959
+topic_49     2005.6249
+topic_17        0.2118
+topic_33        0.1737
+topic_25        0.5283
+topic_7         0.3465
+topic_15        0.6139
+topic_27        0.6289
+topic_42        0.2072
+topic_41        0.4367
+topic_36         1.232
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 36,22,42,28,3,14,34,7,1,50,32,11,17,44,39,15,18,35,25,49,33,48,9,46,6,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R36,22,42,28,3,14,34,7,1,50,32,11,17,44,39,15,18,35,25,49,33,48,9,46,6,51'
+
+@attribute topic_36 numeric
+@attribute topic_22 numeric
+@attribute topic_42 numeric
+@attribute topic_28 numeric
+@attribute topic_3 numeric
+@attribute topic_14 numeric
+@attribute topic_34 numeric
+@attribute topic_7 numeric
+@attribute topic_1 numeric
+@attribute topic_50 numeric
+@attribute topic_32 numeric
+@attribute topic_11 numeric
+@attribute topic_17 numeric
+@attribute topic_44 numeric
+@attribute topic_39 numeric
+@attribute topic_15 numeric
+@attribute topic_18 numeric
+@attribute topic_35 numeric
+@attribute topic_25 numeric
+@attribute topic_49 numeric
+@attribute topic_33 numeric
+@attribute topic_48 numeric
+@attribute topic_9 numeric
+@attribute topic_46 numeric
+@attribute topic_6 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      negative
+======================
+topic_36        0.6087
+topic_22       -0.1374
+topic_42       -1.3836
+topic_28        0.3407
+topic_3        -2.6129
+topic_14        -0.055
+topic_34       -0.7497
+topic_7        -0.6148
+topic_1        -0.8809
+topic_50       -0.6147
+topic_32        -0.543
+topic_11       -0.2977
+topic_17       -1.2079
+topic_44       -0.8183
+topic_39        0.0553
+topic_15        0.0373
+topic_18        2.4799
+topic_35       -1.0351
+topic_25       -0.1644
+topic_49        7.8259
+topic_33       -1.2635
+topic_48       -0.8613
+topic_9         0.0744
+topic_46       -0.3283
+topic_6        -0.2238
+Intercept      -0.0213
+
+
+Odds Ratios...
+                 Class
+Variable      negative
+======================
+topic_36         1.838
+topic_22        0.8716
+topic_42        0.2507
+topic_28        1.4059
+topic_3         0.0733
+topic_14        0.9465
+topic_34        0.4725
+topic_7         0.5408
+topic_1         0.4144
+topic_50        0.5408
+topic_32         0.581
+topic_11        0.7426
+topic_17        0.2988
+topic_44        0.4412
+topic_39        1.0568
+topic_15         1.038
+topic_18       11.9398
+topic_35        0.3552
+topic_25        0.8484
+topic_49     2504.6232
+topic_33        0.2827
+topic_48        0.4226
+topic_9         1.0772
+topic_46        0.7201
+topic_6         0.7994
+
+
+FilteredClassifier using weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 46,49,34,20,26,45,10,22,48,32,4,29,39,9,47,19,8,44,6,50,1,36,3,42,40,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R46,49,34,20,26,45,10,22,48,32,4,29,39,9,47,19,8,44,6,50,1,36,3,42,40,51'
+
+@attribute topic_46 numeric
+@attribute topic_49 numeric
+@attribute topic_34 numeric
+@attribute topic_20 numeric
+@attribute topic_26 numeric
+@attribute topic_45 numeric
+@attribute topic_10 numeric
+@attribute topic_22 numeric
+@attribute topic_48 numeric
+@attribute topic_32 numeric
+@attribute topic_4 numeric
+@attribute topic_29 numeric
+@attribute topic_39 numeric
+@attribute topic_9 numeric
+@attribute topic_47 numeric
+@attribute topic_19 numeric
+@attribute topic_8 numeric
+@attribute topic_44 numeric
+@attribute topic_6 numeric
+@attribute topic_50 numeric
+@attribute topic_1 numeric
+@attribute topic_36 numeric
+@attribute topic_3 numeric
+@attribute topic_42 numeric
+@attribute topic_40 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      negative
+======================
+topic_46       -0.5408
+topic_49        7.8191
+topic_34       -0.8851
+topic_20        0.0258
+topic_26       -0.6585
+topic_45        0.1382
+topic_10        0.4083
+topic_22       -0.2731
+topic_48        -1.091
+topic_32       -0.7038
+topic_4         0.1577
+topic_29       -0.1031
+topic_39       -0.1634
+topic_9         -0.073
+topic_47       -0.5507
+topic_19        0.4727
+topic_8         0.0373
+topic_44       -0.9317
+topic_6        -0.2827
+topic_50       -0.6246
+topic_1        -0.8044
+topic_36        0.4145
+topic_3         -2.637
+topic_42        -1.209
+topic_40        2.2083
+Intercept       0.0566
+
+
+Odds Ratios...
+                 Class
+Variable      negative
+======================
+topic_46        0.5823
+topic_49     2487.5927
+topic_34        0.4127
+topic_20        1.0261
+topic_26        0.5176
+topic_45        1.1482
+topic_10        1.5043
+topic_22         0.761
+topic_48        0.3359
+topic_32        0.4947
+topic_4         1.1708
+topic_29        0.9021
+topic_39        0.8493
+topic_9         0.9296
+topic_47        0.5765
+topic_19        1.6043
+topic_8          1.038
+topic_44        0.3939
+topic_6         0.7537
+topic_50        0.5355
+topic_1         0.4474
+topic_36        1.5136
+topic_3         0.0716
+topic_42        0.2985
+topic_40        9.0999
+
+
+
+
+Time taken to build model: 0.94 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5031               62.8875 %
+Incorrectly Classified Instances      2969               37.1125 %
+Total Number of Instances             8000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.535    0.277    0.659      0.535    0.590      negative
+                 0.723    0.465    0.609      0.723    0.661      positive
+Weighted Avg.    0.629    0.371    0.634      0.629    0.626      
+

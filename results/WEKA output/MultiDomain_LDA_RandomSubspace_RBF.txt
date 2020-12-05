@@ -1,0 +1,651 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.RBFClassifier -- -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1
+Relation:     multidomain_topics
+Instances:    8000
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 937089591 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 48,16,1,35,45,40,22,9,18,19,42,47,46,8,13,7,43,20,2,38,23,14,27,11,34,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R48,16,1,35,45,40,22,9,18,19,42,47,46,8,13,7,43,20,2,38,23,14,27,11,34,51'
+
+@attribute topic_48 numeric
+@attribute topic_16 numeric
+@attribute topic_1 numeric
+@attribute topic_35 numeric
+@attribute topic_45 numeric
+@attribute topic_40 numeric
+@attribute topic_22 numeric
+@attribute topic_9 numeric
+@attribute topic_18 numeric
+@attribute topic_19 numeric
+@attribute topic_42 numeric
+@attribute topic_47 numeric
+@attribute topic_46 numeric
+@attribute topic_8 numeric
+@attribute topic_13 numeric
+@attribute topic_7 numeric
+@attribute topic_43 numeric
+@attribute topic_20 numeric
+@attribute topic_2 numeric
+@attribute topic_38 numeric
+@attribute topic_23 numeric
+@attribute topic_14 numeric
+@attribute topic_27 numeric
+@attribute topic_11 numeric
+@attribute topic_34 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-10.551633941570584	9.389474538340044	
+
+Unit center:
+0.6549000316407495	0.36031532988810955	0.64597722182726	0.4952538261886358	0.007214945444515918	-0.9895626173165825	0.18058264890345938	0.19420329646579407	-1.6811897812881131	-0.2244232176737137	0.9028087531735168	0.3678159811901417	0.25720423955755417	0.01990188102977868	-0.35468469951790543	0.41811027415361623	0.057752780368166126	0.18648153145865537	-0.24996720180714194	0.21432136825604728	0.19609194286655549	0.19545913178276877	-0.18103338933483457	0.23899537937512516	0.5173960949030777	
+
+Unit scale:
+1.604253297218753	
+
+Output weights for different classes:
+-6.746299397842811	8.771741839889014	
+
+Unit center:
+0.7633700945856621	0.42955259177126376	0.836381925610296	0.760851037268708	-0.04471523126952369	-1.5320681383331316	0.25905582416118184	0.20368743215375412	-1.9084432501867086	-0.30877410870925925	1.0569804317268716	0.41423525438366615	0.2443608438307729	0.05414181722825395	-0.4976927182909039	0.630463298034963	0.20924199151796954	0.20390168743311568	-0.3160898271055667	0.4053318350844021	0.2261835516051064	0.22867848220632855	0.3934611707082045	0.3322503166811791	0.7255000183174601	
+
+Unit scale:
+2.4030012202202564	
+
+Bias weights for different classes:
+5.057857361409303	-5.517209561141451	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 409330953 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 33,38,13,10,4,7,22,26,32,36,48,3,8,9,44,27,42,23,16,29,28,30,35,50,18,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R33,38,13,10,4,7,22,26,32,36,48,3,8,9,44,27,42,23,16,29,28,30,35,50,18,51'
+
+@attribute topic_33 numeric
+@attribute topic_38 numeric
+@attribute topic_13 numeric
+@attribute topic_10 numeric
+@attribute topic_4 numeric
+@attribute topic_7 numeric
+@attribute topic_22 numeric
+@attribute topic_26 numeric
+@attribute topic_32 numeric
+@attribute topic_36 numeric
+@attribute topic_48 numeric
+@attribute topic_3 numeric
+@attribute topic_8 numeric
+@attribute topic_9 numeric
+@attribute topic_44 numeric
+@attribute topic_27 numeric
+@attribute topic_42 numeric
+@attribute topic_23 numeric
+@attribute topic_16 numeric
+@attribute topic_29 numeric
+@attribute topic_28 numeric
+@attribute topic_30 numeric
+@attribute topic_35 numeric
+@attribute topic_50 numeric
+@attribute topic_18 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-8.010486051278184	8.292460625997853	
+
+Unit center:
+0.27894418190635617	0.2562184595593968	-0.11818479257379018	-0.1891405839020289	-0.05285532343861374	0.09749357732251465	0.01069108713760047	0.3364153066291276	0.1931178012301952	0.04176801214767811	0.16944179904644044	0.1560694202137234	-0.03709535136769111	0.12881442556386474	0.17698699490532985	0.19131363171019766	0.2599255858136526	-0.08047020843634844	0.004260901654466281	-0.010675203827292867	-0.08352340918119279	-0.11421159917220722	0.03886760273740213	0.05048431194714365	-0.6670131216839482	
+
+Unit scale:
+0.8795191771460096	
+
+Output weights for different classes:
+7.197831451086503	-7.478504944819301	
+
+Unit center:
+0.08720308162859093	0.23987475320374357	0.14571712992815014	-0.018138382265928645	0.03248356287288235	-0.010839535682335531	-0.01110088373273463	0.22148258827250242	0.13667311340718621	0.19806933468116225	0.019393705003684644	-0.4559943059651451	0.048223195220782604	0.16955144958062707	0.05936273717533054	0.24431482169181484	0.024529427461727316	-0.10627350572498816	-0.08152372037448503	0.0453996485915597	0.0429133409619738	0.005005182274530724	-0.15835593915143745	-0.04968925921990466	0.05967381633685232	
+
+Unit scale:
+0.45415012725917553	
+
+Bias weights for different classes:
+2.2392260562482864	-2.3133250815532325	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 796881914 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 23,42,5,19,17,14,33,26,34,15,30,10,50,4,6,2,47,41,43,28,21,37,36,48,49,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R23,42,5,19,17,14,33,26,34,15,30,10,50,4,6,2,47,41,43,28,21,37,36,48,49,51'
+
+@attribute topic_23 numeric
+@attribute topic_42 numeric
+@attribute topic_5 numeric
+@attribute topic_19 numeric
+@attribute topic_17 numeric
+@attribute topic_14 numeric
+@attribute topic_33 numeric
+@attribute topic_26 numeric
+@attribute topic_34 numeric
+@attribute topic_15 numeric
+@attribute topic_30 numeric
+@attribute topic_10 numeric
+@attribute topic_50 numeric
+@attribute topic_4 numeric
+@attribute topic_6 numeric
+@attribute topic_2 numeric
+@attribute topic_47 numeric
+@attribute topic_41 numeric
+@attribute topic_43 numeric
+@attribute topic_28 numeric
+@attribute topic_21 numeric
+@attribute topic_37 numeric
+@attribute topic_36 numeric
+@attribute topic_48 numeric
+@attribute topic_49 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+17.19624014534893	-14.71862645183472	
+
+Unit center:
+0.2718397459393576	-0.2598016880237918	-0.701410181730079	0.5175250616781377	-0.4401964290959348	0.11667540060062409	-0.3356170402471074	0.020902749573871067	-0.059726404833942114	0.2737670654653295	0.4698026578811856	0.42242157766229743	-0.06083616150461551	0.33987453329385486	0.14822778132275086	0.4568170368563741	0.13474907175297224	0.05778903452055184	0.4764538299129863	0.30761917993696497	0.3585486993284977	0.10009275001701437	0.46873685904175383	-0.15976065117139873	2.55825826868857	
+
+Unit scale:
+2.3272506238228585	
+
+Output weights for different classes:
+12.861798353215097	-11.911967324352888	
+
+Unit center:
+0.22228067705666527	-0.2959841177014039	-0.7284085851275206	0.4500955766233761	-0.4743322995851033	0.0723130440675359	-0.36369887460784533	-0.025521026382514682	-0.06148546016963374	0.16634723957983896	0.4248425696284388	0.3750792786932042	-0.12014104501061194	0.29462162612023973	0.04427823637133839	0.42179891652359264	-0.007366008941174647	0.0331063848354726	0.39258922550335273	0.23695924468608545	0.24236398068589524	-0.04469990177684556	0.42299810957365813	-0.26516389196281204	2.584106505982591	
+
+Unit scale:
+2.2822435752652233	
+
+Bias weights for different classes:
+-12.651524317437598	11.205817826883743	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1103040615 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 39,27,36,50,40,38,29,41,16,10,11,7,1,32,26,45,17,4,13,28,42,18,14,46,48,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R39,27,36,50,40,38,29,41,16,10,11,7,1,32,26,45,17,4,13,28,42,18,14,46,48,51'
+
+@attribute topic_39 numeric
+@attribute topic_27 numeric
+@attribute topic_36 numeric
+@attribute topic_50 numeric
+@attribute topic_40 numeric
+@attribute topic_38 numeric
+@attribute topic_29 numeric
+@attribute topic_41 numeric
+@attribute topic_16 numeric
+@attribute topic_10 numeric
+@attribute topic_11 numeric
+@attribute topic_7 numeric
+@attribute topic_1 numeric
+@attribute topic_32 numeric
+@attribute topic_26 numeric
+@attribute topic_45 numeric
+@attribute topic_17 numeric
+@attribute topic_4 numeric
+@attribute topic_13 numeric
+@attribute topic_28 numeric
+@attribute topic_42 numeric
+@attribute topic_18 numeric
+@attribute topic_14 numeric
+@attribute topic_46 numeric
+@attribute topic_48 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-6.542338857682255	7.853470204227345	
+
+Unit center:
+0.12074608461973364	1.8054455142636296	0.4259211340733136	-0.33305504766883176	1.2331772169485251	0.4475362612567759	3.014384193674916	0.002147857400268562	-0.2391790520800119	0.14971867774859438	-0.1060313047807293	-0.21633414916823218	-0.8224239088407161	-0.1502316879068945	0.03803015951041717	0.038112609777793925	-0.7077813158939837	0.18569896058027965	0.501492135168736	-0.10925665938502246	-1.0131515667570978	4.594838378492621	-0.03552567821630037	-0.17325881862698098	-0.7000821037301017	
+
+Unit scale:
+1.1485461177192269	
+
+Output weights for different classes:
+-14.773362361842027	15.4442580424071	
+
+Unit center:
+0.07950828199026505	0.0436821821352557	-0.20024328715376305	0.5194147180561343	-0.9526708519735191	0.2581805696863505	0.1276108866802899	0.34452791700086194	0.3903348235039028	-0.17296283130012735	0.2487167327161273	0.46176654419023605	0.6372292651377076	0.45645912787909804	0.4889649611791211	0.028411695829025908	0.7654073545233825	0.0022795205753567186	-0.31948733956712594	0.022339519086727044	0.8716832256864292	-1.5411545361679932	0.18899228952425923	0.2474990019006504	0.6303644022857142	
+
+Unit scale:
+1.785438311459154	
+
+Bias weights for different classes:
+4.782359462254641	-5.001579435911036	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1635552373 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 7,37,36,39,21,2,29,49,48,16,38,41,30,18,46,43,3,44,12,35,19,13,4,1,9,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R7,37,36,39,21,2,29,49,48,16,38,41,30,18,46,43,3,44,12,35,19,13,4,1,9,51'
+
+@attribute topic_7 numeric
+@attribute topic_37 numeric
+@attribute topic_36 numeric
+@attribute topic_39 numeric
+@attribute topic_21 numeric
+@attribute topic_2 numeric
+@attribute topic_29 numeric
+@attribute topic_49 numeric
+@attribute topic_48 numeric
+@attribute topic_16 numeric
+@attribute topic_38 numeric
+@attribute topic_41 numeric
+@attribute topic_30 numeric
+@attribute topic_18 numeric
+@attribute topic_46 numeric
+@attribute topic_43 numeric
+@attribute topic_3 numeric
+@attribute topic_44 numeric
+@attribute topic_12 numeric
+@attribute topic_35 numeric
+@attribute topic_19 numeric
+@attribute topic_13 numeric
+@attribute topic_4 numeric
+@attribute topic_1 numeric
+@attribute topic_9 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-22.928393540281494	25.9923336938676	
+
+Unit center:
+0.41890688712582885	0.39474842041047525	-0.0327294402702776	0.11583148868245656	0.09474394405521695	-0.02255140760780461	0.15278683008712848	-2.0404396178457374	0.4976797338298243	0.31517046753036665	0.2688392031461264	0.2780689863342634	-0.011746564370272322	-0.912523604369028	0.27449865052790584	0.14395572788247035	0.9261882977614773	0.46154329247858117	0.11963095076514185	0.44747471989911425	-0.027728215774550716	-0.11810081464153116	0.04244091131346648	0.48250105270593907	0.09842307538908342	
+
+Unit scale:
+1.8451057060777567	
+
+Output weights for different classes:
+-5.584852010225867	9.84030096751125	
+
+Unit center:
+0.6347242921710402	1.3142837544375703	-0.38573636587466964	-0.012463174644165695	-0.4301828571649848	-0.5632081779640363	0.007494712380140484	-5.128169429478617	1.4432172341718994	0.6476494566053286	-0.5458260040830292	0.09325716895686048	-0.3401863279513661	-7.930969808716523	0.708611892233523	-0.7321922326639184	3.166060455227616	1.614812414639175	-0.7904714264311394	1.0710125469912508	-0.42317557606523604	-0.7114658657963832	-0.1836002208423145	1.3653393678585597	0.1068283281575525	
+
+Unit scale:
+-0.7074132466627309	
+
+Bias weights for different classes:
+7.462338837122999	-8.468186975299348	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 650138448 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 40,46,20,1,47,48,21,42,18,2,17,43,14,8,13,25,19,33,38,11,28,37,12,27,15,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R40,46,20,1,47,48,21,42,18,2,17,43,14,8,13,25,19,33,38,11,28,37,12,27,15,51'
+
+@attribute topic_40 numeric
+@attribute topic_46 numeric
+@attribute topic_20 numeric
+@attribute topic_1 numeric
+@attribute topic_47 numeric
+@attribute topic_48 numeric
+@attribute topic_21 numeric
+@attribute topic_42 numeric
+@attribute topic_18 numeric
+@attribute topic_2 numeric
+@attribute topic_17 numeric
+@attribute topic_43 numeric
+@attribute topic_14 numeric
+@attribute topic_8 numeric
+@attribute topic_13 numeric
+@attribute topic_25 numeric
+@attribute topic_19 numeric
+@attribute topic_33 numeric
+@attribute topic_38 numeric
+@attribute topic_11 numeric
+@attribute topic_28 numeric
+@attribute topic_37 numeric
+@attribute topic_12 numeric
+@attribute topic_27 numeric
+@attribute topic_15 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-9.657702762611617	9.070960577541431	
+
+Unit center:
+-0.5213917860403414	-0.19251885600378646	-0.21144088906032468	-0.004389000956122164	-0.12412043756559167	0.0986464947377371	0.14106083620481435	0.2282834633903921	-0.5323862302253305	-0.16980014164995244	0.03823295369499394	-0.13707324451507313	-0.08495649902358164	-0.07241403846124164	-0.309106105303799	-0.06781084861946182	-0.2114734993612117	0.2394431542924853	-0.0010595761291500225	-0.06700852176640305	-0.32570028837381987	0.127002385852312	-0.025688455450443674	0.21967519964999607	0.0823003699597739	
+
+Unit scale:
+0.8351507093478188	
+
+Output weights for different classes:
+7.120996065969044	-6.680122851438743	
+
+Unit center:
+0.10876388677465339	-0.1094287242224498	-0.12547433071786818	-0.10432043355550491	-0.08667817984580059	0.01791254642019052	0.2205138886535911	0.043763768357839065	0.2014076607402298	0.11459113733732547	-0.22184349437420392	0.016598051230943146	-0.03917328078803527	0.07512831297264316	0.0553818006236097	-0.019062391821582602	0.08213096989772839	0.10956346299610908	0.09528996252833934	-0.020589035585070883	-0.1420794593930639	0.13631224820299429	0.16016896336317515	0.31181430902415636	0.21342641434020734	
+
+Unit scale:
+0.4147594344485972	
+
+Bias weights for different classes:
+1.9623775190054926	-1.842877349225388	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -593670153 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 45,18,30,49,13,40,37,48,32,33,50,16,2,34,36,25,41,27,21,14,17,19,35,28,31,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R45,18,30,49,13,40,37,48,32,33,50,16,2,34,36,25,41,27,21,14,17,19,35,28,31,51'
+
+@attribute topic_45 numeric
+@attribute topic_18 numeric
+@attribute topic_30 numeric
+@attribute topic_49 numeric
+@attribute topic_13 numeric
+@attribute topic_40 numeric
+@attribute topic_37 numeric
+@attribute topic_48 numeric
+@attribute topic_32 numeric
+@attribute topic_33 numeric
+@attribute topic_50 numeric
+@attribute topic_16 numeric
+@attribute topic_2 numeric
+@attribute topic_34 numeric
+@attribute topic_36 numeric
+@attribute topic_25 numeric
+@attribute topic_41 numeric
+@attribute topic_27 numeric
+@attribute topic_21 numeric
+@attribute topic_14 numeric
+@attribute topic_17 numeric
+@attribute topic_19 numeric
+@attribute topic_35 numeric
+@attribute topic_28 numeric
+@attribute topic_31 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-17.92892118326809	18.067977071561195	
+
+Unit center:
+0.06154628852281477	-1.0263354100952258	-0.009223457151352735	-2.4232244895498636	-0.16804669680181866	-0.6936424866268709	0.44914051924178117	0.4180345566120477	0.3442565025495937	0.5168343896451434	0.36293660587003296	0.23883117395934886	-0.0472695536074792	0.3008770069629592	-0.08290619407362138	0.1606764900797537	0.2544294797797859	0.06639179073073381	0.13864809939290845	0.10114417579067775	0.5407468800467147	-0.016185477835329518	0.4232259977691688	0.03494543972208494	-0.03772438514224018	
+
+Unit scale:
+2.2512014879439746	
+
+Output weights for different classes:
+-15.653435749175966	15.119406107350786	
+
+Unit center:
+0.040358047330347806	-0.7495093907570666	-0.04668474960025121	-2.789906854104479	-0.17370813048747505	-0.755078190806104	0.3314742758007863	0.4272135239501273	0.37118404813087147	0.638702618768512	0.3814256614172417	0.26612704773847357	-0.05481458129437445	0.4243779297836413	-0.09058785422010832	0.16049855350340927	0.3408184727155071	0.23940883953984002	0.1445514485997318	0.12412500866471818	0.5628258173566942	-0.06294065189849152	0.42272682976622394	-0.016065600414770217	0.0037417441630454404	
+
+Unit scale:
+2.537463233279162	
+
+Bias weights for different classes:
+13.715316579444274	-13.545279971444202	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1825447 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 29,44,6,37,21,48,46,13,35,2,30,20,5,3,38,49,17,33,25,7,15,27,42,41,36,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R29,44,6,37,21,48,46,13,35,2,30,20,5,3,38,49,17,33,25,7,15,27,42,41,36,51'
+
+@attribute topic_29 numeric
+@attribute topic_44 numeric
+@attribute topic_6 numeric
+@attribute topic_37 numeric
+@attribute topic_21 numeric
+@attribute topic_48 numeric
+@attribute topic_46 numeric
+@attribute topic_13 numeric
+@attribute topic_35 numeric
+@attribute topic_2 numeric
+@attribute topic_30 numeric
+@attribute topic_20 numeric
+@attribute topic_5 numeric
+@attribute topic_3 numeric
+@attribute topic_38 numeric
+@attribute topic_49 numeric
+@attribute topic_17 numeric
+@attribute topic_33 numeric
+@attribute topic_25 numeric
+@attribute topic_7 numeric
+@attribute topic_15 numeric
+@attribute topic_27 numeric
+@attribute topic_42 numeric
+@attribute topic_41 numeric
+@attribute topic_36 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+13.31584849929701	-13.106437708799735	
+
+Unit center:
+0.19573765462242415	-0.1945759786221316	0.03301538782610936	0.0026616528252848158	0.23418617250978194	-0.2924933038745949	-0.00643704974334178	0.5281773728473533	-0.49484388976681354	0.37435954828560847	0.4008215747465337	0.25162278362523266	-0.795471341953439	-1.1701202004569418	0.13704482760552258	2.586797241408641	-0.4408244226014607	-0.43889618225664734	-0.00949613021412312	-0.09483809416460152	0.10879490931156326	0.19501281980262997	-0.3846895867731661	-0.021670880196123246	0.3891216527771403	
+
+Unit scale:
+2.4201202841083367	
+
+Output weights for different classes:
+16.629357281924044	-14.827844124578208	
+
+Unit center:
+0.12841360124411566	-0.18762911335348126	-0.02070918934629239	-0.0014823423910786228	0.2540482331605595	-0.30012564761689814	-0.10795863605240058	0.4537294510653912	-0.4220794019857381	0.32323605940920275	0.331867201517556	0.20444080125274333	-0.6701400274829344	-1.0166095131837638	0.17511833184824202	2.2273749165720598	-0.424675035249417	-0.364766903393611	-0.032168965635126175	-0.1284755901457533	0.12542609594891788	0.09766055398868158	-0.31385379509071704	-0.003573867793262855	0.3163217137642135	
+
+Unit scale:
+2.013225739297436	
+
+Bias weights for different classes:
+-11.444472409494004	10.696364811499034	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1907763044 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 36,22,42,28,3,14,34,7,1,50,32,11,17,44,39,15,18,35,25,49,33,48,9,46,6,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R36,22,42,28,3,14,34,7,1,50,32,11,17,44,39,15,18,35,25,49,33,48,9,46,6,51'
+
+@attribute topic_36 numeric
+@attribute topic_22 numeric
+@attribute topic_42 numeric
+@attribute topic_28 numeric
+@attribute topic_3 numeric
+@attribute topic_14 numeric
+@attribute topic_34 numeric
+@attribute topic_7 numeric
+@attribute topic_1 numeric
+@attribute topic_50 numeric
+@attribute topic_32 numeric
+@attribute topic_11 numeric
+@attribute topic_17 numeric
+@attribute topic_44 numeric
+@attribute topic_39 numeric
+@attribute topic_15 numeric
+@attribute topic_18 numeric
+@attribute topic_35 numeric
+@attribute topic_25 numeric
+@attribute topic_49 numeric
+@attribute topic_33 numeric
+@attribute topic_48 numeric
+@attribute topic_9 numeric
+@attribute topic_46 numeric
+@attribute topic_6 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+1.8188018111430997	4.204173946585328	
+
+Unit center:
+-2.1093262974783396	2.90263675001354	15.113801422052342	0.7926847973136486	28.580430087750344	1.481231663824974	1.0207330688402914	3.874524776362432	11.737525322252637	4.575893075804441	2.863044374450569	2.697421334388575	9.70580987914509	14.082852184333275	0.2147425352034942	-3.451806671306212	-52.74015466472625	7.18718691548945	1.392804486987716	-40.893342628250636	5.2639801867496585	9.533364378480297	-0.007423712241928815	5.933585380027915	3.6652884855266747	
+
+Unit scale:
+6.555437692448465	
+
+Output weights for different classes:
+-25.838495895230626	30.948745382625813	
+
+Unit center:
+0.02821960444745498	0.2430065817291296	0.6489026236296708	0.0958756009962067	0.8803953760095751	0.1624215773061365	0.36537189636676143	0.4353403090544156	0.47558448973633444	0.36408536199219443	0.39416391037881987	0.28300051450441854	0.5493163207690103	0.4973607365407358	0.1642094269614816	0.2526250192002837	-0.7090733258622003	0.456999097120026	0.2322532047214359	-1.748556156653719	0.545473616689485	0.5045387571577687	0.16549936356763384	0.3196729670932173	0.2936430742602409	
+
+Unit scale:
+2.012978941585932	
+
+Bias weights for different classes:
+10.30887643178485	-12.362337004922793	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1794154053 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 46,49,34,20,26,45,10,22,48,32,4,29,39,9,47,19,8,44,6,50,1,36,3,42,40,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R46,49,34,20,26,45,10,22,48,32,4,29,39,9,47,19,8,44,6,50,1,36,3,42,40,51'
+
+@attribute topic_46 numeric
+@attribute topic_49 numeric
+@attribute topic_34 numeric
+@attribute topic_20 numeric
+@attribute topic_26 numeric
+@attribute topic_45 numeric
+@attribute topic_10 numeric
+@attribute topic_22 numeric
+@attribute topic_48 numeric
+@attribute topic_32 numeric
+@attribute topic_4 numeric
+@attribute topic_29 numeric
+@attribute topic_39 numeric
+@attribute topic_9 numeric
+@attribute topic_47 numeric
+@attribute topic_19 numeric
+@attribute topic_8 numeric
+@attribute topic_44 numeric
+@attribute topic_6 numeric
+@attribute topic_50 numeric
+@attribute topic_1 numeric
+@attribute topic_36 numeric
+@attribute topic_3 numeric
+@attribute topic_42 numeric
+@attribute topic_40 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+1.285245309966226	-5.508044396808257	
+
+Unit center:
+1.454300725127152	-6.330729176085551	0.08398349425725868	0.20273219425463518	-0.18078672132406068	3.934911347727202	-0.10936926101078723	0.3429842136854078	1.4777082075777281	0.3066435551449439	3.4316092368464632	0.08321365865047109	-0.06986709289985019	-0.01906058000936279	1.5534343397676007	-0.3209353729841232	-0.09252295659697295	1.4876240840437656	0.39366600728293344	0.43163905784912454	1.2182080274872438	-0.13020867575747855	3.4187540903593687	1.390628850054585	-2.1854102690882953	
+
+Unit scale:
+-3.081061203907908	
+
+Output weights for different classes:
+21.015587489269137	-24.271173431335136	
+
+Unit center:
+-0.010501253995904368	2.133282090115153	-0.06459611043144055	0.2741666328811943	0.007104264422162127	0.25085212995935	0.3556218328299754	0.06894323042205915	-0.22613185214024997	-0.03274170109494122	0.2712692902948868	0.20889630866502298	0.15110341770129887	0.17099725112056738	0.0609215975805105	0.4497999648275247	0.2663005601999587	-0.12094508445950237	0.10919496469758597	-0.02923277393919355	-0.10913391201346766	0.3861003265263814	-0.9512389825059755	-0.23277433524781688	0.9172095316981699	
+
+Unit scale:
+1.83062190907581	
+
+Bias weights for different classes:
+-7.022429850093806	8.134316269229481	
+
+
+
+Time taken to build model: 8.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4993               62.4125 %
+Incorrectly Classified Instances      3007               37.5875 %
+Total Number of Instances             8000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.533    0.285    0.652      0.533    0.587      negative
+                 0.715    0.467    0.605      0.715    0.655      positive
+Weighted Avg.    0.624    0.376    0.628      0.624    0.621      
+

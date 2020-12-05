@@ -1,0 +1,861 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     multidomain_topics
+Instances:    8000
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 48,16,1,35,45,40,22,9,18,19,42,47,46,8,13,7,43,20,2,38,23,14,27,11,34,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R48,16,1,35,45,40,22,9,18,19,42,47,46,8,13,7,43,20,2,38,23,14,27,11,34,51'
+
+@attribute topic_48 numeric
+@attribute topic_16 numeric
+@attribute topic_1 numeric
+@attribute topic_35 numeric
+@attribute topic_45 numeric
+@attribute topic_40 numeric
+@attribute topic_22 numeric
+@attribute topic_9 numeric
+@attribute topic_18 numeric
+@attribute topic_19 numeric
+@attribute topic_42 numeric
+@attribute topic_47 numeric
+@attribute topic_46 numeric
+@attribute topic_8 numeric
+@attribute topic_13 numeric
+@attribute topic_7 numeric
+@attribute topic_43 numeric
+@attribute topic_20 numeric
+@attribute topic_2 numeric
+@attribute topic_38 numeric
+@attribute topic_23 numeric
+@attribute topic_14 numeric
+@attribute topic_27 numeric
+@attribute topic_11 numeric
+@attribute topic_34 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0065 * (normalized) topic_48
+ +       0.0022 * (normalized) topic_16
+ +       0.0146 * (normalized) topic_1
+ +       0.0038 * (normalized) topic_35
+ +      -1.851  * (normalized) topic_45
+ +      -3.8703 * (normalized) topic_40
+ +      -0.0003 * (normalized) topic_22
+ +      -0.001  * (normalized) topic_9
+ +      -4.4559 * (normalized) topic_18
+ +      -2.0961 * (normalized) topic_19
+ +       0.0232 * (normalized) topic_42
+ +       0.001  * (normalized) topic_47
+ +       0.0012 * (normalized) topic_46
+ +      -1.54   * (normalized) topic_8
+ +      -2.5375 * (normalized) topic_13
+ +       0.0031 * (normalized) topic_7
+ +      -1.0672 * (normalized) topic_43
+ +      -0.0126 * (normalized) topic_20
+ +      -2.269  * (normalized) topic_2
+ +       0.0001 * (normalized) topic_38
+ +      -0.0021 * (normalized) topic_23
+ +      -0.0009 * (normalized) topic_14
+ +      -1.855  * (normalized) topic_27
+ +       0.0002 * (normalized) topic_11
+ +       0.0028 * (normalized) topic_34
+ +       1.0014
+
+Number of kernel evaluations: 2704128 (86.708% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 33,38,13,10,4,7,22,26,32,36,48,3,8,9,44,27,42,23,16,29,28,30,35,50,18,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R33,38,13,10,4,7,22,26,32,36,48,3,8,9,44,27,42,23,16,29,28,30,35,50,18,51'
+
+@attribute topic_33 numeric
+@attribute topic_38 numeric
+@attribute topic_13 numeric
+@attribute topic_10 numeric
+@attribute topic_4 numeric
+@attribute topic_7 numeric
+@attribute topic_22 numeric
+@attribute topic_26 numeric
+@attribute topic_32 numeric
+@attribute topic_36 numeric
+@attribute topic_48 numeric
+@attribute topic_3 numeric
+@attribute topic_8 numeric
+@attribute topic_9 numeric
+@attribute topic_44 numeric
+@attribute topic_27 numeric
+@attribute topic_42 numeric
+@attribute topic_23 numeric
+@attribute topic_16 numeric
+@attribute topic_29 numeric
+@attribute topic_28 numeric
+@attribute topic_30 numeric
+@attribute topic_35 numeric
+@attribute topic_50 numeric
+@attribute topic_18 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         1.588  * (normalized) topic_33
+ +       0.5046 * (normalized) topic_38
+ +      -1.2659 * (normalized) topic_13
+ +      -1.062  * (normalized) topic_10
+ +      -0.9636 * (normalized) topic_4
+ +       1.1735 * (normalized) topic_7
+ +       1.0443 * (normalized) topic_22
+ +       1.2155 * (normalized) topic_26
+ +       1.0571 * (normalized) topic_32
+ +      -1.1758 * (normalized) topic_36
+ +       1.6079 * (normalized) topic_48
+ +       2.9433 * (normalized) topic_3
+ +      -0.9574 * (normalized) topic_8
+ +       0.1039 * (normalized) topic_9
+ +       1.3877 * (normalized) topic_44
+ +      -0.9622 * (normalized) topic_27
+ +       1.6341 * (normalized) topic_42
+ +       0.8612 * (normalized) topic_23
+ +       1.2202 * (normalized) topic_16
+ +      -0.7098 * (normalized) topic_29
+ +      -1.1776 * (normalized) topic_28
+ +      -0.9528 * (normalized) topic_30
+ +       2.0716 * (normalized) topic_35
+ +       1.2006 * (normalized) topic_50
+ +      -2.8443 * (normalized) topic_18
+ -       0.0421
+
+Number of kernel evaluations: 1320095 (65.162% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 23,42,5,19,17,14,33,26,34,15,30,10,50,4,6,2,47,41,43,28,21,37,36,48,49,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R23,42,5,19,17,14,33,26,34,15,30,10,50,4,6,2,47,41,43,28,21,37,36,48,49,51'
+
+@attribute topic_23 numeric
+@attribute topic_42 numeric
+@attribute topic_5 numeric
+@attribute topic_19 numeric
+@attribute topic_17 numeric
+@attribute topic_14 numeric
+@attribute topic_33 numeric
+@attribute topic_26 numeric
+@attribute topic_34 numeric
+@attribute topic_15 numeric
+@attribute topic_30 numeric
+@attribute topic_10 numeric
+@attribute topic_50 numeric
+@attribute topic_4 numeric
+@attribute topic_6 numeric
+@attribute topic_2 numeric
+@attribute topic_47 numeric
+@attribute topic_41 numeric
+@attribute topic_43 numeric
+@attribute topic_28 numeric
+@attribute topic_21 numeric
+@attribute topic_37 numeric
+@attribute topic_36 numeric
+@attribute topic_48 numeric
+@attribute topic_49 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.0591 * (normalized) topic_23
+ +       1.3477 * (normalized) topic_42
+ +       2.0061 * (normalized) topic_5
+ +      -1.2016 * (normalized) topic_19
+ +       1.4394 * (normalized) topic_17
+ +       0.8054 * (normalized) topic_14
+ +       1.4555 * (normalized) topic_33
+ +       0.9519 * (normalized) topic_26
+ +       1.0814 * (normalized) topic_34
+ +       0.6414 * (normalized) topic_15
+ +      -1.5576 * (normalized) topic_30
+ +      -1.2481 * (normalized) topic_10
+ +       1.0523 * (normalized) topic_50
+ +      -1.2175 * (normalized) topic_4
+ +       0.83   * (normalized) topic_6
+ +      -1.3258 * (normalized) topic_2
+ +       0.8894 * (normalized) topic_47
+ +       0.823  * (normalized) topic_41
+ +      -1.2633 * (normalized) topic_43
+ +      -0.1439 * (normalized) topic_28
+ +      -0.9553 * (normalized) topic_21
+ +       0.9738 * (normalized) topic_37
+ +      -1.2973 * (normalized) topic_36
+ +       1.1213 * (normalized) topic_48
+ +      -8.8053 * (normalized) topic_49
+ +       0.1952
+
+Number of kernel evaluations: 1136873 (67.654% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 39,27,36,50,40,38,29,41,16,10,11,7,1,32,26,45,17,4,13,28,42,18,14,46,48,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R39,27,36,50,40,38,29,41,16,10,11,7,1,32,26,45,17,4,13,28,42,18,14,46,48,51'
+
+@attribute topic_39 numeric
+@attribute topic_27 numeric
+@attribute topic_36 numeric
+@attribute topic_50 numeric
+@attribute topic_40 numeric
+@attribute topic_38 numeric
+@attribute topic_29 numeric
+@attribute topic_41 numeric
+@attribute topic_16 numeric
+@attribute topic_10 numeric
+@attribute topic_11 numeric
+@attribute topic_7 numeric
+@attribute topic_1 numeric
+@attribute topic_32 numeric
+@attribute topic_26 numeric
+@attribute topic_45 numeric
+@attribute topic_17 numeric
+@attribute topic_4 numeric
+@attribute topic_13 numeric
+@attribute topic_28 numeric
+@attribute topic_42 numeric
+@attribute topic_18 numeric
+@attribute topic_14 numeric
+@attribute topic_46 numeric
+@attribute topic_48 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0109 * (normalized) topic_39
+ +      -1.8501 * (normalized) topic_27
+ +      -2.1395 * (normalized) topic_36
+ +       0.0106 * (normalized) topic_50
+ +      -3.9419 * (normalized) topic_40
+ +      -0.002  * (normalized) topic_38
+ +      -0.3085 * (normalized) topic_29
+ +       0.0008 * (normalized) topic_41
+ +       0.0036 * (normalized) topic_16
+ +      -2.0999 * (normalized) topic_10
+ +       0.0026 * (normalized) topic_11
+ +       0.0034 * (normalized) topic_7
+ +       0.0103 * (normalized) topic_1
+ +       0.0076 * (normalized) topic_32
+ +       0.0122 * (normalized) topic_26
+ +      -1.8914 * (normalized) topic_45
+ +       0.0245 * (normalized) topic_17
+ +      -2.0005 * (normalized) topic_4
+ +      -2.403  * (normalized) topic_13
+ +      -1.1764 * (normalized) topic_28
+ +       0.0245 * (normalized) topic_42
+ +      -4.4796 * (normalized) topic_18
+ +      -0.0007 * (normalized) topic_14
+ +       0.0019 * (normalized) topic_46
+ +       0.0098 * (normalized) topic_48
+ +       1.0018
+
+Number of kernel evaluations: 2225913 (85.492% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 7,37,36,39,21,2,29,49,48,16,38,41,30,18,46,43,3,44,12,35,19,13,4,1,9,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R7,37,36,39,21,2,29,49,48,16,38,41,30,18,46,43,3,44,12,35,19,13,4,1,9,51'
+
+@attribute topic_7 numeric
+@attribute topic_37 numeric
+@attribute topic_36 numeric
+@attribute topic_39 numeric
+@attribute topic_21 numeric
+@attribute topic_2 numeric
+@attribute topic_29 numeric
+@attribute topic_49 numeric
+@attribute topic_48 numeric
+@attribute topic_16 numeric
+@attribute topic_38 numeric
+@attribute topic_41 numeric
+@attribute topic_30 numeric
+@attribute topic_18 numeric
+@attribute topic_46 numeric
+@attribute topic_43 numeric
+@attribute topic_3 numeric
+@attribute topic_44 numeric
+@attribute topic_12 numeric
+@attribute topic_35 numeric
+@attribute topic_19 numeric
+@attribute topic_13 numeric
+@attribute topic_4 numeric
+@attribute topic_1 numeric
+@attribute topic_9 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0035 * (normalized) topic_7
+ +       0.0044 * (normalized) topic_37
+ +      -2.0192 * (normalized) topic_36
+ +      -0.0104 * (normalized) topic_39
+ +      -0.5538 * (normalized) topic_21
+ +      -2.0293 * (normalized) topic_2
+ +      -0.0246 * (normalized) topic_29
+ +     -10.1605 * (normalized) topic_49
+ +       0.0055 * (normalized) topic_48
+ +       0.0026 * (normalized) topic_16
+ +      -0.0044 * (normalized) topic_38
+ +      -0.0002 * (normalized) topic_41
+ +      -1.5292 * (normalized) topic_30
+ +      -4.1138 * (normalized) topic_18
+ +       0.0046 * (normalized) topic_46
+ +      -0.7596 * (normalized) topic_43
+ +       0.2278 * (normalized) topic_3
+ +       0.0171 * (normalized) topic_44
+ +      -1.0407 * (normalized) topic_12
+ +       0.0107 * (normalized) topic_35
+ +      -2.0004 * (normalized) topic_19
+ +      -2.2477 * (normalized) topic_13
+ +      -1.5589 * (normalized) topic_4
+ +       0.0283 * (normalized) topic_1
+ +      -0.0705 * (normalized) topic_9
+ +       1.001 
+
+Number of kernel evaluations: 3315384 (85.497% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 40,46,20,1,47,48,21,42,18,2,17,43,14,8,13,25,19,33,38,11,28,37,12,27,15,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R40,46,20,1,47,48,21,42,18,2,17,43,14,8,13,25,19,33,38,11,28,37,12,27,15,51'
+
+@attribute topic_40 numeric
+@attribute topic_46 numeric
+@attribute topic_20 numeric
+@attribute topic_1 numeric
+@attribute topic_47 numeric
+@attribute topic_48 numeric
+@attribute topic_21 numeric
+@attribute topic_42 numeric
+@attribute topic_18 numeric
+@attribute topic_2 numeric
+@attribute topic_17 numeric
+@attribute topic_43 numeric
+@attribute topic_14 numeric
+@attribute topic_8 numeric
+@attribute topic_13 numeric
+@attribute topic_25 numeric
+@attribute topic_19 numeric
+@attribute topic_33 numeric
+@attribute topic_38 numeric
+@attribute topic_11 numeric
+@attribute topic_28 numeric
+@attribute topic_37 numeric
+@attribute topic_12 numeric
+@attribute topic_27 numeric
+@attribute topic_15 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -3.7461 * (normalized) topic_40
+ +      -0.0003 * (normalized) topic_46
+ +      -0.0506 * (normalized) topic_20
+ +       0.0334 * (normalized) topic_1
+ +       0.0012 * (normalized) topic_47
+ +       0.2436 * (normalized) topic_48
+ +      -1.1423 * (normalized) topic_21
+ +       0.0463 * (normalized) topic_42
+ +      -4.2233 * (normalized) topic_18
+ +      -2.2559 * (normalized) topic_2
+ +       0.0347 * (normalized) topic_17
+ +      -1.0653 * (normalized) topic_43
+ +      -0.0007 * (normalized) topic_14
+ +      -1.7839 * (normalized) topic_8
+ +      -2.5024 * (normalized) topic_13
+ +       0.0032 * (normalized) topic_25
+ +      -2.0968 * (normalized) topic_19
+ +       0.1331 * (normalized) topic_33
+ +      -0.0144 * (normalized) topic_38
+ +      -0.0051 * (normalized) topic_11
+ +      -1.2113 * (normalized) topic_28
+ +       0.006  * (normalized) topic_37
+ +      -1.6432 * (normalized) topic_12
+ +      -1.9043 * (normalized) topic_27
+ +      -1.0053 * (normalized) topic_15
+ +       1.0012
+
+Number of kernel evaluations: 2665591 (76.863% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 45,18,30,49,13,40,37,48,32,33,50,16,2,34,36,25,41,27,21,14,17,19,35,28,31,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R45,18,30,49,13,40,37,48,32,33,50,16,2,34,36,25,41,27,21,14,17,19,35,28,31,51'
+
+@attribute topic_45 numeric
+@attribute topic_18 numeric
+@attribute topic_30 numeric
+@attribute topic_49 numeric
+@attribute topic_13 numeric
+@attribute topic_40 numeric
+@attribute topic_37 numeric
+@attribute topic_48 numeric
+@attribute topic_32 numeric
+@attribute topic_33 numeric
+@attribute topic_50 numeric
+@attribute topic_16 numeric
+@attribute topic_2 numeric
+@attribute topic_34 numeric
+@attribute topic_36 numeric
+@attribute topic_25 numeric
+@attribute topic_41 numeric
+@attribute topic_27 numeric
+@attribute topic_21 numeric
+@attribute topic_14 numeric
+@attribute topic_17 numeric
+@attribute topic_19 numeric
+@attribute topic_35 numeric
+@attribute topic_28 numeric
+@attribute topic_31 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.1391 * (normalized) topic_45
+ +      -4.0632 * (normalized) topic_18
+ +      -1.1079 * (normalized) topic_30
+ +     -10.0983 * (normalized) topic_49
+ +      -2.2839 * (normalized) topic_13
+ +      -3.8022 * (normalized) topic_40
+ +       0.008  * (normalized) topic_37
+ +       0.0006 * (normalized) topic_48
+ +       0.0065 * (normalized) topic_32
+ +       0.0199 * (normalized) topic_33
+ +       0.0029 * (normalized) topic_50
+ +      -0.0012 * (normalized) topic_16
+ +      -2.0089 * (normalized) topic_2
+ +      -0.0033 * (normalized) topic_34
+ +      -2.0215 * (normalized) topic_36
+ +      -0.003  * (normalized) topic_25
+ +      -0.0034 * (normalized) topic_41
+ +      -0.0079 * (normalized) topic_27
+ +      -0.1978 * (normalized) topic_21
+ +      -0.004  * (normalized) topic_14
+ +       0.0181 * (normalized) topic_17
+ +      -2.0027 * (normalized) topic_19
+ +       0.0031 * (normalized) topic_35
+ +      -0.101  * (normalized) topic_28
+ +      -1.2785 * (normalized) topic_31
+ +       1.004 
+
+Number of kernel evaluations: 3899712 (85.528% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 29,44,6,37,21,48,46,13,35,2,30,20,5,3,38,49,17,33,25,7,15,27,42,41,36,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R29,44,6,37,21,48,46,13,35,2,30,20,5,3,38,49,17,33,25,7,15,27,42,41,36,51'
+
+@attribute topic_29 numeric
+@attribute topic_44 numeric
+@attribute topic_6 numeric
+@attribute topic_37 numeric
+@attribute topic_21 numeric
+@attribute topic_48 numeric
+@attribute topic_46 numeric
+@attribute topic_13 numeric
+@attribute topic_35 numeric
+@attribute topic_2 numeric
+@attribute topic_30 numeric
+@attribute topic_20 numeric
+@attribute topic_5 numeric
+@attribute topic_3 numeric
+@attribute topic_38 numeric
+@attribute topic_49 numeric
+@attribute topic_17 numeric
+@attribute topic_33 numeric
+@attribute topic_25 numeric
+@attribute topic_7 numeric
+@attribute topic_15 numeric
+@attribute topic_27 numeric
+@attribute topic_42 numeric
+@attribute topic_41 numeric
+@attribute topic_36 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         1.0369 * (normalized) topic_29
+ +       2.3676 * (normalized) topic_44
+ +       2.0203 * (normalized) topic_6
+ +       2.0696 * (normalized) topic_37
+ +       0.1441 * (normalized) topic_21
+ +       2.384  * (normalized) topic_48
+ +       2.0202 * (normalized) topic_46
+ +      -0.0241 * (normalized) topic_13
+ +       2.8226 * (normalized) topic_35
+ +      -0.0838 * (normalized) topic_2
+ +      -0.078  * (normalized) topic_30
+ +       0.5659 * (normalized) topic_20
+ +       3.344  * (normalized) topic_5
+ +       4.0642 * (normalized) topic_3
+ +       1.2555 * (normalized) topic_38
+ +      -5.7047 * (normalized) topic_49
+ +       2.3851 * (normalized) topic_17
+ +       2.6155 * (normalized) topic_33
+ +       1.8577 * (normalized) topic_25
+ +       2.083  * (normalized) topic_7
+ +       1.5888 * (normalized) topic_15
+ +       1.5357 * (normalized) topic_27
+ +       2.5963 * (normalized) topic_42
+ +       1.999  * (normalized) topic_41
+ +      -0.2043 * (normalized) topic_36
+ -       1.0019
+
+Number of kernel evaluations: 2408102 (66.208% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 36,22,42,28,3,14,34,7,1,50,32,11,17,44,39,15,18,35,25,49,33,48,9,46,6,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R36,22,42,28,3,14,34,7,1,50,32,11,17,44,39,15,18,35,25,49,33,48,9,46,6,51'
+
+@attribute topic_36 numeric
+@attribute topic_22 numeric
+@attribute topic_42 numeric
+@attribute topic_28 numeric
+@attribute topic_3 numeric
+@attribute topic_14 numeric
+@attribute topic_34 numeric
+@attribute topic_7 numeric
+@attribute topic_1 numeric
+@attribute topic_50 numeric
+@attribute topic_32 numeric
+@attribute topic_11 numeric
+@attribute topic_17 numeric
+@attribute topic_44 numeric
+@attribute topic_39 numeric
+@attribute topic_15 numeric
+@attribute topic_18 numeric
+@attribute topic_35 numeric
+@attribute topic_25 numeric
+@attribute topic_49 numeric
+@attribute topic_33 numeric
+@attribute topic_48 numeric
+@attribute topic_9 numeric
+@attribute topic_46 numeric
+@attribute topic_6 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.0082 * (normalized) topic_36
+ +       0.0159 * (normalized) topic_22
+ +       0.0368 * (normalized) topic_42
+ +      -0.2061 * (normalized) topic_28
+ +       0.0828 * (normalized) topic_3
+ +       0.0136 * (normalized) topic_14
+ +       0.0179 * (normalized) topic_34
+ +       0.0173 * (normalized) topic_7
+ +       0.027  * (normalized) topic_1
+ +       0.0192 * (normalized) topic_50
+ +       0.0226 * (normalized) topic_32
+ +       0.0164 * (normalized) topic_11
+ +       0.0304 * (normalized) topic_17
+ +       0.0291 * (normalized) topic_44
+ +       0.0066 * (normalized) topic_39
+ +       0.002  * (normalized) topic_15
+ +      -4.4149 * (normalized) topic_18
+ +       0.0318 * (normalized) topic_35
+ +       0.013  * (normalized) topic_25
+ +     -10.7963 * (normalized) topic_49
+ +       0.0366 * (normalized) topic_33
+ +       0.0233 * (normalized) topic_48
+ +       0.0013 * (normalized) topic_9
+ +       0.0178 * (normalized) topic_46
+ +       0.0177 * (normalized) topic_6
+ +       0.9873
+
+Number of kernel evaluations: 1962187 (81.975% cached)
+
+
+
+FilteredClassifier using weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 46,49,34,20,26,45,10,22,48,32,4,29,39,9,47,19,8,44,6,50,1,36,3,42,40,51
+
+Filtered Header
+@relation 'multidomain_topics-weka.filters.unsupervised.attribute.Remove-V-R46,49,34,20,26,45,10,22,48,32,4,29,39,9,47,19,8,44,6,50,1,36,3,42,40,51'
+
+@attribute topic_46 numeric
+@attribute topic_49 numeric
+@attribute topic_34 numeric
+@attribute topic_20 numeric
+@attribute topic_26 numeric
+@attribute topic_45 numeric
+@attribute topic_10 numeric
+@attribute topic_22 numeric
+@attribute topic_48 numeric
+@attribute topic_32 numeric
+@attribute topic_4 numeric
+@attribute topic_29 numeric
+@attribute topic_39 numeric
+@attribute topic_9 numeric
+@attribute topic_47 numeric
+@attribute topic_19 numeric
+@attribute topic_8 numeric
+@attribute topic_44 numeric
+@attribute topic_6 numeric
+@attribute topic_50 numeric
+@attribute topic_1 numeric
+@attribute topic_36 numeric
+@attribute topic_3 numeric
+@attribute topic_42 numeric
+@attribute topic_40 numeric
+@attribute class_atr {negative,positive}
+
+@data
+
+
+Classifier Model
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.9058 * (normalized) topic_46
+ +      -9.094  * (normalized) topic_49
+ +       0.7918 * (normalized) topic_34
+ +       0.0403 * (normalized) topic_20
+ +       0.8496 * (normalized) topic_26
+ +      -1.1386 * (normalized) topic_45
+ +      -1.3052 * (normalized) topic_10
+ +       0.7287 * (normalized) topic_22
+ +       1.1534 * (normalized) topic_48
+ +       0.787  * (normalized) topic_32
+ +      -1.2564 * (normalized) topic_4
+ +       0.7418 * (normalized) topic_29
+ +       0.6368 * (normalized) topic_39
+ +       0.1995 * (normalized) topic_9
+ +       0.784  * (normalized) topic_47
+ +      -1.2572 * (normalized) topic_19
+ +      -0.4042 * (normalized) topic_8
+ +       1.0466 * (normalized) topic_44
+ +       0.7503 * (normalized) topic_6
+ +       0.8375 * (normalized) topic_50
+ +       0.9227 * (normalized) topic_1
+ +      -1.3989 * (normalized) topic_36
+ +       2.0812 * (normalized) topic_3
+ +       1.116  * (normalized) topic_42
+ +      -3.3322 * (normalized) topic_40
+ +       0.25  
+
+Number of kernel evaluations: 1179203 (67.038% cached)
+
+
+
+
+
+Time taken to build model: 6.8 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4871               60.8875 %
+Incorrectly Classified Instances      3129               39.1125 %
+Total Number of Instances             8000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.433    0.215    0.668      0.433    0.525      negative
+                 0.785    0.567    0.581      0.785    0.667      positive
+Weighted Avg.    0.609    0.391    0.624      0.609    0.596      
+

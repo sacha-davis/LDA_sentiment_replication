@@ -1,0 +1,265 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     irish_topics
+Instances:    1660
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, irrelevant
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.6471 * (normalized) topic_1
+ +       0.5604 * (normalized) topic_2
+ +       1.5333 * (normalized) topic_3
+ +       0.5606 * (normalized) topic_4
+ +      -4.1297 * (normalized) topic_5
+ +       0.5602 * (normalized) topic_6
+ +       0.5602 * (normalized) topic_7
+ +       0.1811 * (normalized) topic_8
+ +      -0.5211 * (normalized) topic_9
+ +       0.6868 * (normalized) topic_10
+ +       0.9139 * (normalized) topic_11
+ +      -2.7631 * (normalized) topic_12
+ +       0.5665 * (normalized) topic_13
+ +       1.083  * (normalized) topic_14
+ +       0.7188 * (normalized) topic_15
+ +       2.15   * (normalized) topic_16
+ +       0.5627 * (normalized) topic_17
+ +      -2.576  * (normalized) topic_18
+ +       1.1608 * (normalized) topic_19
+ +       1.1512 * (normalized) topic_20
+ +       0.4413 * (normalized) topic_21
+ +      -0.6796 * (normalized) topic_22
+ +      -0.1911 * (normalized) topic_23
+ +       1.8253 * (normalized) topic_24
+ +      -0.2492 * (normalized) topic_25
+ +       0.8125 * (normalized) topic_26
+ +       0.5602 * (normalized) topic_27
+ +       0.332  * (normalized) topic_28
+ +      -0.2318 * (normalized) topic_29
+ +      -0.6657 * (normalized) topic_30
+ +      -2.4844 * (normalized) topic_31
+ +      -0.8783 * (normalized) topic_32
+ +       0.561  * (normalized) topic_33
+ +      -2.7041 * (normalized) topic_34
+ +       0.5369 * (normalized) topic_35
+ +       0.6963 * (normalized) topic_36
+ +       0.3898 * (normalized) topic_37
+ +      -2.1604 * (normalized) topic_38
+ +       1.4724 * (normalized) topic_39
+ +      -0.2923 * (normalized) topic_40
+ +       0.4101 * (normalized) topic_41
+ +      -0.0977 * (normalized) topic_42
+ +      -1.7797 * (normalized) topic_43
+ +       0.5599 * (normalized) topic_44
+ +       0.5599 * (normalized) topic_45
+ +       0.5596 * (normalized) topic_46
+ +      -0.5053 * (normalized) topic_47
+ +      -0.2866 * (normalized) topic_48
+ +       0.5603 * (normalized) topic_49
+ +       0.5749 * (normalized) topic_50
+ +       0.44  
+
+Number of kernel evaluations: 137280 (78.744% cached)
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.8531 * (normalized) topic_1
+ +      -0.4136 * (normalized) topic_2
+ +       0.3165 * (normalized) topic_3
+ +      -0.9301 * (normalized) topic_4
+ +      -0.8191 * (normalized) topic_5
+ +      -0.4147 * (normalized) topic_6
+ +      -0.0057 * (normalized) topic_7
+ +      -0.4138 * (normalized) topic_8
+ +       0.3133 * (normalized) topic_9
+ +      -0.2327 * (normalized) topic_10
+ +       0.7616 * (normalized) topic_11
+ +      -1.296  * (normalized) topic_12
+ +      -0.4151 * (normalized) topic_13
+ +      -0.0098 * (normalized) topic_14
+ +       0.3521 * (normalized) topic_15
+ +       2.1198 * (normalized) topic_16
+ +       0.4775 * (normalized) topic_17
+ +      -0.6727 * (normalized) topic_18
+ +       0.0202 * (normalized) topic_19
+ +      -0.0587 * (normalized) topic_20
+ +       0.0228 * (normalized) topic_21
+ +      -0.99   * (normalized) topic_22
+ +      -0.3794 * (normalized) topic_23
+ +      -0.8641 * (normalized) topic_24
+ +       2.4336 * (normalized) topic_25
+ +       1.4277 * (normalized) topic_26
+ +      -0.0796 * (normalized) topic_27
+ +      -0.8097 * (normalized) topic_28
+ +      -0.1993 * (normalized) topic_29
+ +      -0.8198 * (normalized) topic_30
+ +       1.744  * (normalized) topic_31
+ +       1.5869 * (normalized) topic_32
+ +      -0.4146 * (normalized) topic_33
+ +      -0.5556 * (normalized) topic_34
+ +       0.1991 * (normalized) topic_35
+ +      -0.7373 * (normalized) topic_36
+ +      -0.2752 * (normalized) topic_37
+ +      -0.8058 * (normalized) topic_38
+ +       2.6968 * (normalized) topic_39
+ +      -1.1844 * (normalized) topic_40
+ +       0.4998 * (normalized) topic_41
+ +      -0.3963 * (normalized) topic_42
+ +      -1.1297 * (normalized) topic_43
+ +      -0.2813 * (normalized) topic_44
+ +       0.2652 * (normalized) topic_45
+ +       0.3524 * (normalized) topic_46
+ +      -0.3095 * (normalized) topic_47
+ +       0.2028 * (normalized) topic_48
+ +       1.3732 * (normalized) topic_49
+ +      -0.3947 * (normalized) topic_50
+ -       0.5861
+
+Number of kernel evaluations: 93053 (77.369% cached)
+
+Classifier for classes: irrelevant, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3516 * (normalized) topic_1
+ +      -0.3305 * (normalized) topic_2
+ +      -1.1331 * (normalized) topic_3
+ +      -0.3434 * (normalized) topic_4
+ +       2.4534 * (normalized) topic_5
+ +      -0.3275 * (normalized) topic_6
+ +      -0.3284 * (normalized) topic_7
+ +      -0.3769 * (normalized) topic_8
+ +       0.9954 * (normalized) topic_9
+ +      -0.327  * (normalized) topic_10
+ +      -0.3279 * (normalized) topic_11
+ +       0.4069 * (normalized) topic_12
+ +      -0.5924 * (normalized) topic_13
+ +      -0.3264 * (normalized) topic_14
+ +      -0.3381 * (normalized) topic_15
+ +      -0.5761 * (normalized) topic_16
+ +      -0.3269 * (normalized) topic_17
+ +       2.4356 * (normalized) topic_18
+ +      -0.646  * (normalized) topic_19
+ +      -0.5164 * (normalized) topic_20
+ +      -0.3273 * (normalized) topic_21
+ +      -0.7176 * (normalized) topic_22
+ +      -0.3505 * (normalized) topic_23
+ +      -2.2291 * (normalized) topic_24
+ +       2.3964 * (normalized) topic_25
+ +      -0.3292 * (normalized) topic_26
+ +      -0.3265 * (normalized) topic_27
+ +      -0.7675 * (normalized) topic_28
+ +      -0.2223 * (normalized) topic_29
+ +      -0.4436 * (normalized) topic_30
+ +       3.0097 * (normalized) topic_31
+ +       1.6736 * (normalized) topic_32
+ +      -0.7555 * (normalized) topic_33
+ +       1.7362 * (normalized) topic_34
+ +      -0.3276 * (normalized) topic_35
+ +      -0.837  * (normalized) topic_36
+ +      -0.3337 * (normalized) topic_37
+ +       1.4425 * (normalized) topic_38
+ +      -0.162  * (normalized) topic_39
+ +      -0.3282 * (normalized) topic_40
+ +       0.1935 * (normalized) topic_41
+ +      -0.3075 * (normalized) topic_42
+ +      -0.3968 * (normalized) topic_43
+ +      -0.328  * (normalized) topic_44
+ +      -0.3269 * (normalized) topic_45
+ +      -0.326  * (normalized) topic_46
+ +      -0.0348 * (normalized) topic_47
+ +       1.0806 * (normalized) topic_48
+ +       0.1701 * (normalized) topic_49
+ +      -0.5884 * (normalized) topic_50
+ -       0.6734
+
+Number of kernel evaluations: 93174 (81.993% cached)
+
+
+
+Time taken to build model: 0.21 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         955               57.5301 %
+Incorrectly Classified Instances       705               42.4699 %
+Total Number of Instances             1660     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.583    0.245    0.608      0.583    0.595      negative
+                 0.702    0.282    0.568      0.702    0.628      irrelevant
+                 0.394    0.124    0.526      0.394    0.451      positive
+Weighted Avg.    0.575    0.226    0.573      0.575    0.569      
+

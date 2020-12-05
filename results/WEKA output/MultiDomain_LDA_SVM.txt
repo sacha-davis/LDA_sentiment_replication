@@ -1,0 +1,144 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     multidomain_topics
+Instances:    8000
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: negative, positive
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.8544 * (normalized) topic_1
+ +      -1.2388 * (normalized) topic_2
+ +       1.766  * (normalized) topic_3
+ +      -1.0938 * (normalized) topic_4
+ +       1.8597 * (normalized) topic_5
+ +       0.7881 * (normalized) topic_6
+ +       0.8152 * (normalized) topic_7
+ +      -0.7674 * (normalized) topic_8
+ +       0.4046 * (normalized) topic_9
+ +      -1.2965 * (normalized) topic_10
+ +       0.7327 * (normalized) topic_11
+ +      -0.3461 * (normalized) topic_12
+ +      -1.4508 * (normalized) topic_13
+ +       0.6291 * (normalized) topic_14
+ +       0.6372 * (normalized) topic_15
+ +       0.8046 * (normalized) topic_16
+ +       0.9236 * (normalized) topic_17
+ +      -2.8628 * (normalized) topic_18
+ +      -1.2215 * (normalized) topic_19
+ +       0.1066 * (normalized) topic_20
+ +      -0.2079 * (normalized) topic_21
+ +       0.7232 * (normalized) topic_22
+ +       0.4823 * (normalized) topic_23
+ +       0.8055 * (normalized) topic_24
+ +       0.7723 * (normalized) topic_25
+ +       0.8345 * (normalized) topic_26
+ +       0.6291 * (normalized) topic_27
+ +      -0.3137 * (normalized) topic_28
+ +       0.4898 * (normalized) topic_29
+ +      -0.8817 * (normalized) topic_30
+ +      -0.8446 * (normalized) topic_31
+ +       0.7967 * (normalized) topic_32
+ +       0.9718 * (normalized) topic_33
+ +       0.7919 * (normalized) topic_34
+ +       1.0246 * (normalized) topic_35
+ +      -1.2329 * (normalized) topic_36
+ +       0.799  * (normalized) topic_37
+ +       0.5275 * (normalized) topic_38
+ +       0.4829 * (normalized) topic_39
+ +      -2.9656 * (normalized) topic_40
+ +       0.7872 * (normalized) topic_41
+ +       0.9934 * (normalized) topic_42
+ +      -0.3391 * (normalized) topic_43
+ +       0.8594 * (normalized) topic_44
+ +      -0.6602 * (normalized) topic_45
+ +       0.7872 * (normalized) topic_46
+ +       0.7901 * (normalized) topic_47
+ +       0.8927 * (normalized) topic_48
+ +      -8.7306 * (normalized) topic_49
+ +       0.7704 * (normalized) topic_50
+ +       0.2132
+
+Number of kernel evaluations: 3979853 (67.563% cached)
+
+
+
+Time taken to build model: 0.91 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4965               62.0625 %
+Incorrectly Classified Instances      3035               37.9375 %
+Total Number of Instances             8000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.426    0.185    0.698      0.426    0.529      negative
+                 0.816    0.574    0.587      0.816    0.682      positive
+Weighted Avg.    0.621    0.379    0.642      0.621    0.606      
+

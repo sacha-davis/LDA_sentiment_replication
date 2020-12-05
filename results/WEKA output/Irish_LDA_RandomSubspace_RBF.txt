@@ -1,0 +1,652 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.RBFClassifier -- -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1
+Relation:     irish_topics
+Instances:    1660
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1024863131 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 30,21,12,15,4,33,7,9,19,43,47,35,38,37,6,24,42,49,5,39,10,20,27,18,32,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R30,21,12,15,4,33,7,9,19,43,47,35,38,37,6,24,42,49,5,39,10,20,27,18,32,51'
+
+@attribute topic_30 numeric
+@attribute topic_21 numeric
+@attribute topic_12 numeric
+@attribute topic_15 numeric
+@attribute topic_4 numeric
+@attribute topic_33 numeric
+@attribute topic_7 numeric
+@attribute topic_9 numeric
+@attribute topic_19 numeric
+@attribute topic_43 numeric
+@attribute topic_47 numeric
+@attribute topic_35 numeric
+@attribute topic_38 numeric
+@attribute topic_37 numeric
+@attribute topic_6 numeric
+@attribute topic_24 numeric
+@attribute topic_42 numeric
+@attribute topic_49 numeric
+@attribute topic_5 numeric
+@attribute topic_39 numeric
+@attribute topic_10 numeric
+@attribute topic_20 numeric
+@attribute topic_27 numeric
+@attribute topic_18 numeric
+@attribute topic_32 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-11.103631923519279	10.385962846205992	3.6846787585323475	
+
+Unit center:
+-0.15589427955734791	0.07960943203667134	-0.4542771102476692	0.1200753003781861	-0.006057489664560603	0.06798808022384728	0.09019824188454628	-0.011299340140523459	0.24631839666582586	-0.3701101265302671	-0.07043808744748825	0.08085104396761071	-0.1277938629038197	-0.04929290723940804	0.11876117990087268	0.18599013078939142	-0.022132499488928998	0.265295581943166	-0.6473847321765317	0.4717352525682946	0.07055231200590281	0.13360595425341149	0.12251591327913204	0.011329464631289176	0.22018929225279307	
+
+Unit scale:
+0.9438506524617183	
+
+Output weights for different classes:
+7.85493902109091	-11.6494010224642	4.629476753303686	
+
+Unit center:
+0.03208067378715685	0.06129170660979192	0.21652285308605546	-0.06109288359726336	-0.02684575875815599	-0.02937311280241955	0.05629523892845977	0.12718653286478454	-0.09972895781108887	-0.0705683497464372	0.2116607440784998	0.10813624102918708	0.34302751863747094	0.026062973509775975	0.039581034253239764	-0.5567037046172452	0.042537668286439734	0.23256612727544287	0.23511428792377126	0.22609035117405843	2.465125250347427E-4	-0.09658506072821753	0.004421846882500243	0.4064781678428534	0.2801237385779454	
+
+Unit scale:
+0.7792300464933959	
+
+Bias weights for different classes:
+0.8995304625944396	-0.2528922334919642	-4.460307962568784	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1547802301 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 20,16,4,27,46,33,21,14,26,17,22,9,29,40,49,1,6,42,48,11,13,25,19,2,34,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R20,16,4,27,46,33,21,14,26,17,22,9,29,40,49,1,6,42,48,11,13,25,19,2,34,51'
+
+@attribute topic_20 numeric
+@attribute topic_16 numeric
+@attribute topic_4 numeric
+@attribute topic_27 numeric
+@attribute topic_46 numeric
+@attribute topic_33 numeric
+@attribute topic_21 numeric
+@attribute topic_14 numeric
+@attribute topic_26 numeric
+@attribute topic_17 numeric
+@attribute topic_22 numeric
+@attribute topic_9 numeric
+@attribute topic_29 numeric
+@attribute topic_40 numeric
+@attribute topic_49 numeric
+@attribute topic_1 numeric
+@attribute topic_6 numeric
+@attribute topic_42 numeric
+@attribute topic_48 numeric
+@attribute topic_11 numeric
+@attribute topic_13 numeric
+@attribute topic_25 numeric
+@attribute topic_19 numeric
+@attribute topic_2 numeric
+@attribute topic_34 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+1.5654768162686739	-8.589672340465981	7.946992359890663	
+
+Unit center:
+-0.3483014998071865	-0.2697207378665829	-0.14797541576616258	-0.22947955800696646	0.05430143322174945	-0.0685471019637145	0.05095258328969881	-0.47737720943786954	0.04835862571308281	0.18350250274600266	-0.042931398235910086	0.4011763054371629	0.13892197996706013	-0.029553682557665252	0.3011013925812602	0.0028037973964746775	-0.051356250386172954	0.08192137938637137	0.48108560148207574	-0.17235665068964046	-0.05532514647406242	0.6956691298185552	-0.3369722317402323	-0.0031989682327606224	0.518280308951444	
+
+Unit scale:
+0.9986361637237643	
+
+Output weights for different classes:
+9.565332195101552	-3.4785915850290867	-5.3107090655165505	
+
+Unit center:
+-0.17148123865629572	-0.45540125918771995	0.10957034575722714	0.018511414180047297	0.12387765490042994	0.027984404608803286	0.11179155453475524	-0.34288733003648514	-0.23393116922556473	0.01856989703363712	0.5720920528356978	0.17345737606397799	0.16817673386849225	0.36432174628392233	0.03258189992885045	0.44644028861023854	-0.08386361417065442	0.10977112097617844	0.17352847346259362	-0.136759502330051	0.10383243577527157	-0.30088292836273905	-0.23996232112468238	0.30288929301972967	0.6118855930746979	
+
+Unit scale:
+0.9531101083787031	
+
+Bias weights for different classes:
+-4.261922964766572	3.616382325851273	-2.088655703888692	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S 1295068405 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 32,21,44,43,15,1,10,50,49,27,7,12,31,3,6,22,9,48,25,36,2,5,26,11,29,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R32,21,44,43,15,1,10,50,49,27,7,12,31,3,6,22,9,48,25,36,2,5,26,11,29,51'
+
+@attribute topic_32 numeric
+@attribute topic_21 numeric
+@attribute topic_44 numeric
+@attribute topic_43 numeric
+@attribute topic_15 numeric
+@attribute topic_1 numeric
+@attribute topic_10 numeric
+@attribute topic_50 numeric
+@attribute topic_49 numeric
+@attribute topic_27 numeric
+@attribute topic_7 numeric
+@attribute topic_12 numeric
+@attribute topic_31 numeric
+@attribute topic_3 numeric
+@attribute topic_6 numeric
+@attribute topic_22 numeric
+@attribute topic_9 numeric
+@attribute topic_48 numeric
+@attribute topic_25 numeric
+@attribute topic_36 numeric
+@attribute topic_2 numeric
+@attribute topic_5 numeric
+@attribute topic_26 numeric
+@attribute topic_11 numeric
+@attribute topic_29 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-4.397966492954524	15.34822750932962	-8.51178892430619	
+
+Unit center:
+-0.34653659466936027	0.09581911396219481	0.3073808807689283	0.16074793617844485	0.06533018997605633	0.3304271631186893	0.14161606973713092	0.27145164242844794	-0.0799643140193512	0.2651214174444288	0.09730251267707178	0.07734361217940315	-0.9806363811540589	0.39454386303913797	0.22076763883051978	0.3266387354325862	-0.1918075323442927	-0.18496688478927203	-0.7377118527202423	0.4326466020152453	0.15349870371283392	-0.1237703075012654	0.20426494773002385	0.22842533202179752	-0.004500825108515595	
+
+Unit scale:
+1.3399018330901353	
+
+Output weights for different classes:
+13.613505072862294	-12.4860350628087	-2.0230934085453005	
+
+Unit center:
+0.05577590335461998	0.06911666117909401	0.14923520146003177	0.4558599660878473	-0.06985749589677956	0.4037793324601118	-0.010372400044462226	-0.0725344133758858	0.08020924791168903	0.05488196773805569	-0.004154033746089734	0.7516656576324857	0.1846134002926017	-0.15058585176223013	-0.03276257178622074	0.36243226527072137	0.16449202239923916	0.158883395659258	-0.22832629561555076	-0.03281609247006352	0.14297011955917055	0.7412048118288912	-0.13325438704275533	-0.060571750248350986	0.1005617181144707	
+
+Unit scale:
+0.904876710647839	
+
+Bias weights for different classes:
+-2.90891852169541	-3.1848283116224607	3.0554700775595025	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1426106928 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,32,50,24,4,43,16,33,7,44,3,15,28,11,25,6,21,46,10,26,40,20,49,8,22,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R2,32,50,24,4,43,16,33,7,44,3,15,28,11,25,6,21,46,10,26,40,20,49,8,22,51'
+
+@attribute topic_2 numeric
+@attribute topic_32 numeric
+@attribute topic_50 numeric
+@attribute topic_24 numeric
+@attribute topic_4 numeric
+@attribute topic_43 numeric
+@attribute topic_16 numeric
+@attribute topic_33 numeric
+@attribute topic_7 numeric
+@attribute topic_44 numeric
+@attribute topic_3 numeric
+@attribute topic_15 numeric
+@attribute topic_28 numeric
+@attribute topic_11 numeric
+@attribute topic_25 numeric
+@attribute topic_6 numeric
+@attribute topic_21 numeric
+@attribute topic_46 numeric
+@attribute topic_10 numeric
+@attribute topic_26 numeric
+@attribute topic_40 numeric
+@attribute topic_20 numeric
+@attribute topic_49 numeric
+@attribute topic_8 numeric
+@attribute topic_22 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+1.7744667077338094	-10.508867970863681	10.337035185717694	
+
+Unit center:
+0.008665424721345804	0.3636579728706978	-0.16957152490920588	-1.0093556952664606	-0.09933135882498967	0.040421757218639456	-0.24039914615018546	-0.039713994567872044	0.09847729232392603	-0.1267560361293466	-0.2456599598514669	-0.08875339821880199	-0.028739306161083136	-0.1379027930262964	0.4931529628765147	-0.008889556905330154	0.09666924970234451	0.05898570773410552	-0.048714048009354506	0.0641457801921431	0.017124040373863565	-0.24834655956971055	0.2407988512784847	0.09445854512585553	-0.011389471297796199	
+
+Unit scale:
+1.0101467211413742	
+
+Output weights for different classes:
+9.600225187021495	-3.068469530635877	-5.881413036004718	
+
+Unit center:
+0.3505774873631788	-0.015743394173103952	-0.15255710583808116	-0.35731285994931644	0.11032259338162802	0.49281712908928693	-0.4979612577537685	0.04379388694373993	0.03712537428289041	0.19446111817063788	-0.22599023945888286	-0.09304952614571152	0.2672864662442419	-0.1507651514774664	-0.3116433082977653	-0.04530408512602691	0.1399101220056306	0.051167989628183856	-0.023212165017246746	-0.28533573499029535	0.40930438384292633	-0.14569889161426833	4.7828051667643876E-4	0.25366061052115396	0.5401432327404895	
+
+Unit scale:
+0.9770393434123208	
+
+Bias weights for different classes:
+-4.749542163442287	4.537647430383869	-2.8366638118717704	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1654123249 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 26,40,23,34,30,17,18,50,5,3,43,2,14,42,29,44,28,35,38,20,39,19,11,36,16,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R26,40,23,34,30,17,18,50,5,3,43,2,14,42,29,44,28,35,38,20,39,19,11,36,16,51'
+
+@attribute topic_26 numeric
+@attribute topic_40 numeric
+@attribute topic_23 numeric
+@attribute topic_34 numeric
+@attribute topic_30 numeric
+@attribute topic_17 numeric
+@attribute topic_18 numeric
+@attribute topic_50 numeric
+@attribute topic_5 numeric
+@attribute topic_3 numeric
+@attribute topic_43 numeric
+@attribute topic_2 numeric
+@attribute topic_14 numeric
+@attribute topic_42 numeric
+@attribute topic_29 numeric
+@attribute topic_44 numeric
+@attribute topic_28 numeric
+@attribute topic_35 numeric
+@attribute topic_38 numeric
+@attribute topic_20 numeric
+@attribute topic_39 numeric
+@attribute topic_19 numeric
+@attribute topic_11 numeric
+@attribute topic_36 numeric
+@attribute topic_16 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+10.119275607688557	-12.31377931599492	2.1770540820019355	
+
+Unit center:
+0.04905872053917563	0.04648014491481784	4.7617651154769844E-4	0.3075161314963626	0.06193610425759952	0.15438583368409786	0.4969401189271931	-0.09592741352205841	0.38012063330086193	-0.19462513653765637	0.07033155260219172	0.030438342905123945	-0.2719777217373842	0.021869717190668846	0.08428916645474535	-0.054903132835012296	0.015015276279674111	0.12380542088829677	0.44623905025674515	-0.15374255124531383	0.2039978537637433	-0.19948003036153142	-0.06076015409486816	-0.28388247980188996	-0.051600951871271825	
+
+Unit scale:
+0.7656664826672301	
+
+Output weights for different classes:
+-8.566663976609231	6.089691699620227	5.184196693652715	
+
+Unit center:
+0.27829888811931064	-0.21182995915367278	-0.04831771888048727	-0.19096640399838163	-0.14686516062925717	0.16161699264454976	0.17476218499097906	0.11698559357630858	-0.3548077057280909	0.16779284892295432	-0.26954152494834904	-0.08570661229683917	0.16177194067578757	-0.008409614449590394	-0.011109698090504194	-0.04670103032893789	-0.13379624465709652	0.09148337796094934	0.10645324175492935	0.0648079109327538	0.47141828106855665	0.1712940573278804	0.15078928427888025	-0.04919009214549223	0.2906775285355505	
+
+Unit scale:
+0.7753713459476054	
+
+Bias weights for different classes:
+-0.9380876337928272	1.6463194894210156	-4.034095729414548	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1935881639 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 41,23,16,32,11,14,29,44,21,6,47,36,31,8,7,35,49,25,26,15,13,5,2,12,19,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R41,23,16,32,11,14,29,44,21,6,47,36,31,8,7,35,49,25,26,15,13,5,2,12,19,51'
+
+@attribute topic_41 numeric
+@attribute topic_23 numeric
+@attribute topic_16 numeric
+@attribute topic_32 numeric
+@attribute topic_11 numeric
+@attribute topic_14 numeric
+@attribute topic_29 numeric
+@attribute topic_44 numeric
+@attribute topic_21 numeric
+@attribute topic_6 numeric
+@attribute topic_47 numeric
+@attribute topic_36 numeric
+@attribute topic_31 numeric
+@attribute topic_8 numeric
+@attribute topic_7 numeric
+@attribute topic_35 numeric
+@attribute topic_49 numeric
+@attribute topic_25 numeric
+@attribute topic_26 numeric
+@attribute topic_15 numeric
+@attribute topic_13 numeric
+@attribute topic_5 numeric
+@attribute topic_2 numeric
+@attribute topic_12 numeric
+@attribute topic_19 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-4.363164339167476	14.087389959202893	-8.312451409671604	
+
+Unit center:
+-0.21638352092953256	0.17857694757608658	0.07563872033519531	-0.2978727474917218	0.21087023845395186	0.31000449712714667	-0.028237174758105978	0.28817117801158665	0.08796269876393875	0.189699365433207	-0.06886070156681795	0.4068763488616652	-0.8837116996801699	0.12712491418706298	0.067945555302312	-0.05653366856673556	-0.08110767690712332	-0.7141703848777264	0.20411699382704226	0.04716893006979582	0.12709964484795833	-0.028839732019641046	0.14831219771240847	0.16740533351759637	0.3813688555009592	
+
+Unit scale:
+1.1883262810408048	
+
+Output weights for different classes:
+10.755625590606716	-11.317315550450319	-0.6979741163160129	
+
+Unit center:
+8.898743068299484E-4	0.17674645512441448	-0.2686216975151485	0.08389812687317788	-0.043418998908779156	-0.17181558257280022	0.12459495011242858	0.13482281846372945	0.05323709977298785	-0.05608970583605019	0.18952397453462932	-0.04627212238957408	0.12309764089786956	0.156198073913388	-0.03961083906455297	0.07059766310944607	0.07279516127169872	-0.22536053923815547	-0.11119546407873951	-0.08626333696001186	0.0640602605073518	0.6462666024334467	0.10696978791579152	0.6609955512221708	-0.14122887361980654	
+
+Unit scale:
+0.7295965266884611	
+
+Bias weights for different classes:
+-1.7772074162482316	-3.1390107461273904	2.3984773326212925	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -1394512361 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 14,5,7,9,17,30,2,12,46,45,20,36,47,18,38,49,28,16,19,35,29,39,21,32,34,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R14,5,7,9,17,30,2,12,46,45,20,36,47,18,38,49,28,16,19,35,29,39,21,32,34,51'
+
+@attribute topic_14 numeric
+@attribute topic_5 numeric
+@attribute topic_7 numeric
+@attribute topic_9 numeric
+@attribute topic_17 numeric
+@attribute topic_30 numeric
+@attribute topic_2 numeric
+@attribute topic_12 numeric
+@attribute topic_46 numeric
+@attribute topic_45 numeric
+@attribute topic_20 numeric
+@attribute topic_36 numeric
+@attribute topic_47 numeric
+@attribute topic_18 numeric
+@attribute topic_38 numeric
+@attribute topic_49 numeric
+@attribute topic_28 numeric
+@attribute topic_16 numeric
+@attribute topic_19 numeric
+@attribute topic_35 numeric
+@attribute topic_29 numeric
+@attribute topic_39 numeric
+@attribute topic_21 numeric
+@attribute topic_32 numeric
+@attribute topic_34 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+8.39935598830566	-10.424127842904166	0.0300806970998067	
+
+Unit center:
+-0.15172292001507653	0.3609124023013859	-0.027319498579546218	0.14242033378046712	-0.05206294755067627	0.10126920430448998	-0.0014861950747036123	0.4266711145970149	-0.08078104075302832	0.0014346048002175605	-0.16097943701510198	-0.10754342101334159	0.1394794658822052	0.25334596386624453	0.20137687771799193	-0.007768239559223798	0.036527046099026135	-0.16165028805108728	-0.18736355420377948	-0.005789551039704066	0.059953102303642765	-0.15520586374975262	-0.02046670346345025	0.0487544492890551	0.21442451034941062	
+
+Unit scale:
+0.8110922875929805	
+
+Output weights for different classes:
+-5.989606420867571	7.610004021978683	0.2901376320932079	
+
+Unit center:
+0.21769818997579382	-0.26680908581338686	0.053070454927143525	0.08662636874158297	-0.07430974969965896	0.1319383790377959	-0.02348710812023451	-0.04251121034739392	-0.039728104901994354	0.0918521091742097	0.10564422290316297	0.1894539072785036	0.016578281263006332	-0.12610756780185592	-0.17963448917419125	-0.045600347628781075	0.030587396730633945	0.14788417069196094	0.16952232779014978	0.0033899064525448916	0.02929528373459899	0.0072130021354334896	0.029657739645770318	-0.038202580329407945	-0.21932502112203417	
+
+Unit scale:
+0.47571484135565956	
+
+Bias weights for different classes:
+-3.293576608596676	2.662658878872216	-1.126542442810329	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -948961067 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 10,13,12,49,43,40,50,22,4,7,19,14,32,41,25,30,15,5,37,20,34,6,23,46,33,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R10,13,12,49,43,40,50,22,4,7,19,14,32,41,25,30,15,5,37,20,34,6,23,46,33,51'
+
+@attribute topic_10 numeric
+@attribute topic_13 numeric
+@attribute topic_12 numeric
+@attribute topic_49 numeric
+@attribute topic_43 numeric
+@attribute topic_40 numeric
+@attribute topic_50 numeric
+@attribute topic_22 numeric
+@attribute topic_4 numeric
+@attribute topic_7 numeric
+@attribute topic_19 numeric
+@attribute topic_14 numeric
+@attribute topic_32 numeric
+@attribute topic_41 numeric
+@attribute topic_25 numeric
+@attribute topic_30 numeric
+@attribute topic_15 numeric
+@attribute topic_5 numeric
+@attribute topic_37 numeric
+@attribute topic_20 numeric
+@attribute topic_34 numeric
+@attribute topic_6 numeric
+@attribute topic_23 numeric
+@attribute topic_46 numeric
+@attribute topic_33 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-9.999675820479847	5.947570534374722	6.613378857568736	
+
+Unit center:
+0.06706013187393492	0.04594975497496124	-0.33834205004737583	0.33055497426506436	-0.28443397408823023	-0.17888763829262402	0.13499806254868493	-0.1780644285809218	-0.014090230446176069	0.13150899301107521	0.20506316929579926	0.18781069214765567	0.30406606993486707	0.26130859163514397	0.6217351797743248	-0.116376728922001	0.12651693935466643	-0.4017888705083842	0.05524547743520345	0.13484980513044145	-0.1447394707058001	0.10812239065355295	-0.02610897247766568	0.11824649381392081	0.07627824872855261	
+
+Unit scale:
+0.7975400944028919	
+
+Output weights for different classes:
+9.001363235872144	-10.822958836435664	1.887323316096446	
+
+Unit center:
+-0.07879414041631763	-0.07316388967145615	0.41846024334185583	0.21838967027052616	0.03350473552298534	0.013521414778564354	-0.16014433869064185	0.012428184466616513	-0.06958577770474692	-0.021064818142640752	-0.25452625235171966	-0.3392110062433483	0.30582936387230164	0.151975545215381	0.5788746121842033	-0.006830091248185113	-0.08203528198121737	0.46829196082678004	0.04290202221827645	-0.2521865336303618	0.3768105591705062	-0.07116415240256634	-0.02761118964262996	0.03206114240910563	-0.04737192528897572	
+
+Unit scale:
+0.8659104819112786	
+
+Bias weights for different classes:
+-0.7605178068789624	1.6605464790946796	-3.925994969707084	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -778045881 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 23,22,3,42,14,30,50,39,38,26,9,29,49,41,28,21,44,34,46,4,10,36,18,20,17,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R23,22,3,42,14,30,50,39,38,26,9,29,49,41,28,21,44,34,46,4,10,36,18,20,17,51'
+
+@attribute topic_23 numeric
+@attribute topic_22 numeric
+@attribute topic_3 numeric
+@attribute topic_42 numeric
+@attribute topic_14 numeric
+@attribute topic_30 numeric
+@attribute topic_50 numeric
+@attribute topic_39 numeric
+@attribute topic_38 numeric
+@attribute topic_26 numeric
+@attribute topic_9 numeric
+@attribute topic_29 numeric
+@attribute topic_49 numeric
+@attribute topic_41 numeric
+@attribute topic_28 numeric
+@attribute topic_21 numeric
+@attribute topic_44 numeric
+@attribute topic_34 numeric
+@attribute topic_46 numeric
+@attribute topic_4 numeric
+@attribute topic_10 numeric
+@attribute topic_36 numeric
+@attribute topic_18 numeric
+@attribute topic_20 numeric
+@attribute topic_17 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+-0.3064004786840934	0.6268617597073948	2.724642249512464	
+
+Unit center:
+0.48590704965435777	0.21581463833383152	0.2924086817622573	0.30890496628489966	0.43142056632544734	0.11388351443672792	0.22293205991446466	0.6684250069697878	-0.3954927847112076	0.18880683093136166	0.30214311180442455	0.28119785923221086	0.3956506145751805	0.8223045339295519	0.21231179554859964	0.20500706851845563	0.4347031861782154	-0.14246737488199154	0.5311430910047594	0.6005855594324262	0.49735028843418616	0.9221105488465715	-1.5307519763989448	0.6731624184533503	0.22063779577822903	
+
+Unit scale:
+8.1490005524186	
+
+Output weights for different classes:
+10.079536652820996	-13.76893568985161	2.7797392815611333	
+
+Unit center:
+0.09127169796035528	0.3596569717728672	-0.2745143584072977	0.0886681207627859	-0.41500533730755024	0.2114485098952265	-0.15793610601428199	-0.09561594333400655	0.7234986122303418	-0.05585508025116362	0.28693194961890833	0.1915228325940608	0.21880017980252334	0.20583273041625427	0.16023481977987084	0.06533638996405748	-0.009698744691471889	0.7252024014625594	0.07771250220956424	0.00594083972146597	-0.02992925378888498	-0.27969448435539523	0.780742596142776	-0.2367257925378238	0.1105001365968988	
+
+Unit scale:
+1.130661084275702	
+
+Bias weights for different classes:
+-3.9428827573606386	3.9230514753839802	-4.646883419212405	
+
+FilteredClassifier using weka.classifiers.functions.RBFClassifier -N 2 -R 0.01 -L 1.0E-6 -C 2 -P 1 -E 1 -S -273491135 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 25,26,14,13,15,44,30,34,46,23,21,4,50,43,36,49,39,28,29,7,32,6,19,12,45,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R25,26,14,13,15,44,30,34,46,23,21,4,50,43,36,49,39,28,29,7,32,6,19,12,45,51'
+
+@attribute topic_25 numeric
+@attribute topic_26 numeric
+@attribute topic_14 numeric
+@attribute topic_13 numeric
+@attribute topic_15 numeric
+@attribute topic_44 numeric
+@attribute topic_30 numeric
+@attribute topic_34 numeric
+@attribute topic_46 numeric
+@attribute topic_23 numeric
+@attribute topic_21 numeric
+@attribute topic_4 numeric
+@attribute topic_50 numeric
+@attribute topic_43 numeric
+@attribute topic_36 numeric
+@attribute topic_49 numeric
+@attribute topic_39 numeric
+@attribute topic_28 numeric
+@attribute topic_29 numeric
+@attribute topic_7 numeric
+@attribute topic_32 numeric
+@attribute topic_6 numeric
+@attribute topic_19 numeric
+@attribute topic_12 numeric
+@attribute topic_45 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+Output weights for different classes:
+2.0834441873888556	-9.639420817824059	8.190803592952564	
+
+Unit center:
+0.6885961145478092	0.011897249440202177	-0.5035877326027318	-0.08680084096069492	-0.08812985270752033	-0.197431960707289	-0.06027541778610406	0.594363312316141	0.06070495579616848	-0.08617974649284689	0.0505184390908236	-0.1013558323739478	-0.23451068560228813	0.10406057613532538	-0.6045784347610731	0.30313555448261625	0.2181294812609189	-0.031555943336949784	0.13443098197775305	0.01488860040889746	0.46047607141113855	-0.10390550668285967	-0.3916354968980151	0.46389384083571117	0.10390582516465122	
+
+Unit scale:
+1.1593912980111973	
+
+Output weights for different classes:
+11.424941439281525	-4.097863491130818	-7.4652633683965215	
+
+Unit center:
+-0.3332840376061852	-0.1888115190191689	-0.2541784700482587	0.09942926994940228	-0.09414971690675125	0.17105752880883246	0.3702217507712737	0.6170550304705262	0.04846322391351138	0.2502441753496504	0.09733746946954067	0.16457901702538819	-0.06917780433792567	0.5965988384677927	-0.06465527961840523	0.03329406910348972	-0.45859393795992764	0.2691755860879688	0.09464468567011873	-0.004254063595089111	-0.008080298282132024	-0.05924536318123916	-0.1832374090496204	0.9248282366170552	0.03247581365411422	
+
+Unit scale:
+1.026030300615134	
+
+Bias weights for different classes:
+-4.7986512466533835	4.502879512211216	-2.0578316545287616	
+
+
+
+Time taken to build model: 4.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         973               58.6145 %
+Incorrectly Classified Instances       687               41.3855 %
+Total Number of Instances             1660     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.715    0.359    0.565      0.715    0.631      negative
+                 0.702    0.247    0.601      0.702    0.647      irrelevant
+                 0.237    0.047    0.638      0.237    0.345      positive
+Weighted Avg.    0.586    0.239    0.596      0.586    0.562      
+

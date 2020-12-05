@@ -6,6 +6,10 @@ The objective of this project is to replicate the work published by Onan et al. 
 
 ## Introduction
 
+This repository contains all the code, instructions, and data for our replication study.
+The `data` directory contains the arff files of each dataset and the results of our LDA topic generation.
+The `results` directory contains text files of the results from WEKA as well as a xlsx containing all our results.
+The instructions for following our WEKA procedure is detailed in this projects [wiki](https://github.com/sarah-davis/LDA_sentiment_replication/wiki/WEKA-instructions).
 
 ## Installation and execution
 
@@ -47,7 +51,7 @@ The objective of this project is to replicate the work published by Onan et al. 
     csv2arff data\irish_topics.csv data\irish_topics.arff
 	```
 
-6. Upload data to WEKA, train models
+6. Upload data to WEKA, train models. WEKA instructions for this project is available in this projects [wiki](https://github.com/sarah-davis/LDA_sentiment_replication/wiki/WEKA-instructions).
 
  ## Data
  

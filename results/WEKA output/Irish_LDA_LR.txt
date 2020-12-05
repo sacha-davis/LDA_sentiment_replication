@@ -1,0 +1,192 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     irish_topics
+Instances:    1660
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable       negative  irrelevant
+===================================
+topic_1          1.5962      1.4727
+topic_2           2.372      2.9541
+topic_3         -2.0688      3.3146
+topic_4          0.4126       1.656
+topic_5          1.4817     -3.9719
+topic_6         -0.5401      1.3082
+topic_7          -0.633      0.4137
+topic_8          0.2186      0.7073
+topic_9         -0.9597     -1.0556
+topic_10        -0.8079      0.6912
+topic_11        -1.9109      1.2455
+topic_12         2.7261     -1.1927
+topic_13         0.2509      1.1281
+topic_14        -1.1527      2.1752
+topic_15        -1.2395      0.9261
+topic_16        -3.9249      0.8493
+topic_17        -1.0036      0.2454
+topic_18           0.38     -2.7773
+topic_19        -1.4123      2.4226
+topic_20        -0.8593      1.6124
+topic_21        -0.6138      0.5261
+topic_22         2.6505      2.6286
+topic_23         0.6036      1.1523
+topic_24         5.2153     10.0943
+topic_25        -2.7994     -2.4071
+topic_26        -4.1381      1.3535
+topic_27        -0.7445      0.9931
+topic_28         2.0519      2.3493
+topic_29        -0.7861     -0.1983
+topic_30          8.489      8.4786
+topic_31        -1.4302     -4.1541
+topic_32        -1.4645     -1.4663
+topic_33         0.8919      2.1844
+topic_34          0.512      -2.553
+topic_35         -0.961       0.071
+topic_36         0.9473      3.1508
+topic_37        -0.4918      0.1082
+topic_38         0.8994     -1.4548
+topic_39        -4.2059     -0.3495
+topic_40         2.2275      2.5425
+topic_41        -1.1408     -0.6591
+topic_42         0.1914      0.8357
+topic_43          1.745      0.9367
+topic_44         0.2753      1.9898
+topic_45        -1.0138      0.3222
+topic_46        -1.0708      0.2585
+topic_47         0.3644      0.2454
+topic_48        -1.1574     -1.0115
+topic_49        -1.5002     -0.4457
+topic_50         0.4697       2.686
+Intercept        0.6848      0.3948
+
+
+Odds Ratios...
+                  Class
+Variable       negative  irrelevant
+===================================
+topic_1          4.9342      4.3608
+topic_2         10.7185     19.1846
+topic_3          0.1263     27.5103
+topic_4          1.5108      5.2381
+topic_5          4.4003      0.0188
+topic_6          0.5827      3.6995
+topic_7           0.531      1.5125
+topic_8          1.2443      2.0285
+topic_9           0.383       0.348
+topic_10         0.4458      1.9961
+topic_11         0.1479      3.4747
+topic_12        15.2731      0.3034
+topic_13         1.2852      3.0898
+topic_14         0.3158      8.8043
+topic_15         0.2895      2.5246
+topic_16         0.0197      2.3381
+topic_17         0.3666      1.2782
+topic_18         1.4623      0.0622
+topic_19         0.2436     11.2749
+topic_20         0.4235      5.0149
+topic_21         0.5413      1.6923
+topic_22        14.1611     13.8544
+topic_23         1.8286      3.1653
+topic_24       184.0719   24205.818
+topic_25         0.0608      0.0901
+topic_26          0.016      3.8711
+topic_27          0.475      2.6995
+topic_28         7.7824     10.4785
+topic_29         0.4556      0.8201
+topic_30      4860.8382   4810.6056
+topic_31         0.2392      0.0157
+topic_32         0.2312      0.2308
+topic_33         2.4398      8.8852
+topic_34         1.6686      0.0779
+topic_35         0.3825      1.0736
+topic_36         2.5788     23.3552
+topic_37         0.6115      1.1143
+topic_38         2.4582      0.2335
+topic_39         0.0149       0.705
+topic_40         9.2764     12.7111
+topic_41         0.3196      0.5173
+topic_42          1.211      2.3065
+topic_43          5.726      2.5515
+topic_44         1.3169      7.3142
+topic_45         0.3628      1.3802
+topic_46         0.3427       1.295
+topic_47         1.4397      1.2781
+topic_48         0.3143      0.3637
+topic_49         0.2231      0.6404
+topic_50         1.5996     14.6728
+
+
+Time taken to build model: 0.26 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         971               58.494  %
+Incorrectly Classified Instances       689               41.506  %
+Total Number of Instances             1660     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.638    0.274    0.603      0.638    0.620      negative
+                 0.662    0.235    0.598      0.662    0.629      irrelevant
+                 0.401    0.129    0.521      0.401    0.453      positive
+Weighted Avg.    0.585    0.223    0.580      0.585    0.580      
+

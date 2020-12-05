@@ -1,0 +1,1708 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     irish_topics
+Instances:    1660
+Attributes:   51
+              topic_1
+              topic_2
+              topic_3
+              topic_4
+              topic_5
+              topic_6
+              topic_7
+              topic_8
+              topic_9
+              topic_10
+              topic_11
+              topic_12
+              topic_13
+              topic_14
+              topic_15
+              topic_16
+              topic_17
+              topic_18
+              topic_19
+              topic_20
+              topic_21
+              topic_22
+              topic_23
+              topic_24
+              topic_25
+              topic_26
+              topic_27
+              topic_28
+              topic_29
+              topic_30
+              topic_31
+              topic_32
+              topic_33
+              topic_34
+              topic_35
+              topic_36
+              topic_37
+              topic_38
+              topic_39
+              topic_40
+              topic_41
+              topic_42
+              topic_43
+              topic_44
+              topic_45
+              topic_46
+              topic_47
+              topic_48
+              topic_49
+              topic_50
+              class_atr
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1024863131 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 30,21,12,15,4,33,7,9,19,43,47,35,38,37,6,24,42,49,5,39,10,20,27,18,32,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R30,21,12,15,4,33,7,9,19,43,47,35,38,37,6,24,42,49,5,39,10,20,27,18,32,51'
+
+@attribute topic_30 numeric
+@attribute topic_21 numeric
+@attribute topic_12 numeric
+@attribute topic_15 numeric
+@attribute topic_4 numeric
+@attribute topic_33 numeric
+@attribute topic_7 numeric
+@attribute topic_9 numeric
+@attribute topic_19 numeric
+@attribute topic_43 numeric
+@attribute topic_47 numeric
+@attribute topic_35 numeric
+@attribute topic_38 numeric
+@attribute topic_37 numeric
+@attribute topic_6 numeric
+@attribute topic_24 numeric
+@attribute topic_42 numeric
+@attribute topic_49 numeric
+@attribute topic_5 numeric
+@attribute topic_39 numeric
+@attribute topic_10 numeric
+@attribute topic_20 numeric
+@attribute topic_27 numeric
+@attribute topic_18 numeric
+@attribute topic_32 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_24 < 0.08
+|   topic_18 < 0
+|   |   topic_5 < 0.11
+|   |   |   topic_12 < 0.12
+|   |   |   |   topic_43 < 0.07
+|   |   |   |   |   topic_38 < 0.02
+|   |   |   |   |   |   topic_30 < 0.05
+|   |   |   |   |   |   |   topic_47 < 0.04
+|   |   |   |   |   |   |   |   topic_20 < 0
+|   |   |   |   |   |   |   |   |   topic_30 < 0
+|   |   |   |   |   |   |   |   |   |   topic_24 < 0 : irrelevant (62/34) [37/18]
+|   |   |   |   |   |   |   |   |   |   topic_24 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_24 < 0 : negative (8/3) [10/6]
+|   |   |   |   |   |   |   |   |   |   |   topic_24 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_5 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 < 0 : negative (2/0) [4/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 >= 0 : irrelevant (7/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : irrelevant (191/98) [71/27]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0.25 : negative (5/1) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0.05 : irrelevant (13/4) [3/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_5 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_12 < 0 : negative (4/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_12 >= 0 : positive (15/7) [10/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_37 < 0.02
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_24 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_9 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0.42
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_19 < 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_38 < 0 : positive (14/6) [8/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_38 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0 : negative (5/0) [8/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0 : positive (9/5) [5/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 < 0 : irrelevant (3/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 >= 0 : negative (4/2) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_19 >= 0.25 : irrelevant (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0.42 : positive (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_9 >= 0 : positive (8/1) [5/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_24 >= 0 : irrelevant (9/3) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_37 >= 0.02 : irrelevant (9/1) [3/1]
+|   |   |   |   |   |   |   |   |   topic_30 >= 0 : positive (13/3) [4/3]
+|   |   |   |   |   |   |   |   topic_20 >= 0
+|   |   |   |   |   |   |   |   |   topic_7 < 0
+|   |   |   |   |   |   |   |   |   |   topic_24 < 0 : negative (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   topic_24 >= 0 : irrelevant (26/6) [14/8]
+|   |   |   |   |   |   |   |   |   topic_7 >= 0 : irrelevant (9/4) [3/2]
+|   |   |   |   |   |   |   topic_47 >= 0.04
+|   |   |   |   |   |   |   |   topic_32 < 0 : negative (4/0) [1/0]
+|   |   |   |   |   |   |   |   topic_32 >= 0 : positive (13/6) [5/3]
+|   |   |   |   |   |   topic_30 >= 0.05 : irrelevant (12/5) [4/2]
+|   |   |   |   |   topic_38 >= 0.02 : negative (85/51) [56/30]
+|   |   |   |   topic_43 >= 0.07 : negative (83/43) [50/30]
+|   |   |   topic_12 >= 0.12 : negative (33/8) [14/4]
+|   |   topic_5 >= 0.11 : negative (100/30) [51/15]
+|   topic_18 >= 0
+|   |   topic_39 < 0 : negative (79/21) [47/17]
+|   |   topic_39 >= 0
+|   |   |   topic_12 < 0
+|   |   |   |   topic_42 < 0.28 : positive (131/69) [57/30]
+|   |   |   |   topic_42 >= 0.28 : irrelevant (3/0) [3/2]
+|   |   |   topic_12 >= 0
+|   |   |   |   topic_4 < 0 : negative (13/1) [10/5]
+|   |   |   |   topic_4 >= 0
+|   |   |   |   |   topic_30 < 0 : irrelevant (3/0) [1/1]
+|   |   |   |   |   topic_30 >= 0
+|   |   |   |   |   |   topic_15 < 0
+|   |   |   |   |   |   |   topic_6 < 0.03 : negative (15/3) [6/4]
+|   |   |   |   |   |   |   topic_6 >= 0.03 : irrelevant (2/1) [2/1]
+|   |   |   |   |   |   topic_15 >= 0
+|   |   |   |   |   |   |   topic_30 < 0
+|   |   |   |   |   |   |   |   topic_30 < 0 : irrelevant (2/0) [1/0]
+|   |   |   |   |   |   |   |   topic_30 >= 0 : negative (2/1) [1/0]
+|   |   |   |   |   |   |   topic_30 >= 0 : positive (3/2) [4/2]
+topic_24 >= 0.08
+|   topic_5 < 0.04
+|   |   topic_38 < 0.06 : irrelevant (83/6) [38/4]
+|   |   topic_38 >= 0.06 : negative (3/0) [2/1]
+|   topic_5 >= 0.04 : negative (14/4) [4/0]
+
+Size of the tree : 85
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1547802301 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 20,16,4,27,46,33,21,14,26,17,22,9,29,40,49,1,6,42,48,11,13,25,19,2,34,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R20,16,4,27,46,33,21,14,26,17,22,9,29,40,49,1,6,42,48,11,13,25,19,2,34,51'
+
+@attribute topic_20 numeric
+@attribute topic_16 numeric
+@attribute topic_4 numeric
+@attribute topic_27 numeric
+@attribute topic_46 numeric
+@attribute topic_33 numeric
+@attribute topic_21 numeric
+@attribute topic_14 numeric
+@attribute topic_26 numeric
+@attribute topic_17 numeric
+@attribute topic_22 numeric
+@attribute topic_9 numeric
+@attribute topic_29 numeric
+@attribute topic_40 numeric
+@attribute topic_49 numeric
+@attribute topic_1 numeric
+@attribute topic_6 numeric
+@attribute topic_42 numeric
+@attribute topic_48 numeric
+@attribute topic_11 numeric
+@attribute topic_13 numeric
+@attribute topic_25 numeric
+@attribute topic_19 numeric
+@attribute topic_2 numeric
+@attribute topic_34 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_25 < 0.12
+|   topic_14 < 0.03
+|   |   topic_22 < 0.08
+|   |   |   topic_16 < 0
+|   |   |   |   topic_34 < 0.13
+|   |   |   |   |   topic_20 < 0.25
+|   |   |   |   |   |   topic_20 < 0
+|   |   |   |   |   |   |   topic_13 < 0.44
+|   |   |   |   |   |   |   |   topic_1 < 0.69
+|   |   |   |   |   |   |   |   |   topic_19 < 0.47
+|   |   |   |   |   |   |   |   |   |   topic_49 < 0.64
+|   |   |   |   |   |   |   |   |   |   |   topic_46 < 0.84
+|   |   |   |   |   |   |   |   |   |   |   |   topic_11 < 0 : negative (164/80) [74/28]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_11 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0 : irrelevant (6/0) [4/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_21 < 0.15
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_9 < 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 < 0.21
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0.33
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_27 < 0.76
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 < 0.37
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 < 0.17
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 < 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0.07
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_2 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_42 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_27 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_11 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : positive (14/8) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : irrelevant (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : negative (7/3) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_48 < 0 : irrelevant (3/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_48 >= 0 : negative (11/5) [9/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0 : negative (6/3) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : irrelevant (7/3) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0 : negative (7/2) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 >= 0 : irrelevant (12/4) [7/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0 : negative (6/0) [6/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0 : positive (9/4) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_21 < 0 : irrelevant (5/0) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_21 >= 0 : negative (7/3) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_11 >= 0 : positive (7/3) [6/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0 : irrelevant (12/5) [6/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : positive (3/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_27 >= 0 : negative (49/22) [22/16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 < 0.11 : positive (7/0) [6/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 >= 0.11 : negative (6/4) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_42 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0 : negative (5/0) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0 : negative (15/8) [7/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0 : irrelevant (20/5) [5/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : negative (36/16) [13/8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : positive (5/1) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : negative (11/5) [6/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_2 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : negative (6/1) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : irrelevant (8/3) [5/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0.07 : irrelevant (12/5) [6/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 >= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : negative (3/0) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : positive (7/3) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 >= 0.17 : negative (10/4) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 >= 0.05 : negative (7/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 >= 0.37 : irrelevant (3/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_27 >= 0.76 : irrelevant (3/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0.33 : positive (5/1) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0.17
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 < 0 : positive (6/2) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 >= 0 : irrelevant (4/0) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0.17 : irrelevant (7/2) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_1 >= 0.21 : negative (13/4) [10/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_9 >= 0.01 : negative (22/6) [10/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_21 >= 0.15 : irrelevant (6/1) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   topic_46 >= 0.84 : irrelevant (4/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   topic_49 >= 0.64 : irrelevant (5/0) [2/1]
+|   |   |   |   |   |   |   |   |   topic_19 >= 0.47 : irrelevant (8/1) [3/0]
+|   |   |   |   |   |   |   |   topic_1 >= 0.69 : irrelevant (8/1) [4/2]
+|   |   |   |   |   |   |   topic_13 >= 0.44 : irrelevant (15/5) [7/4]
+|   |   |   |   |   |   topic_20 >= 0
+|   |   |   |   |   |   |   topic_49 < 0.04 : negative (15/7) [12/7]
+|   |   |   |   |   |   |   topic_49 >= 0.04 : positive (3/0) [0/0]
+|   |   |   |   |   topic_20 >= 0.25 : irrelevant (16/4) [5/1]
+|   |   |   |   topic_34 >= 0.13 : negative (54/15) [23/7]
+|   |   |   topic_16 >= 0
+|   |   |   |   topic_27 < 0
+|   |   |   |   |   topic_16 < 0.3
+|   |   |   |   |   |   topic_16 < 0.27
+|   |   |   |   |   |   |   topic_21 < 0
+|   |   |   |   |   |   |   |   topic_1 < 0.44
+|   |   |   |   |   |   |   |   |   topic_16 < 0 : positive (22/10) [9/6]
+|   |   |   |   |   |   |   |   |   topic_16 >= 0
+|   |   |   |   |   |   |   |   |   |   topic_11 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_20 < 0.14
+|   |   |   |   |   |   |   |   |   |   |   |   topic_1 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_19 < 0.19
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0.18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_6 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 < 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0 : positive (5/0) [6/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0 : negative (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 >= 0.1 : negative (8/2) [8/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : irrelevant (4/0) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 < 0.18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 < 0.06
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0.07
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_42 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : negative (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 < 0 : irrelevant (2/0) [2/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : positive (2/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : negative (12/6) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_42 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0 : irrelevant (11/3) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0 : negative (5/2) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0.07 : irrelevant (3/3) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 >= 0.06 : positive (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 >= 0.18 : negative (3/0) [3/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_6 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 < 0 : irrelevant (12/4) [6/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 >= 0 : positive (7/3) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0 : negative (6/1) [7/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 < 0 : irrelevant (2/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0 : positive (5/1) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0.18 : irrelevant (7/2) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_19 >= 0.19 : irrelevant (3/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 >= 0 : irrelevant (7/1) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_1 >= 0 : irrelevant (9/4) [10/5]
+|   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0.14 : irrelevant (7/1) [3/1]
+|   |   |   |   |   |   |   |   |   |   topic_11 >= 0 : negative (7/2) [1/1]
+|   |   |   |   |   |   |   |   topic_1 >= 0.44 : negative (6/1) [0/0]
+|   |   |   |   |   |   |   topic_21 >= 0 : negative (17/6) [9/4]
+|   |   |   |   |   |   topic_16 >= 0.27 : negative (4/0) [1/1]
+|   |   |   |   |   topic_16 >= 0.3
+|   |   |   |   |   |   topic_13 < 0
+|   |   |   |   |   |   |   topic_4 < 0 : irrelevant (15/7) [7/2]
+|   |   |   |   |   |   |   topic_4 >= 0 : positive (4/0) [1/0]
+|   |   |   |   |   |   topic_13 >= 0 : irrelevant (6/0) [1/0]
+|   |   |   |   topic_27 >= 0 : irrelevant (19/3) [6/2]
+|   |   topic_22 >= 0.08
+|   |   |   topic_9 < 0.03
+|   |   |   |   topic_46 < 0
+|   |   |   |   |   topic_4 < 0 : negative (5/1) [5/2]
+|   |   |   |   |   topic_4 >= 0 : irrelevant (7/3) [3/1]
+|   |   |   |   topic_46 >= 0 : negative (18/0) [11/8]
+|   |   |   topic_9 >= 0.03 : irrelevant (2/0) [0/0]
+|   topic_14 >= 0.03 : irrelevant (40/8) [20/13]
+topic_25 >= 0.12
+|   topic_13 < 0 : positive (101/54) [63/34]
+|   topic_13 >= 0
+|   |   topic_14 < 0
+|   |   |   topic_16 < 0 : positive (6/1) [0/0]
+|   |   |   topic_16 >= 0 : irrelevant (2/0) [1/0]
+|   |   topic_14 >= 0 : positive (7/0) [0/0]
+
+Size of the tree : 185
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1295068405 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 32,21,44,43,15,1,10,50,49,27,7,12,31,3,6,22,9,48,25,36,2,5,26,11,29,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R32,21,44,43,15,1,10,50,49,27,7,12,31,3,6,22,9,48,25,36,2,5,26,11,29,51'
+
+@attribute topic_32 numeric
+@attribute topic_21 numeric
+@attribute topic_44 numeric
+@attribute topic_43 numeric
+@attribute topic_15 numeric
+@attribute topic_1 numeric
+@attribute topic_10 numeric
+@attribute topic_50 numeric
+@attribute topic_49 numeric
+@attribute topic_27 numeric
+@attribute topic_7 numeric
+@attribute topic_12 numeric
+@attribute topic_31 numeric
+@attribute topic_3 numeric
+@attribute topic_6 numeric
+@attribute topic_22 numeric
+@attribute topic_9 numeric
+@attribute topic_48 numeric
+@attribute topic_25 numeric
+@attribute topic_36 numeric
+@attribute topic_2 numeric
+@attribute topic_5 numeric
+@attribute topic_26 numeric
+@attribute topic_11 numeric
+@attribute topic_29 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_31 < 0.09
+|   topic_5 < 0.05
+|   |   topic_12 < 0.12
+|   |   |   topic_25 < 0.1
+|   |   |   |   topic_43 < 0.06
+|   |   |   |   |   topic_22 < 0
+|   |   |   |   |   |   topic_12 < 0
+|   |   |   |   |   |   |   topic_21 < 0
+|   |   |   |   |   |   |   |   topic_32 < 0 : irrelevant (72/42) [29/14]
+|   |   |   |   |   |   |   |   topic_32 >= 0 : positive (5/1) [5/3]
+|   |   |   |   |   |   |   topic_21 >= 0
+|   |   |   |   |   |   |   |   topic_10 < 0
+|   |   |   |   |   |   |   |   |   topic_9 < 0 : irrelevant (31/10) [18/9]
+|   |   |   |   |   |   |   |   |   topic_9 >= 0 : negative (3/0) [1/0]
+|   |   |   |   |   |   |   |   topic_10 >= 0 : irrelevant (89/36) [41/16]
+|   |   |   |   |   |   topic_12 >= 0 : irrelevant (220/95) [125/56]
+|   |   |   |   |   topic_22 >= 0 : irrelevant (30/6) [18/7]
+|   |   |   |   topic_43 >= 0.06
+|   |   |   |   |   topic_44 < 0 : negative (87/35) [45/23]
+|   |   |   |   |   topic_44 >= 0
+|   |   |   |   |   |   topic_36 < 0
+|   |   |   |   |   |   |   topic_22 < 0
+|   |   |   |   |   |   |   |   topic_50 < 0
+|   |   |   |   |   |   |   |   |   topic_31 < 0 : irrelevant (5/1) [1/0]
+|   |   |   |   |   |   |   |   |   topic_31 >= 0 : negative (5/2) [4/2]
+|   |   |   |   |   |   |   |   topic_50 >= 0 : irrelevant (8/1) [1/0]
+|   |   |   |   |   |   |   topic_22 >= 0 : negative (8/2) [4/3]
+|   |   |   |   |   |   topic_36 >= 0 : irrelevant (7/0) [2/2]
+|   |   |   topic_25 >= 0.1
+|   |   |   |   topic_32 < 0.01
+|   |   |   |   |   topic_49 < 0.05
+|   |   |   |   |   |   topic_1 < 0
+|   |   |   |   |   |   |   topic_25 < 0.22
+|   |   |   |   |   |   |   |   topic_31 < 0
+|   |   |   |   |   |   |   |   |   topic_7 < 0 : negative (3/1) [3/1]
+|   |   |   |   |   |   |   |   |   topic_7 >= 0 : positive (6/0) [2/1]
+|   |   |   |   |   |   |   |   topic_31 >= 0 : negative (3/0) [1/1]
+|   |   |   |   |   |   |   topic_25 >= 0.22 : positive (27/15) [12/5]
+|   |   |   |   |   |   topic_1 >= 0
+|   |   |   |   |   |   |   topic_22 < 0.07 : positive (14/4) [3/0]
+|   |   |   |   |   |   |   topic_22 >= 0.07 : irrelevant (2/0) [1/0]
+|   |   |   |   |   topic_49 >= 0.05 : positive (8/0) [1/0]
+|   |   |   |   topic_32 >= 0.01 : irrelevant (8/1) [3/2]
+|   |   topic_12 >= 0.12 : negative (50/10) [20/4]
+|   topic_5 >= 0.05 : negative (145/48) [77/29]
+topic_31 >= 0.09
+|   topic_31 < 0.58 : negative (182/101) [97/55]
+|   topic_31 >= 0.58 : positive (88/29) [40/19]
+
+Size of the tree : 49
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1426106928 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 2,32,50,24,4,43,16,33,7,44,3,15,28,11,25,6,21,46,10,26,40,20,49,8,22,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R2,32,50,24,4,43,16,33,7,44,3,15,28,11,25,6,21,46,10,26,40,20,49,8,22,51'
+
+@attribute topic_2 numeric
+@attribute topic_32 numeric
+@attribute topic_50 numeric
+@attribute topic_24 numeric
+@attribute topic_4 numeric
+@attribute topic_43 numeric
+@attribute topic_16 numeric
+@attribute topic_33 numeric
+@attribute topic_7 numeric
+@attribute topic_44 numeric
+@attribute topic_3 numeric
+@attribute topic_15 numeric
+@attribute topic_28 numeric
+@attribute topic_11 numeric
+@attribute topic_25 numeric
+@attribute topic_6 numeric
+@attribute topic_21 numeric
+@attribute topic_46 numeric
+@attribute topic_10 numeric
+@attribute topic_26 numeric
+@attribute topic_40 numeric
+@attribute topic_20 numeric
+@attribute topic_49 numeric
+@attribute topic_8 numeric
+@attribute topic_22 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_24 < 0.06
+|   topic_16 < 0.15
+|   |   topic_25 < 0.09
+|   |   |   topic_26 < 0
+|   |   |   |   topic_32 < 0.1
+|   |   |   |   |   topic_24 < 0
+|   |   |   |   |   |   topic_50 < 0
+|   |   |   |   |   |   |   topic_3 < 0.01
+|   |   |   |   |   |   |   |   topic_49 < 0.91
+|   |   |   |   |   |   |   |   |   topic_4 < 0.01
+|   |   |   |   |   |   |   |   |   |   topic_22 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_7 < 0 : negative (40/13) [21/13]
+|   |   |   |   |   |   |   |   |   |   |   topic_7 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_28 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_11 < 0 : negative (18/7) [12/6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_11 >= 0 : irrelevant (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0 : positive (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 >= 0 : negative (18/5) [15/4]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_28 >= 0 : negative (23/12) [9/5]
+|   |   |   |   |   |   |   |   |   |   topic_22 >= 0 : negative (7/0) [2/1]
+|   |   |   |   |   |   |   |   |   topic_4 >= 0.01
+|   |   |   |   |   |   |   |   |   |   topic_40 < 0 : irrelevant (12/4) [8/3]
+|   |   |   |   |   |   |   |   |   |   topic_40 >= 0 : negative (5/1) [3/1]
+|   |   |   |   |   |   |   |   topic_49 >= 0.91 : irrelevant (3/0) [0/0]
+|   |   |   |   |   |   |   topic_3 >= 0.01 : irrelevant (3/0) [0/0]
+|   |   |   |   |   |   topic_50 >= 0 : negative (27/9) [12/7]
+|   |   |   |   |   topic_24 >= 0
+|   |   |   |   |   |   topic_8 < 0
+|   |   |   |   |   |   |   topic_28 < 0 : negative (9/1) [3/2]
+|   |   |   |   |   |   |   topic_28 >= 0 : irrelevant (7/2) [3/1]
+|   |   |   |   |   |   topic_8 >= 0 : negative (11/0) [8/2]
+|   |   |   |   topic_32 >= 0.1 : positive (6/1) [9/5]
+|   |   |   topic_26 >= 0
+|   |   |   |   topic_32 < 0 : irrelevant (36/15) [26/18]
+|   |   |   |   topic_32 >= 0
+|   |   |   |   |   topic_22 < 0.07
+|   |   |   |   |   |   topic_20 < 0.33
+|   |   |   |   |   |   |   topic_3 < 0.16
+|   |   |   |   |   |   |   |   topic_15 < 0.23
+|   |   |   |   |   |   |   |   |   topic_2 < 0
+|   |   |   |   |   |   |   |   |   |   topic_6 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_8 < 0.59
+|   |   |   |   |   |   |   |   |   |   |   |   topic_16 < 0.08
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 < 0.22
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_28 < 0.35
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 < 0.36
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 < 0 : negative (92/55) [44/24]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 >= 0 : irrelevant (13/6) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 >= 0.36 : negative (13/3) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 >= 0 : negative (341/198) [152/84]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_28 >= 0.35 : irrelevant (6/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 >= 0.22 : negative (9/1) [5/4]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_16 >= 0.08 : negative (6/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   topic_8 >= 0.59 : irrelevant (7/1) [3/2]
+|   |   |   |   |   |   |   |   |   |   topic_6 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_43 < 0 : positive (22/8) [14/8]
+|   |   |   |   |   |   |   |   |   |   |   topic_43 >= 0 : negative (22/8) [13/7]
+|   |   |   |   |   |   |   |   |   topic_2 >= 0 : negative (16/6) [10/4]
+|   |   |   |   |   |   |   |   topic_15 >= 0.23
+|   |   |   |   |   |   |   |   |   topic_49 < 0 : irrelevant (10/3) [3/2]
+|   |   |   |   |   |   |   |   |   topic_49 >= 0
+|   |   |   |   |   |   |   |   |   |   topic_15 < 0.38 : positive (3/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   topic_15 >= 0.38 : irrelevant (7/2) [1/0]
+|   |   |   |   |   |   |   topic_3 >= 0.16 : irrelevant (10/2) [0/0]
+|   |   |   |   |   |   topic_20 >= 0.33 : irrelevant (11/2) [6/1]
+|   |   |   |   |   topic_22 >= 0.07 : negative (24/10) [10/3]
+|   |   topic_25 >= 0.09 : positive (124/64) [57/27]
+|   topic_16 >= 0.15 : irrelevant (40/15) [28/14]
+topic_24 >= 0.06 : irrelevant (100/19) [63/18]
+
+Size of the tree : 73
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1654123249 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 26,40,23,34,30,17,18,50,5,3,43,2,14,42,29,44,28,35,38,20,39,19,11,36,16,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R26,40,23,34,30,17,18,50,5,3,43,2,14,42,29,44,28,35,38,20,39,19,11,36,16,51'
+
+@attribute topic_26 numeric
+@attribute topic_40 numeric
+@attribute topic_23 numeric
+@attribute topic_34 numeric
+@attribute topic_30 numeric
+@attribute topic_17 numeric
+@attribute topic_18 numeric
+@attribute topic_50 numeric
+@attribute topic_5 numeric
+@attribute topic_3 numeric
+@attribute topic_43 numeric
+@attribute topic_2 numeric
+@attribute topic_14 numeric
+@attribute topic_42 numeric
+@attribute topic_29 numeric
+@attribute topic_44 numeric
+@attribute topic_28 numeric
+@attribute topic_35 numeric
+@attribute topic_38 numeric
+@attribute topic_20 numeric
+@attribute topic_39 numeric
+@attribute topic_19 numeric
+@attribute topic_11 numeric
+@attribute topic_36 numeric
+@attribute topic_16 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_5 < 0.11
+|   topic_18 < 0.03
+|   |   topic_38 < 0.02
+|   |   |   topic_19 < 0
+|   |   |   |   topic_26 < 0
+|   |   |   |   |   topic_43 < 0.03
+|   |   |   |   |   |   topic_34 < 0.1
+|   |   |   |   |   |   |   topic_36 < 0.6
+|   |   |   |   |   |   |   |   topic_20 < 0.32
+|   |   |   |   |   |   |   |   |   topic_20 < 0.02
+|   |   |   |   |   |   |   |   |   |   topic_39 < 0.01
+|   |   |   |   |   |   |   |   |   |   |   topic_14 < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0.72
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 < 0.21
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0 : irrelevant (13/6) [9/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_3 < 0 : negative (20/11) [10/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_3 >= 0 : irrelevant (6/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 >= 0 : positive (14/5) [8/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 >= 0 : irrelevant (110/55) [48/25]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_18 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 < 0 : irrelevant (8/4) [5/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 >= 0 : positive (2/0) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_40 >= 0 : irrelevant (16/4) [14/9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_18 >= 0 : irrelevant (21/11) [17/9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 >= 0 : irrelevant (22/10) [13/6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 >= 0.21
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 < 0 : positive (3/0) [2/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0 : irrelevant (9/4) [9/1]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0.72 : negative (3/0) [2/2]
+|   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0.05 : irrelevant (8/1) [6/3]
+|   |   |   |   |   |   |   |   |   |   topic_39 >= 0.01 : irrelevant (31/13) [10/5]
+|   |   |   |   |   |   |   |   |   topic_20 >= 0.02 : negative (6/2) [2/1]
+|   |   |   |   |   |   |   |   topic_20 >= 0.32 : irrelevant (12/1) [4/1]
+|   |   |   |   |   |   |   topic_36 >= 0.6 : irrelevant (9/0) [3/2]
+|   |   |   |   |   |   topic_34 >= 0.1 : negative (23/10) [15/6]
+|   |   |   |   |   topic_43 >= 0.03
+|   |   |   |   |   |   topic_39 < 0 : negative (10/2) [7/3]
+|   |   |   |   |   |   topic_39 >= 0
+|   |   |   |   |   |   |   topic_29 < 0.23
+|   |   |   |   |   |   |   |   topic_16 < 0
+|   |   |   |   |   |   |   |   |   topic_43 < 0.88 : irrelevant (35/16) [35/18]
+|   |   |   |   |   |   |   |   |   topic_43 >= 0.88 : negative (5/1) [0/0]
+|   |   |   |   |   |   |   |   topic_16 >= 0
+|   |   |   |   |   |   |   |   |   topic_17 < 0 : irrelevant (9/3) [7/2]
+|   |   |   |   |   |   |   |   |   topic_17 >= 0 : negative (2/0) [1/0]
+|   |   |   |   |   |   |   topic_29 >= 0.23 : negative (6/0) [2/1]
+|   |   |   |   topic_26 >= 0
+|   |   |   |   |   topic_44 < 0
+|   |   |   |   |   |   topic_36 < 0.07
+|   |   |   |   |   |   |   topic_34 < 0.18
+|   |   |   |   |   |   |   |   topic_35 < 0.06
+|   |   |   |   |   |   |   |   |   topic_42 < 0
+|   |   |   |   |   |   |   |   |   |   topic_5 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_3 < 0 : irrelevant (3/1) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   topic_3 >= 0 : positive (6/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   topic_5 >= 0 : irrelevant (56/33) [13/7]
+|   |   |   |   |   |   |   |   |   topic_42 >= 0 : positive (38/14) [12/8]
+|   |   |   |   |   |   |   |   topic_35 >= 0.06 : positive (5/0) [0/0]
+|   |   |   |   |   |   |   topic_34 >= 0.18 : negative (3/0) [5/3]
+|   |   |   |   |   |   topic_36 >= 0.07 : irrelevant (6/0) [5/2]
+|   |   |   |   |   topic_44 >= 0
+|   |   |   |   |   |   topic_36 < 0 : irrelevant (16/2) [5/1]
+|   |   |   |   |   |   topic_36 >= 0
+|   |   |   |   |   |   |   topic_30 < 0 : negative (6/2) [3/3]
+|   |   |   |   |   |   |   topic_30 >= 0
+|   |   |   |   |   |   |   |   topic_3 < 0 : irrelevant (7/0) [7/3]
+|   |   |   |   |   |   |   |   topic_3 >= 0
+|   |   |   |   |   |   |   |   |   topic_5 < 0
+|   |   |   |   |   |   |   |   |   |   topic_23 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_3 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0.36
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0 : positive (2/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0 : irrelevant (44/19) [20/8]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0.36 : negative (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   topic_3 >= 0 : negative (5/2) [1/0]
+|   |   |   |   |   |   |   |   |   |   topic_23 >= 0 : irrelevant (5/0) [2/0]
+|   |   |   |   |   |   |   |   |   topic_5 >= 0 : positive (4/1) [0/0]
+|   |   |   topic_19 >= 0 : irrelevant (46/12) [11/4]
+|   |   topic_38 >= 0.02
+|   |   |   topic_2 < 0
+|   |   |   |   topic_34 < 0 : irrelevant (3/0) [1/0]
+|   |   |   |   topic_34 >= 0 : negative (13/2) [4/2]
+|   |   |   topic_2 >= 0
+|   |   |   |   topic_42 < 0 : positive (6/0) [4/3]
+|   |   |   |   topic_42 >= 0
+|   |   |   |   |   topic_20 < 0
+|   |   |   |   |   |   topic_34 < 0
+|   |   |   |   |   |   |   topic_38 < 0.04 : negative (5/0) [2/1]
+|   |   |   |   |   |   |   topic_38 >= 0.04 : positive (53/30) [29/15]
+|   |   |   |   |   |   topic_34 >= 0
+|   |   |   |   |   |   |   topic_39 < 0 : negative (16/5) [10/5]
+|   |   |   |   |   |   |   topic_39 >= 0 : irrelevant (3/0) [1/0]
+|   |   |   |   |   topic_20 >= 0 : negative (18/8) [5/2]
+|   topic_18 >= 0.03
+|   |   topic_36 < 0
+|   |   |   topic_18 < 0.32
+|   |   |   |   topic_39 < 0.18
+|   |   |   |   |   topic_43 < 0.05
+|   |   |   |   |   |   topic_3 < 0.02 : negative (67/34) [38/18]
+|   |   |   |   |   |   topic_3 >= 0.02 : irrelevant (2/0) [2/1]
+|   |   |   |   |   topic_43 >= 0.05 : negative (10/2) [8/1]
+|   |   |   |   topic_39 >= 0.18 : positive (11/2) [3/0]
+|   |   |   topic_18 >= 0.32
+|   |   |   |   topic_18 < 0.43 : negative (16/0) [10/6]
+|   |   |   |   topic_18 >= 0.43
+|   |   |   |   |   topic_38 < 0
+|   |   |   |   |   |   topic_39 < 0.04 : negative (32/5) [12/1]
+|   |   |   |   |   |   topic_39 >= 0.04 : positive (2/0) [1/0]
+|   |   |   |   |   topic_38 >= 0 : negative (15/8) [14/7]
+|   |   topic_36 >= 0
+|   |   |   topic_39 < 0 : irrelevant (8/1) [3/3]
+|   |   |   topic_39 >= 0
+|   |   |   |   topic_43 < 0 : positive (14/4) [5/2]
+|   |   |   |   topic_43 >= 0
+|   |   |   |   |   topic_18 < 0.23
+|   |   |   |   |   |   topic_44 < 0 : positive (4/1) [1/0]
+|   |   |   |   |   |   topic_44 >= 0 : irrelevant (2/0) [1/0]
+|   |   |   |   |   topic_18 >= 0.23 : negative (8/2) [4/3]
+topic_5 >= 0.11
+|   topic_18 < 0
+|   |   topic_38 < 0.07
+|   |   |   topic_5 < 0.71
+|   |   |   |   topic_43 < 0 : irrelevant (7/4) [3/1]
+|   |   |   |   topic_43 >= 0 : negative (63/20) [35/11]
+|   |   |   topic_5 >= 0.71 : negative (13/0) [2/1]
+|   |   topic_38 >= 0.07 : negative (19/0) [9/1]
+|   topic_18 >= 0 : negative (39/18) [17/4]
+
+Size of the tree : 135
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1935881639 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 41,23,16,32,11,14,29,44,21,6,47,36,31,8,7,35,49,25,26,15,13,5,2,12,19,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R41,23,16,32,11,14,29,44,21,6,47,36,31,8,7,35,49,25,26,15,13,5,2,12,19,51'
+
+@attribute topic_41 numeric
+@attribute topic_23 numeric
+@attribute topic_16 numeric
+@attribute topic_32 numeric
+@attribute topic_11 numeric
+@attribute topic_14 numeric
+@attribute topic_29 numeric
+@attribute topic_44 numeric
+@attribute topic_21 numeric
+@attribute topic_6 numeric
+@attribute topic_47 numeric
+@attribute topic_36 numeric
+@attribute topic_31 numeric
+@attribute topic_8 numeric
+@attribute topic_7 numeric
+@attribute topic_35 numeric
+@attribute topic_49 numeric
+@attribute topic_25 numeric
+@attribute topic_26 numeric
+@attribute topic_15 numeric
+@attribute topic_13 numeric
+@attribute topic_5 numeric
+@attribute topic_2 numeric
+@attribute topic_12 numeric
+@attribute topic_19 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_31 < 0.26
+|   topic_5 < 0.06
+|   |   topic_12 < 0.22
+|   |   |   topic_25 < 0.11
+|   |   |   |   topic_16 < 0
+|   |   |   |   |   topic_31 < 0.09
+|   |   |   |   |   |   topic_36 < 0.25
+|   |   |   |   |   |   |   topic_32 < 0.05
+|   |   |   |   |   |   |   |   topic_35 < 0
+|   |   |   |   |   |   |   |   |   topic_29 < 0.33
+|   |   |   |   |   |   |   |   |   |   topic_36 < 0 : positive (3/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   topic_36 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_41 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0.52
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0.26
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0.19
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_47 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_44 < 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0.06
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_12 < 0.02 : negative (34/8) [24/14]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_12 >= 0.02 : irrelevant (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0.06 : irrelevant (9/3) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_44 >= 0.01 : irrelevant (2/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_47 >= 0 : negative (8/0) [8/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0.19 : irrelevant (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0.26 : irrelevant (2/0) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0.52 : irrelevant (3/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_47 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 < 0.2 : negative (15/5) [6/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0.2 : positive (2/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 >= 0 : irrelevant (4/1) [4/1]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_47 >= 0 : negative (19/9) [9/5]
+|   |   |   |   |   |   |   |   |   topic_29 >= 0.33 : positive (5/2) [0/0]
+|   |   |   |   |   |   |   |   topic_35 >= 0 : negative (11/4) [3/2]
+|   |   |   |   |   |   |   topic_32 >= 0.05 : positive (12/6) [8/2]
+|   |   |   |   |   |   topic_36 >= 0.25 : irrelevant (4/0) [3/1]
+|   |   |   |   |   topic_31 >= 0.09
+|   |   |   |   |   |   topic_41 < 0 : negative (8/3) [3/1]
+|   |   |   |   |   |   topic_41 >= 0 : positive (4/0) [1/1]
+|   |   |   |   topic_16 >= 0
+|   |   |   |   |   topic_16 < 0.28
+|   |   |   |   |   |   topic_32 < 0.15
+|   |   |   |   |   |   |   topic_31 < 0.02
+|   |   |   |   |   |   |   |   topic_5 < 0.05
+|   |   |   |   |   |   |   |   |   topic_49 < 0.17
+|   |   |   |   |   |   |   |   |   |   topic_19 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_15 < 0.36
+|   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 < 0.68
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_47 < 0.16
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_11 < 0.2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_47 < 0.02
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0 : irrelevant (175/84) [117/54]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 < 0 : negative (6/3) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 >= 0 : irrelevant (8/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0 : negative (9/3) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0 : irrelevant (13/7) [6/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 >= 0 : irrelevant (17/5) [8/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0.01 : irrelevant (17/4) [11/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_47 >= 0.02 : negative (2/0) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_11 >= 0.2 : irrelevant (8/2) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_47 >= 0.16 : irrelevant (5/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0.19 : irrelevant (10/0) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0.19 : negative (13/6) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0 : irrelevant (21/5) [17/7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0.68 : negative (4/2) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0 : negative (22/13) [15/9]
+|   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0.36 : irrelevant (12/2) [1/1]
+|   |   |   |   |   |   |   |   |   |   topic_19 >= 0 : irrelevant (22/2) [13/1]
+|   |   |   |   |   |   |   |   |   topic_49 >= 0.17 : positive (7/2) [5/3]
+|   |   |   |   |   |   |   |   topic_5 >= 0.05 : negative (4/0) [4/2]
+|   |   |   |   |   |   |   topic_31 >= 0.02
+|   |   |   |   |   |   |   |   topic_7 < 0
+|   |   |   |   |   |   |   |   |   topic_49 < 0.05
+|   |   |   |   |   |   |   |   |   |   topic_41 < 0 : negative (5/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   topic_41 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_29 < 0 : negative (44/24) [22/8]
+|   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0 : positive (4/1) [2/1]
+|   |   |   |   |   |   |   |   |   topic_49 >= 0.05 : positive (4/0) [1/1]
+|   |   |   |   |   |   |   |   topic_7 >= 0 : irrelevant (14/4) [7/4]
+|   |   |   |   |   |   topic_32 >= 0.15
+|   |   |   |   |   |   |   topic_41 < 0.01
+|   |   |   |   |   |   |   |   topic_12 < 0 : negative (9/4) [1/1]
+|   |   |   |   |   |   |   |   topic_12 >= 0
+|   |   |   |   |   |   |   |   |   topic_36 < 0 : positive (4/1) [1/0]
+|   |   |   |   |   |   |   |   |   topic_36 >= 0 : negative (12/6) [1/1]
+|   |   |   |   |   |   |   topic_41 >= 0.01 : positive (9/3) [2/1]
+|   |   |   |   |   topic_16 >= 0.28
+|   |   |   |   |   |   topic_31 < 0.12
+|   |   |   |   |   |   |   topic_41 < 0 : irrelevant (7/0) [3/2]
+|   |   |   |   |   |   |   topic_41 >= 0
+|   |   |   |   |   |   |   |   topic_14 < 0
+|   |   |   |   |   |   |   |   |   topic_11 < 0
+|   |   |   |   |   |   |   |   |   |   topic_23 < 0 : positive (4/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   topic_23 >= 0 : irrelevant (5/0) [1/0]
+|   |   |   |   |   |   |   |   |   topic_11 >= 0 : positive (3/0) [1/0]
+|   |   |   |   |   |   |   |   topic_14 >= 0 : irrelevant (5/0) [1/0]
+|   |   |   |   |   |   topic_31 >= 0.12 : positive (3/0) [1/1]
+|   |   |   topic_25 >= 0.11 : positive (86/45) [35/15]
+|   |   topic_12 >= 0.22 : negative (38/7) [14/2]
+|   topic_5 >= 0.06
+|   |   topic_47 < 0.01
+|   |   |   topic_8 < 0 : negative (20/11) [11/4]
+|   |   |   topic_8 >= 0
+|   |   |   |   topic_13 < 0
+|   |   |   |   |   topic_16 < 0 : negative (18/0) [10/1]
+|   |   |   |   |   topic_16 >= 0
+|   |   |   |   |   |   topic_11 < 0 : positive (2/0) [2/1]
+|   |   |   |   |   |   topic_11 >= 0 : negative (22/4) [6/0]
+|   |   |   |   topic_13 >= 0
+|   |   |   |   |   topic_5 < 0.14
+|   |   |   |   |   |   topic_16 < 0 : negative (11/5) [8/4]
+|   |   |   |   |   |   topic_16 >= 0 : positive (6/2) [2/0]
+|   |   |   |   |   topic_5 >= 0.14 : negative (71/19) [34/11]
+|   |   topic_47 >= 0.01 : irrelevant (5/1) [2/2]
+topic_31 >= 0.26 : positive (171/78) [90/45]
+
+Size of the tree : 127
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1394512361 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 14,5,7,9,17,30,2,12,46,45,20,36,47,18,38,49,28,16,19,35,29,39,21,32,34,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R14,5,7,9,17,30,2,12,46,45,20,36,47,18,38,49,28,16,19,35,29,39,21,32,34,51'
+
+@attribute topic_14 numeric
+@attribute topic_5 numeric
+@attribute topic_7 numeric
+@attribute topic_9 numeric
+@attribute topic_17 numeric
+@attribute topic_30 numeric
+@attribute topic_2 numeric
+@attribute topic_12 numeric
+@attribute topic_46 numeric
+@attribute topic_45 numeric
+@attribute topic_20 numeric
+@attribute topic_36 numeric
+@attribute topic_47 numeric
+@attribute topic_18 numeric
+@attribute topic_38 numeric
+@attribute topic_49 numeric
+@attribute topic_28 numeric
+@attribute topic_16 numeric
+@attribute topic_19 numeric
+@attribute topic_35 numeric
+@attribute topic_29 numeric
+@attribute topic_39 numeric
+@attribute topic_21 numeric
+@attribute topic_32 numeric
+@attribute topic_34 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_5 < 0.05
+|   topic_18 < 0.04
+|   |   topic_12 < 0.12
+|   |   |   topic_38 < 0.08
+|   |   |   |   topic_34 < 0.05
+|   |   |   |   |   topic_19 < 0.14
+|   |   |   |   |   |   topic_14 < 0.01
+|   |   |   |   |   |   |   topic_16 < 0.3
+|   |   |   |   |   |   |   |   topic_32 < 0.09
+|   |   |   |   |   |   |   |   |   topic_36 < 0.33
+|   |   |   |   |   |   |   |   |   |   topic_46 < 0 : negative (11/4) [4/3]
+|   |   |   |   |   |   |   |   |   |   topic_46 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_2 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 < 0 : irrelevant (279/139) [122/63]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_39 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 < 0 : positive (5/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_16 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_35 < 0 : irrelevant (35/16) [16/8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_35 >= 0 : positive (30/12) [13/7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_39 >= 0 : irrelevant (25/11) [7/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 < 0.02
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 < 0 : positive (5/1) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 >= 0 : negative (2/0) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 >= 0 : positive (6/0) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_30 >= 0.02 : negative (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0.25 : irrelevant (17/3) [7/2]
+|   |   |   |   |   |   |   |   |   |   |   topic_2 >= 0 : irrelevant (54/22) [36/12]
+|   |   |   |   |   |   |   |   |   topic_36 >= 0.33 : irrelevant (17/2) [6/1]
+|   |   |   |   |   |   |   |   topic_32 >= 0.09 : positive (30/16) [13/7]
+|   |   |   |   |   |   |   topic_16 >= 0.3 : irrelevant (17/7) [11/3]
+|   |   |   |   |   |   topic_14 >= 0.01 : irrelevant (43/14) [17/4]
+|   |   |   |   |   topic_19 >= 0.14 : irrelevant (16/1) [4/3]
+|   |   |   |   topic_34 >= 0.05
+|   |   |   |   |   topic_39 < 0 : negative (44/16) [28/12]
+|   |   |   |   |   topic_39 >= 0 : irrelevant (17/10) [12/5]
+|   |   |   topic_38 >= 0.08
+|   |   |   |   topic_38 < 0.19
+|   |   |   |   |   topic_29 < 0
+|   |   |   |   |   |   topic_14 < 0 : negative (2/0) [1/0]
+|   |   |   |   |   |   topic_14 >= 0 : positive (12/2) [4/4]
+|   |   |   |   |   topic_29 >= 0 : positive (24/12) [11/6]
+|   |   |   |   topic_38 >= 0.19
+|   |   |   |   |   topic_45 < 0
+|   |   |   |   |   |   topic_49 < 0 : negative (6/1) [4/2]
+|   |   |   |   |   |   topic_49 >= 0
+|   |   |   |   |   |   |   topic_9 < 0 : positive (9/1) [2/2]
+|   |   |   |   |   |   |   topic_9 >= 0
+|   |   |   |   |   |   |   |   topic_17 < 0 : negative (9/1) [2/1]
+|   |   |   |   |   |   |   |   topic_17 >= 0 : positive (8/3) [3/1]
+|   |   |   |   |   topic_45 >= 0 : negative (10/4) [11/4]
+|   |   topic_12 >= 0.12 : negative (29/6) [21/7]
+|   topic_18 >= 0.04
+|   |   topic_19 < 0
+|   |   |   topic_39 < 0.22
+|   |   |   |   topic_5 < 0
+|   |   |   |   |   topic_16 < 0.28
+|   |   |   |   |   |   topic_14 < 0.02
+|   |   |   |   |   |   |   topic_39 < 0
+|   |   |   |   |   |   |   |   topic_35 < 0
+|   |   |   |   |   |   |   |   |   topic_45 < 0 : negative (46/9) [26/9]
+|   |   |   |   |   |   |   |   |   topic_45 >= 0 : positive (3/1) [3/1]
+|   |   |   |   |   |   |   |   topic_35 >= 0 : negative (44/17) [21/8]
+|   |   |   |   |   |   |   topic_39 >= 0
+|   |   |   |   |   |   |   |   topic_18 < 0.27 : positive (15/8) [14/8]
+|   |   |   |   |   |   |   |   topic_18 >= 0.27 : negative (17/5) [11/8]
+|   |   |   |   |   |   topic_14 >= 0.02 : irrelevant (2/0) [1/1]
+|   |   |   |   |   topic_16 >= 0.28 : positive (5/1) [0/0]
+|   |   |   |   topic_5 >= 0
+|   |   |   |   |   topic_36 < 0 : negative (5/0) [4/2]
+|   |   |   |   |   topic_36 >= 0
+|   |   |   |   |   |   topic_18 < 0.34 : irrelevant (4/0) [2/1]
+|   |   |   |   |   |   topic_18 >= 0.34 : negative (3/1) [1/0]
+|   |   |   topic_39 >= 0.22 : positive (8/1) [7/2]
+|   |   topic_19 >= 0 : positive (14/6) [14/10]
+topic_5 >= 0.05 : negative (176/57) [86/31]
+
+Size of the tree : 81
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -948961067 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 10,13,12,49,43,40,50,22,4,7,19,14,32,41,25,30,15,5,37,20,34,6,23,46,33,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R10,13,12,49,43,40,50,22,4,7,19,14,32,41,25,30,15,5,37,20,34,6,23,46,33,51'
+
+@attribute topic_10 numeric
+@attribute topic_13 numeric
+@attribute topic_12 numeric
+@attribute topic_49 numeric
+@attribute topic_43 numeric
+@attribute topic_40 numeric
+@attribute topic_50 numeric
+@attribute topic_22 numeric
+@attribute topic_4 numeric
+@attribute topic_7 numeric
+@attribute topic_19 numeric
+@attribute topic_14 numeric
+@attribute topic_32 numeric
+@attribute topic_41 numeric
+@attribute topic_25 numeric
+@attribute topic_30 numeric
+@attribute topic_15 numeric
+@attribute topic_5 numeric
+@attribute topic_37 numeric
+@attribute topic_20 numeric
+@attribute topic_34 numeric
+@attribute topic_6 numeric
+@attribute topic_23 numeric
+@attribute topic_46 numeric
+@attribute topic_33 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_5 < 0.1
+|   topic_12 < 0.14
+|   |   topic_25 < 0.09
+|   |   |   topic_41 < 0
+|   |   |   |   topic_34 < 0
+|   |   |   |   |   topic_43 < 0.05
+|   |   |   |   |   |   topic_37 < 0 : irrelevant (43/17) [24/17]
+|   |   |   |   |   |   topic_37 >= 0
+|   |   |   |   |   |   |   topic_10 < 0.68
+|   |   |   |   |   |   |   |   topic_23 < 0.1
+|   |   |   |   |   |   |   |   |   topic_23 < 0.01 : irrelevant (193/103) [84/39]
+|   |   |   |   |   |   |   |   |   topic_23 >= 0.01 : positive (5/1) [2/1]
+|   |   |   |   |   |   |   |   topic_23 >= 0.1 : negative (9/2) [5/2]
+|   |   |   |   |   |   |   topic_10 >= 0.68 : positive (3/0) [0/0]
+|   |   |   |   |   topic_43 >= 0.05 : negative (66/28) [25/12]
+|   |   |   |   topic_34 >= 0 : negative (53/18) [40/17]
+|   |   |   topic_41 >= 0
+|   |   |   |   topic_30 < 0
+|   |   |   |   |   topic_12 < 0.04
+|   |   |   |   |   |   topic_6 < 0
+|   |   |   |   |   |   |   topic_49 < 0.11
+|   |   |   |   |   |   |   |   topic_19 < 0.05
+|   |   |   |   |   |   |   |   |   topic_22 < 0.04
+|   |   |   |   |   |   |   |   |   |   topic_32 < 0 : irrelevant (9/2) [8/7]
+|   |   |   |   |   |   |   |   |   |   topic_32 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_37 < 0 : positive (16/6) [7/3]
+|   |   |   |   |   |   |   |   |   |   |   topic_37 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_37 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 < 0.21 : irrelevant (4/0) [4/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0.21 : negative (4/2) [3/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_37 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 < 0.36
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 < 0 : positive (9/2) [3/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 < 0 : irrelevant (6/1) [6/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_37 < 0.18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 < 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0 : irrelevant (7/3) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0 : positive (17/6) [7/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 < 0 : negative (11/5) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0 : irrelevant (41/18) [19/10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 < 0.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0 : negative (10/6) [8/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0 : positive (8/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0.14
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0.3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0.24
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 < 0 : negative (2/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 >= 0 : irrelevant (3/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0 : positive (5/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0 : negative (7/1) [7/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0 : positive (9/4) [6/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0.24 : irrelevant (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0.3 : irrelevant (2/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0.14 : irrelevant (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0.03 : negative (8/1) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_33 >= 0.01 : positive (10/4) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_37 >= 0.18 : irrelevant (10/3) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_5 >= 0.05 : negative (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 >= 0.36 : irrelevant (8/3) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : irrelevant (10/4) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0 : positive (8/3) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 < 0 : negative (12/2) [4/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0 : irrelevant (7/3) [2/0]
+|   |   |   |   |   |   |   |   |   topic_22 >= 0.04 : irrelevant (9/3) [6/3]
+|   |   |   |   |   |   |   |   topic_19 >= 0.05 : irrelevant (8/1) [7/2]
+|   |   |   |   |   |   |   topic_49 >= 0.11 : positive (9/3) [4/0]
+|   |   |   |   |   |   topic_6 >= 0
+|   |   |   |   |   |   |   topic_13 < 0.03
+|   |   |   |   |   |   |   |   topic_40 < 0 : negative (3/1) [1/0]
+|   |   |   |   |   |   |   |   topic_40 >= 0 : positive (11/0) [7/5]
+|   |   |   |   |   |   |   topic_13 >= 0.03 : irrelevant (2/0) [1/0]
+|   |   |   |   |   topic_12 >= 0.04
+|   |   |   |   |   |   topic_10 < 0 : positive (2/0) [1/0]
+|   |   |   |   |   |   topic_10 >= 0 : irrelevant (10/1) [2/1]
+|   |   |   |   topic_30 >= 0
+|   |   |   |   |   topic_23 < 0
+|   |   |   |   |   |   topic_15 < 0 : negative (4/0) [2/2]
+|   |   |   |   |   |   topic_15 >= 0
+|   |   |   |   |   |   |   topic_30 < 0
+|   |   |   |   |   |   |   |   topic_25 < 0
+|   |   |   |   |   |   |   |   |   topic_40 < 0.21
+|   |   |   |   |   |   |   |   |   |   topic_14 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_22 < 0.04
+|   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0.09
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_37 < 0.16
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0.37
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0.04
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 < 0 : irrelevant (17/6) [3/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_43 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0 : negative (8/4) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0 : irrelevant (3/0) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0.02 : irrelevant (10/5) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0.02 : negative (2/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0.04 : negative (3/1) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0.37 : negative (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_37 >= 0.16 : irrelevant (4/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0.09 : irrelevant (5/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   topic_22 >= 0.04 : negative (3/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   topic_14 >= 0 : irrelevant (6/0) [7/3]
+|   |   |   |   |   |   |   |   |   topic_40 >= 0.21 : negative (3/0) [2/0]
+|   |   |   |   |   |   |   |   topic_25 >= 0 : irrelevant (29/15) [14/8]
+|   |   |   |   |   |   |   topic_30 >= 0 : irrelevant (23/7) [17/9]
+|   |   |   |   |   topic_23 >= 0 : irrelevant (12/4) [8/2]
+|   |   topic_25 >= 0.09
+|   |   |   topic_7 < 0
+|   |   |   |   topic_32 < 0.01 : positive (100/52) [45/22]
+|   |   |   |   topic_32 >= 0.01 : irrelevant (6/1) [6/2]
+|   |   |   topic_7 >= 0 : positive (8/0) [7/3]
+|   topic_12 >= 0.14 : negative (45/8) [30/8]
+topic_5 >= 0.1 : negative (137/41) [76/24]
+
+Size of the tree : 129
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -778045881 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 23,22,3,42,14,30,50,39,38,26,9,29,49,41,28,21,44,34,46,4,10,36,18,20,17,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R23,22,3,42,14,30,50,39,38,26,9,29,49,41,28,21,44,34,46,4,10,36,18,20,17,51'
+
+@attribute topic_23 numeric
+@attribute topic_22 numeric
+@attribute topic_3 numeric
+@attribute topic_42 numeric
+@attribute topic_14 numeric
+@attribute topic_30 numeric
+@attribute topic_50 numeric
+@attribute topic_39 numeric
+@attribute topic_38 numeric
+@attribute topic_26 numeric
+@attribute topic_9 numeric
+@attribute topic_29 numeric
+@attribute topic_49 numeric
+@attribute topic_41 numeric
+@attribute topic_28 numeric
+@attribute topic_21 numeric
+@attribute topic_44 numeric
+@attribute topic_34 numeric
+@attribute topic_46 numeric
+@attribute topic_4 numeric
+@attribute topic_10 numeric
+@attribute topic_36 numeric
+@attribute topic_18 numeric
+@attribute topic_20 numeric
+@attribute topic_17 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_18 < 0.03
+|   topic_38 < 0.02
+|   |   topic_34 < 0.14
+|   |   |   topic_39 < 0
+|   |   |   |   topic_26 < 0
+|   |   |   |   |   topic_3 < 0.02
+|   |   |   |   |   |   topic_41 < 0.43
+|   |   |   |   |   |   |   topic_36 < 0.1
+|   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   topic_20 < 0
+|   |   |   |   |   |   |   |   |   |   topic_9 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_49 < 0 : negative (4/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_22 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0.95
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 < 0 : negative (32/17) [14/7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 >= 0 : irrelevant (6/2) [5/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 >= 0 : negative (5/2) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0.95 : irrelevant (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0 : positive (6/2) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_17 >= 0 : irrelevant (10/5) [6/4]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_22 >= 0 : negative (19/6) [5/1]
+|   |   |   |   |   |   |   |   |   |   topic_9 >= 0 : positive (5/1) [2/1]
+|   |   |   |   |   |   |   |   |   topic_20 >= 0 : negative (5/0) [5/2]
+|   |   |   |   |   |   |   |   topic_4 >= 0
+|   |   |   |   |   |   |   |   |   topic_34 < 0.03
+|   |   |   |   |   |   |   |   |   |   topic_41 < 0.08
+|   |   |   |   |   |   |   |   |   |   |   topic_46 < 0 : irrelevant (13/2) [10/4]
+|   |   |   |   |   |   |   |   |   |   |   topic_46 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0 : irrelevant (23/11) [9/3]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 < 0.08
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 < 0.04
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 < 0.33
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 < 0 : positive (3/0) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_44 < 0.45
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_21 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 < 0 : irrelevant (140/82) [65/26]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 >= 0 : negative (10/4) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_21 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0 : irrelevant (7/0) [7/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0 : negative (7/3) [10/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 < 0.4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_42 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0 : positive (4/1) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0 : negative (4/2) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0 : positive (5/0) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_42 >= 0 : irrelevant (15/8) [10/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0.05 : negative (13/4) [6/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0.05 : irrelevant (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_22 >= 0.4 : negative (7/4) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0.01 : positive (5/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_44 >= 0.45 : irrelevant (7/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_20 >= 0.33 : irrelevant (11/3) [5/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0.04 : negative (4/0) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_10 >= 0.08 : irrelevant (18/4) [6/2]
+|   |   |   |   |   |   |   |   |   |   topic_41 >= 0.08 : irrelevant (17/2) [6/5]
+|   |   |   |   |   |   |   |   |   topic_34 >= 0.03 : negative (19/6) [13/6]
+|   |   |   |   |   |   |   topic_36 >= 0.1
+|   |   |   |   |   |   |   |   topic_41 < 0.17
+|   |   |   |   |   |   |   |   |   topic_46 < 0 : negative (3/1) [2/0]
+|   |   |   |   |   |   |   |   |   topic_46 >= 0 : irrelevant (19/2) [13/2]
+|   |   |   |   |   |   |   |   topic_41 >= 0.17 : negative (2/0) [4/2]
+|   |   |   |   |   |   topic_41 >= 0.43 : positive (16/7) [9/8]
+|   |   |   |   |   topic_3 >= 0.02 : irrelevant (13/1) [6/2]
+|   |   |   |   topic_26 >= 0 : positive (46/23) [20/13]
+|   |   |   topic_39 >= 0
+|   |   |   |   topic_39 < 0 : positive (6/1) [2/1]
+|   |   |   |   topic_39 >= 0
+|   |   |   |   |   topic_14 < 0
+|   |   |   |   |   |   topic_49 < 0.15
+|   |   |   |   |   |   |   topic_22 < 0
+|   |   |   |   |   |   |   |   topic_3 < 0
+|   |   |   |   |   |   |   |   |   topic_30 < 0.07
+|   |   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_41 < 0 : irrelevant (49/16) [19/9]
+|   |   |   |   |   |   |   |   |   |   |   topic_41 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_26 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_44 < 0 : positive (22/9) [8/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_44 >= 0 : irrelevant (5/2) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_36 >= 0 : irrelevant (13/5) [8/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 >= 0 : negative (3/1) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 < 0 : irrelevant (14/1) [7/4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_50 >= 0 : positive (4/2) [2/0]
+|   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : irrelevant (13/4) [4/3]
+|   |   |   |   |   |   |   |   |   topic_30 >= 0.07 : negative (5/1) [2/1]
+|   |   |   |   |   |   |   |   topic_3 >= 0 : negative (7/3) [10/4]
+|   |   |   |   |   |   |   topic_22 >= 0 : irrelevant (13/2) [8/3]
+|   |   |   |   |   |   topic_49 >= 0.15
+|   |   |   |   |   |   |   topic_23 < 0 : negative (3/1) [2/0]
+|   |   |   |   |   |   |   topic_23 >= 0 : positive (2/0) [1/1]
+|   |   |   |   |   topic_14 >= 0 : irrelevant (19/6) [7/1]
+|   |   topic_34 >= 0.14 : negative (53/20) [17/5]
+|   topic_38 >= 0.02 : negative (146/70) [66/31]
+topic_18 >= 0.03
+|   topic_20 < 0
+|   |   topic_39 < 0.17
+|   |   |   topic_4 < 0 : negative (20/1) [8/4]
+|   |   |   topic_4 >= 0
+|   |   |   |   topic_3 < 0
+|   |   |   |   |   topic_23 < 0.08
+|   |   |   |   |   |   topic_26 < 0.02
+|   |   |   |   |   |   |   topic_4 < 0 : negative (53/17) [34/11]
+|   |   |   |   |   |   |   topic_4 >= 0
+|   |   |   |   |   |   |   |   topic_42 < 0 : positive (10/3) [7/2]
+|   |   |   |   |   |   |   |   topic_42 >= 0 : negative (55/26) [42/16]
+|   |   |   |   |   |   topic_26 >= 0.02 : irrelevant (2/0) [1/1]
+|   |   |   |   |   topic_23 >= 0.08 : negative (11/2) [4/1]
+|   |   |   |   topic_3 >= 0 : negative (14/4) [5/3]
+|   |   topic_39 >= 0.17 : positive (13/3) [7/2]
+|   topic_20 >= 0
+|   |   topic_41 < 0 : positive (21/8) [11/5]
+|   |   topic_41 >= 0 : negative (2/0) [1/0]
+
+Size of the tree : 127
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -273491135 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 25,26,14,13,15,44,30,34,46,23,21,4,50,43,36,49,39,28,29,7,32,6,19,12,45,51
+
+Filtered Header
+@relation 'irish_topics-weka.filters.unsupervised.attribute.Remove-V-R25,26,14,13,15,44,30,34,46,23,21,4,50,43,36,49,39,28,29,7,32,6,19,12,45,51'
+
+@attribute topic_25 numeric
+@attribute topic_26 numeric
+@attribute topic_14 numeric
+@attribute topic_13 numeric
+@attribute topic_15 numeric
+@attribute topic_44 numeric
+@attribute topic_30 numeric
+@attribute topic_34 numeric
+@attribute topic_46 numeric
+@attribute topic_23 numeric
+@attribute topic_21 numeric
+@attribute topic_4 numeric
+@attribute topic_50 numeric
+@attribute topic_43 numeric
+@attribute topic_36 numeric
+@attribute topic_49 numeric
+@attribute topic_39 numeric
+@attribute topic_28 numeric
+@attribute topic_29 numeric
+@attribute topic_7 numeric
+@attribute topic_32 numeric
+@attribute topic_6 numeric
+@attribute topic_19 numeric
+@attribute topic_12 numeric
+@attribute topic_45 numeric
+@attribute class_atr {negative,irrelevant,positive}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+topic_14 < 0.08
+|   topic_19 < 0.04
+|   |   topic_39 < 0
+|   |   |   topic_32 < 0.44
+|   |   |   |   topic_13 < 0.82
+|   |   |   |   |   topic_4 < 0.03
+|   |   |   |   |   |   topic_46 < 0.67
+|   |   |   |   |   |   |   topic_43 < 0
+|   |   |   |   |   |   |   |   topic_12 < 0.39
+|   |   |   |   |   |   |   |   |   topic_12 < 0.33
+|   |   |   |   |   |   |   |   |   |   topic_12 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_45 < 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0.04
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0 : negative (4/0) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : positive (6/1) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0 : irrelevant (25/15) [13/8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 < 0 : negative (31/9) [10/6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_46 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 < 0 : irrelevant (7/2) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0 : negative (6/1) [2/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0.04 : negative (6/0) [5/1]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0 : negative (2/1) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0 : positive (7/2) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   topic_45 >= 0.1 : positive (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   topic_12 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_14 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_13 < 0 : negative (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_13 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_6 < 0 : irrelevant (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_6 >= 0 : negative (5/2) [3/0]
+|   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0 : negative (3/0) [1/1]
+|   |   |   |   |   |   |   |   |   topic_12 >= 0.33 : positive (3/0) [0/0]
+|   |   |   |   |   |   |   |   topic_12 >= 0.39 : negative (10/0) [3/0]
+|   |   |   |   |   |   |   topic_43 >= 0
+|   |   |   |   |   |   |   |   topic_26 < 0.03
+|   |   |   |   |   |   |   |   |   topic_36 < 0.22 : negative (55/8) [29/11]
+|   |   |   |   |   |   |   |   |   topic_36 >= 0.22 : irrelevant (2/0) [2/0]
+|   |   |   |   |   |   |   |   topic_26 >= 0.03 : irrelevant (3/1) [0/0]
+|   |   |   |   |   |   topic_46 >= 0.67 : irrelevant (3/0) [1/1]
+|   |   |   |   |   topic_4 >= 0.03
+|   |   |   |   |   |   topic_6 < 0 : irrelevant (10/2) [6/2]
+|   |   |   |   |   |   topic_6 >= 0 : negative (3/1) [2/0]
+|   |   |   |   topic_13 >= 0.82 : irrelevant (4/0) [1/1]
+|   |   |   topic_32 >= 0.44 : positive (4/0) [0/0]
+|   |   topic_39 >= 0
+|   |   |   topic_25 < 0.09
+|   |   |   |   topic_34 < 0
+|   |   |   |   |   topic_26 < 0
+|   |   |   |   |   |   topic_12 < 0.2
+|   |   |   |   |   |   |   topic_43 < 0
+|   |   |   |   |   |   |   |   topic_13 < 0
+|   |   |   |   |   |   |   |   |   topic_21 < 0
+|   |   |   |   |   |   |   |   |   |   topic_25 < 0 : irrelevant (10/3) [6/4]
+|   |   |   |   |   |   |   |   |   |   topic_25 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_36 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_30 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0 : irrelevant (5/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0 : positive (5/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0 : negative (3/1) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0 : irrelevant (22/11) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0 : irrelevant (8/3) [5/3]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_30 >= 0 : positive (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   topic_36 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_12 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0 : negative (2/0) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 < 0 : irrelevant (8/0) [3/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0 : negative (8/4) [5/1]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_12 >= 0 : negative (3/1) [0/0]
+|   |   |   |   |   |   |   |   |   topic_21 >= 0 : negative (20/8) [10/4]
+|   |   |   |   |   |   |   |   topic_13 >= 0
+|   |   |   |   |   |   |   |   |   topic_45 < 0 : irrelevant (27/7) [14/8]
+|   |   |   |   |   |   |   |   |   topic_45 >= 0
+|   |   |   |   |   |   |   |   |   |   topic_46 < 0 : irrelevant (19/4) [13/5]
+|   |   |   |   |   |   |   |   |   |   topic_46 >= 0 : positive (16/10) [10/6]
+|   |   |   |   |   |   |   topic_43 >= 0
+|   |   |   |   |   |   |   |   topic_45 < 0.01
+|   |   |   |   |   |   |   |   |   topic_39 < 0 : negative (31/12) [14/4]
+|   |   |   |   |   |   |   |   |   topic_39 >= 0
+|   |   |   |   |   |   |   |   |   |   topic_46 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_14 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_30 < 0 : negative (23/11) [16/6]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_30 >= 0 : irrelevant (15/7) [4/1]
+|   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0 : negative (4/0) [4/2]
+|   |   |   |   |   |   |   |   |   |   topic_46 >= 0 : irrelevant (6/1) [5/3]
+|   |   |   |   |   |   |   |   topic_45 >= 0.01 : irrelevant (8/1) [4/1]
+|   |   |   |   |   |   topic_12 >= 0.2 : negative (7/2) [5/0]
+|   |   |   |   |   topic_26 >= 0
+|   |   |   |   |   |   topic_43 < 0 : irrelevant (3/0) [0/0]
+|   |   |   |   |   |   topic_43 >= 0
+|   |   |   |   |   |   |   topic_32 < 0 : positive (7/2) [3/1]
+|   |   |   |   |   |   |   topic_32 >= 0
+|   |   |   |   |   |   |   |   topic_39 < 0.08 : irrelevant (10/2) [4/2]
+|   |   |   |   |   |   |   |   topic_39 >= 0.08 : positive (2/0) [3/1]
+|   |   |   |   topic_34 >= 0
+|   |   |   |   |   topic_36 < 0.34
+|   |   |   |   |   |   topic_12 < 0
+|   |   |   |   |   |   |   topic_39 < 0
+|   |   |   |   |   |   |   |   topic_44 < 0.48
+|   |   |   |   |   |   |   |   |   topic_34 < 0
+|   |   |   |   |   |   |   |   |   |   topic_6 < 0
+|   |   |   |   |   |   |   |   |   |   |   topic_32 < 0.28
+|   |   |   |   |   |   |   |   |   |   |   |   topic_32 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 < 0 : negative (67/39) [35/18]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_14 >= 0 : irrelevant (9/2) [7/3]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0.11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0 : negative (22/7) [10/7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0 : positive (8/1) [6/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : negative (32/16) [12/7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_7 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0 : positive (3/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0.45
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 < 0 : negative (5/1) [5/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_15 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0 : positive (4/0) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 < 0 : negative (2/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0 : positive (4/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0 : negative (3/1) [2/1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0.45 : positive (3/0) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   topic_7 >= 0 : negative (4/1) [0/0]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_23 >= 0.11 : irrelevant (4/1) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   topic_32 >= 0.28 : irrelevant (7/3) [2/1]
+|   |   |   |   |   |   |   |   |   |   topic_6 >= 0 : positive (17/4) [15/11]
+|   |   |   |   |   |   |   |   |   topic_34 >= 0
+|   |   |   |   |   |   |   |   |   |   topic_23 < 0 : negative (56/19) [29/11]
+|   |   |   |   |   |   |   |   |   |   topic_23 >= 0
+|   |   |   |   |   |   |   |   |   |   |   topic_45 < 0 : irrelevant (37/19) [13/6]
+|   |   |   |   |   |   |   |   |   |   |   topic_45 >= 0 : negative (12/5) [5/3]
+|   |   |   |   |   |   |   |   topic_44 >= 0.48 : irrelevant (4/0) [3/1]
+|   |   |   |   |   |   |   topic_39 >= 0
+|   |   |   |   |   |   |   |   topic_14 < 0.01
+|   |   |   |   |   |   |   |   |   topic_23 < 0.01
+|   |   |   |   |   |   |   |   |   |   topic_34 < 0.08
+|   |   |   |   |   |   |   |   |   |   |   topic_29 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_49 < 0.06
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_39 < 0.46 : negative (17/6) [9/5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   topic_39 >= 0.46 : irrelevant (3/1) [2/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0.06 : positive (2/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   |   topic_29 >= 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_39 < 0.15 : irrelevant (26/12) [9/5]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_39 >= 0.15 : positive (3/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   topic_34 >= 0.08 : irrelevant (9/4) [3/1]
+|   |   |   |   |   |   |   |   |   topic_23 >= 0.01 : irrelevant (6/0) [2/1]
+|   |   |   |   |   |   |   |   topic_14 >= 0.01 : positive (5/0) [3/2]
+|   |   |   |   |   |   topic_12 >= 0
+|   |   |   |   |   |   |   topic_15 < 0.02
+|   |   |   |   |   |   |   |   topic_34 < 0
+|   |   |   |   |   |   |   |   |   topic_4 < 0
+|   |   |   |   |   |   |   |   |   |   topic_14 < 0.02
+|   |   |   |   |   |   |   |   |   |   |   topic_49 < 0 : negative (53/18) [25/13]
+|   |   |   |   |   |   |   |   |   |   |   topic_49 >= 0 : irrelevant (4/1) [5/1]
+|   |   |   |   |   |   |   |   |   |   topic_14 >= 0.02 : irrelevant (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   topic_4 >= 0 : irrelevant (4/1) [1/0]
+|   |   |   |   |   |   |   |   topic_34 >= 0 : negative (11/2) [5/4]
+|   |   |   |   |   |   |   topic_15 >= 0.02 : irrelevant (6/1) [4/1]
+|   |   |   |   |   topic_36 >= 0.34 : irrelevant (11/1) [3/2]
+|   |   |   topic_25 >= 0.09
+|   |   |   |   topic_32 < 0
+|   |   |   |   |   topic_29 < 0.03
+|   |   |   |   |   |   topic_25 < 0.56
+|   |   |   |   |   |   |   topic_49 < 0.07
+|   |   |   |   |   |   |   |   topic_15 < 0
+|   |   |   |   |   |   |   |   |   topic_46 < 0.24
+|   |   |   |   |   |   |   |   |   |   topic_25 < 0.26
+|   |   |   |   |   |   |   |   |   |   |   topic_34 < 0
+|   |   |   |   |   |   |   |   |   |   |   |   topic_28 < 0 : negative (2/0) [3/1]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_28 >= 0 : positive (13/2) [6/4]
+|   |   |   |   |   |   |   |   |   |   |   topic_34 >= 0 : negative (8/1) [6/4]
+|   |   |   |   |   |   |   |   |   |   topic_25 >= 0.26
+|   |   |   |   |   |   |   |   |   |   |   topic_25 < 0.28 : irrelevant (2/0) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0.28
+|   |   |   |   |   |   |   |   |   |   |   |   topic_25 < 0.49 : negative (11/1) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_25 >= 0.49 : positive (3/1) [1/0]
+|   |   |   |   |   |   |   |   |   topic_46 >= 0.24 : irrelevant (3/1) [1/1]
+|   |   |   |   |   |   |   |   topic_15 >= 0
+|   |   |   |   |   |   |   |   |   topic_13 < 0
+|   |   |   |   |   |   |   |   |   |   topic_25 < 0.32
+|   |   |   |   |   |   |   |   |   |   |   topic_12 < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   topic_4 < 0 : positive (10/1) [13/5]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_4 >= 0 : irrelevant (5/2) [4/2]
+|   |   |   |   |   |   |   |   |   |   |   topic_12 >= 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   topic_26 < 0 : negative (2/1) [1/0]
+|   |   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0 : irrelevant (2/0) [1/1]
+|   |   |   |   |   |   |   |   |   |   topic_25 >= 0.32
+|   |   |   |   |   |   |   |   |   |   |   topic_26 < 0 : negative (8/3) [4/3]
+|   |   |   |   |   |   |   |   |   |   |   topic_26 >= 0 : positive (4/0) [1/0]
+|   |   |   |   |   |   |   |   |   topic_13 >= 0 : negative (2/0) [0/0]
+|   |   |   |   |   |   |   topic_49 >= 0.07 : positive (7/2) [3/1]
+|   |   |   |   |   |   topic_25 >= 0.56 : positive (8/2) [6/2]
+|   |   |   |   |   topic_29 >= 0.03 : irrelevant (2/0) [0/0]
+|   |   |   |   topic_32 >= 0
+|   |   |   |   |   topic_26 < 0 : irrelevant (7/0) [5/3]
+|   |   |   |   |   topic_26 >= 0 : positive (4/0) [2/0]
+|   topic_19 >= 0.04 : irrelevant (29/5) [16/9]
+topic_14 >= 0.08
+|   topic_19 < 0 : irrelevant (21/1) [13/9]
+|   topic_19 >= 0
+|   |   topic_34 < 0 : positive (3/0) [1/0]
+|   |   topic_34 >= 0 : irrelevant (3/1) [3/1]
+
+Size of the tree : 215
+
+
+
+Time taken to build model: 0.26 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         934               56.2651 %
+Incorrectly Classified Instances       726               43.7349 %
+Total Number of Instances             1660     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.660    0.357    0.546      0.660    0.598      negative
+                 0.638    0.231    0.593      0.638    0.615      irrelevant
+                 0.316    0.094    0.540      0.316    0.398      positive
+Weighted Avg.    0.563    0.245    0.561      0.563    0.552      
+
