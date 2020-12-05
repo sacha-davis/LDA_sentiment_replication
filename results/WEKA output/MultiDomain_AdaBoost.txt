@@ -1,0 +1,262 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     multi-domain-sentiment
+Instances:    8000
+Attributes:   13360
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+great <= 0.5 : negative
+great > 0.5 : positive
+great is missing : negative
+
+Class distributions
+
+great <= 0.5
+negative	positive	
+0.5685150851171414	0.43148491488285856	
+great > 0.5
+negative	positive	
+0.3033381712626996	0.6966618287373004	
+great is missing
+negative	positive	
+0.5	0.5	
+
+
+Weight: 0.41
+
+Decision Stump
+
+Classifications
+
+wast <= 1.0 : positive
+wast > 1.0 : negative
+wast is missing : positive
+
+Class distributions
+
+wast <= 1.0
+negative	positive	
+0.42563555898016386	0.5743644410198362	
+wast > 1.0
+negative	positive	
+0.8977378159778215	0.10226218402217839	
+wast is missing
+negative	positive	
+0.4487735242206713	0.5512264757793286	
+
+
+Weight: 0.36
+
+Decision Stump
+
+Classifications
+
+excel <= 0.5 : negative
+excel > 0.5 : positive
+excel is missing : negative
+
+Class distributions
+
+excel <= 0.5
+negative	positive	
+0.5562989203258056	0.4437010796741945	
+excel > 0.5
+negative	positive	
+0.1583782255484117	0.8416217744515883	
+excel is missing
+negative	positive	
+0.5311581863057048	0.46884181369429523	
+
+
+Weight: 0.3
+
+Decision Stump
+
+Classifications
+
+disappoint <= 0.5 : positive
+disappoint > 0.5 : negative
+disappoint is missing : positive
+
+Class distributions
+
+disappoint <= 0.5
+negative	positive	
+0.4378869286327419	0.5621130713672582	
+disappoint > 0.5
+negative	positive	
+0.8022652415892247	0.19773475841077523	
+disappoint is missing
+negative	positive	
+0.4654611128535192	0.5345388871464808	
+
+
+Weight: 0.32
+
+Decision Stump
+
+Classifications
+
+bad <= 0.5 : negative
+bad > 0.5 : negative
+bad is missing : negative
+
+Class distributions
+
+bad <= 0.5
+negative	positive	
+0.5076349557389698	0.49236504426103017	
+bad > 0.5
+negative	positive	
+0.7751025101864567	0.22489748981354327	
+bad is missing
+negative	positive	
+0.534485470049291	0.4655145299507089	
+
+
+Weight: 0.14
+
+Decision Stump
+
+Classifications
+
+bad <= 0.5 : positive
+bad > 0.5 : negative
+bad is missing : negative
+
+Class distributions
+
+bad <= 0.5
+negative	positive	
+0.4731211774474283	0.5268788225525717	
+bad > 0.5
+negative	positive	
+0.7501081849315804	0.24989181506841968	
+bad is missing
+negative	positive	
+0.5000000000001136	0.4999999999998864	
+
+
+Weight: 0.19
+
+Decision Stump
+
+Classifications
+
+love <= 1.0 : negative
+love > 1.0 : positive
+love is missing : negative
+
+Class distributions
+
+love <= 1.0
+negative	positive	
+0.5740394694219413	0.4259605305780588	
+love > 1.0
+negative	positive	
+0.3408444349077991	0.6591555650922009	
+love is missing
+negative	positive	
+0.539492375937184	0.460507624062816	
+
+
+Weight: 0.35
+
+Decision Stump
+
+Classifications
+
+return <= 0.5 : positive
+return > 0.5 : negative
+return is missing : positive
+
+Class distributions
+
+return <= 0.5
+negative	positive	
+0.45745260446608155	0.5425473955339184	
+return > 0.5
+negative	positive	
+0.8018560546943174	0.19814394530568258	
+return is missing
+negative	positive	
+0.4778516487719114	0.5221483512280887	
+
+
+Weight: 0.23
+
+Decision Stump
+
+Classifications
+
+worst <= 1.0 : negative
+worst > 1.0 : negative
+worst is missing : negative
+
+Class distributions
+
+worst <= 1.0
+negative	positive	
+0.5146603428818849	0.4853396571181152	
+worst > 1.0
+negative	positive	
+0.9096573562566589	0.09034264374334121	
+worst is missing
+negative	positive	
+0.529291200781799	0.47070879921820097	
+
+
+Weight: 0.12
+
+Decision Stump
+
+Classifications
+
+worst <= 1.0 : positive
+worst > 1.0 : negative
+worst is missing : positive
+
+Class distributions
+
+worst <= 1.0
+negative	positive	
+0.48534396778251676	0.5146560322174832	
+worst > 1.0
+negative	positive	
+0.8995431996323341	0.1004568003676659	
+worst is missing
+negative	positive	
+0.49999999999997435	0.5000000000000256	
+
+
+Weight: 0.11
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 221.53 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5361               67.0125 %
+Incorrectly Classified Instances      2639               32.9875 %
+Total Number of Instances             8000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  Class
+                 0.751    0.411    0.646      0.751    0.695      negative
+                 0.589    0.249    0.703      0.589    0.641      positive
+Weighted Avg.    0.670    0.330    0.675      0.670    0.668      
+
